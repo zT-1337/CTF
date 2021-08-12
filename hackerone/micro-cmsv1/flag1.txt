@@ -1,0 +1,9 @@
+- after creating page you see url for page -> page/{id}
+- id started at 13, other pages were 1 and 2
+- tried out different ids
+- 6 was forbidden
+
+- edit url for page is /page/edit/id
+- try out with id 6 
+- access control wasnt correctly configured for this url
+- found first flag

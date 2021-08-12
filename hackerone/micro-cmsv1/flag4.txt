@@ -1,0 +1,2 @@
+- tried other type of XSS without the use of script tag (create page with malformed a tag)
+- after visiting that created page the next flag was visible

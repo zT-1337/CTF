@@ -1,0 +1,2 @@
+- added cross-site scripting code as title of page
+- this triggered the site to also add js code for displaying the flag

@@ -1,0 +1,9 @@
+- trying sql injection in create page
+
+- vermutetes insert statement
+"INSERT INTO page (id, title, content)
+VALUES (1, '" . $title  . "', '" . $content . "');"
+
+payload für content
+
+$content = ''); SLEEP(60); --
