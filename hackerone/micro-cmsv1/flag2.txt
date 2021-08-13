@@ -7,3 +7,5 @@ VALUES (1, '" . $title  . "', '" . $content . "');"
 payload für content
 
 $content = ''); SLEEP(60); --
+
+- sql injection for Referer header is also not working
