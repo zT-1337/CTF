@@ -9,3 +9,5 @@ payload für content
 $content = ''); SLEEP(60); --
 
 - sql injection for Referer header is also not working
+
+- sql injection on the url param of the edit request works

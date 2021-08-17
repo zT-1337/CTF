@@ -1,0 +1,24 @@
+- checkout form has hidden field with params that can be changed by client
+    - set prices to zero and submit
+    - found flag
+
+- adding item works by calling GET /add/<id> (0 for cat and 1 for dog)
+    - trying sql injection on that param
+    - didnt work
+
+- hint for flag1
+    - could have used tool for bruteforcing paths
+    - page probably has a way for administration
+    - guessed pages /admin, /dashboard and /login
+    - found /login page
+        - try sql injection on login
+            - didnt work
+        - invalid login with admin:admin
+            - application tells me the username is invalid
+                - try to find valid username by trying login with username list and password "test"
+                - found valid username pat
+                - bruteforcing password for pat with hydra and rockyou wordlist
+                - found credentials pat:sesame
+
+- flag2
+    - might be XSS on edit page
