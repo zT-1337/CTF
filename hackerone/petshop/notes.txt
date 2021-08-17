@@ -22,3 +22,4 @@
 
 - flag2
     - might be XSS on edit page
+    - might be SQL injection on id url param on edit page
