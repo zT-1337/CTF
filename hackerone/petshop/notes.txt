@@ -7,7 +7,7 @@
     - didnt work
 
 - hint for flag1
-    - could have used tool for bruteforcing paths
+    - could have used tool for bruteforcing paths (dirsearch)
     - page probably has a way for administration
     - guessed pages /admin, /dashboard and /login
     - found /login page
@@ -22,4 +22,6 @@
 
 - flag2
     - might be XSS on edit page
+        - alert script on name input of edit
+        - found flag on cart page
     - might be SQL injection on id url param on edit page
