@@ -1,0 +1,126 @@
+-accessed get /
+    - x-powered-by: PHP/5.5.9-lubuntu4.24
+
+- bruteforced paths with dirsearch
+    [12:22:06] 200 -    0B  - /2e5fbee067/config.php                            
+    [12:22:18] 200 -    2KB - /2e5fbee067/index.php                             
+    [12:22:18] 200 -    2KB - /2e5fbee067/index.php/login/                      
+    [12:22:28] 301 -  314B  - /2e5fbee067/pages  ->  http://35.227.24.107/2e5fbee067/pages/
+    [12:22:28] 200 -    3KB - /2e5fbee067/pages/                                
+    [12:22:29] 200 -   68KB - /2e5fbee067/php.ini 
+
+- found usernames
+    - user
+        - tried bruteforcing the password
+            - password is password
+            - found flag ^FLAG^0dec1754f6b6e39fe551293230430710fa2812b116f2b9c845630ea5a33b7a2b$FLAG$
+        - changed his username to XSS payload <script>alert(document.cookie)</script>
+            - worked but no flag
+    - admin
+        - tried bruteforcing the password
+            - didnt work
+
+- found pages
+    - /pages
+        - access of pages via index.php?page=pagename
+        - /account.php
+            - updating of username and password
+            - attempt to hijack admin account by using admin in username
+                - worked
+                - maybe no admin account to begin with
+            - attempt to hijack user account by using user in username
+                - worked
+                - maybe no user account to begin with
+            - attempt to add XSS payload as username
+                - worked, but no flag
+        - /create.php
+            - create post for other user by using different value for user_id
+                - created post for user_id = 1
+                    - found flag ^FLAG^50ad731372c2debafd1c1846cf70c0593a6c2280f7a8ed9470ee062141374d28$FLAG$
+                - created post for user_id = 2
+                    - found same flag
+        - /delete.php
+            - could not access as test:test
+            - get delete.php with id query param
+                - try sql injection on id
+        - /edit.php
+            - tried to edit post without id
+                - found flag
+                - ^FLAG^9917cde176f6367ffe3eb9edc3f57d86da302c8a5691e51b24e54784d950001a$FLAG$
+            - tried to edit post with id = 1
+                - found same flag
+        - /home.php
+            - tried to post with other user id
+                - same flag
+            - tried with return = delete
+                - moved me to a page where i could delete the created post
+                - delete request works similiar to edit request with id as query param
+                    - tried to delete post with id 1
+                        - didnt work
+            - tried xss in whats on your mind
+                - <script>alert('XSS')</script>
+                    - didnt trigger on home page
+                    - didnt trigger on edit page
+                    - trying payload in title
+                        - didnt trigger
+        - /profile.php
+            - access profile page
+            - query param id specifies the profile
+        - /sign_in.php
+            - tried sql injection ' or 1=1;--
+        - /sign_out.php
+        - /sign_up.php
+        - /view.php
+            - ansehen von einem post per id in query
+
+
+- found inputs
+    account.php
+        username
+        password
+    create.php
+        title
+        body
+        private
+        user_id (hidden)
+    home.php
+        post to create.php
+            hidden user_id
+            hidden return 
+    edit.php
+        title
+        body
+        private
+        id (query param)
+    sign_in.php
+        username
+        password
+    sign_up.php
+        username
+        password
+    home.php
+        post
+    create.php
+        title
+        post
+    profile.php
+        id (query param)
+
+- tried id 2 for view post and found flag 
+    - idea should come by knowing there are private posts
+    - could have found accessing admin profile by bruteforcing ids
+
+- flag3 hint is 189 * 5
+    - tried to view post with this id and found flag
+    - probably should have bruteforced different ids
+
+- id of post for deleting is weird
+    - example
+        - post id = 11
+        - delete id =    6512bd43d9caa6e02c990b0a82652dca
+        - id in cookie = c81e728d9d4c2f636f067f89cc14862c
+    - those strange ids are md5 hashes
+
+- id in cookie is also md5 hash of user id
+    - set cookie id with value md5 hash of 1
+        - found last flag
