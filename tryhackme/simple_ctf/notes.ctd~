@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Simple CTF" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631636784" ts_lastsave="1631640832">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631637169" ts_lastsave="1631637991">
+      <rich_text>21/tcp   open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+|_sslv2-drown: 
+
+80/tcp   open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /robots.txt: Robots file
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       </rich_text>
+      <rich_text link="webs http://ha.ckers.org/slowloris/">http://ha.ckers.org/slowloris/</rich_text>
+      <rich_text>
+|_      </rich_text>
+      <rich_text link="webs https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750">https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750</rich_text>
+      <rich_text>
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.18: 
+|       CVE-2021-26691  7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2021-26691">https://vulners.com/cve/CVE-2021-26691</rich_text>
+      <rich_text>
+|       CVE-2017-7679   7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-7679">https://vulners.com/cve/CVE-2017-7679</rich_text>
+      <rich_text>
+|       CVE-2017-7668   7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-7668">https://vulners.com/cve/CVE-2017-7668</rich_text>
+      <rich_text>
+|       CVE-2017-3169   7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-3169">https://vulners.com/cve/CVE-2017-3169</rich_text>
+      <rich_text>
+|       CVE-2017-3167   7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-3167">https://vulners.com/cve/CVE-2017-3167</rich_text>
+      <rich_text>
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2019-0211/ 7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0211/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0211/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0211/      7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0211/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0211/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB    7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB">https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB</rich_text>
+      <rich_text>        *EXPLOIT*
+|       CVE-2019-0211   7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-0211">https://vulners.com/cve/CVE-2019-0211</rich_text>
+      <rich_text>
+|       1337DAY-ID-32502        7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-32502">https://vulners.com/zdt/1337DAY-ID-32502</rich_text>
+      <rich_text>        *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2018-1312/       6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1312/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1312/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/SUSE-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/ORACLE_LINUX-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE_LINUX-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE_LINUX-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/     6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15715/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/       6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2018-1312/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/       6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1312/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/       6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2018-1312/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP1-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/FREEBSD-CVE-2017-15715/     6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/FREEBSD-CVE-2017-15715/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/DEBIAN-CVE-2017-15715/      6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2017-15715/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/AMAZON_LINUX-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/ 6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/">https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2018-1312/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/ALPINE-LINUX-CVE-2017-15715/        6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2017-15715/">https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2017-15715/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       CVE-2020-35452  6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2020-35452">https://vulners.com/cve/CVE-2020-35452</rich_text>
+      <rich_text>
+|       CVE-2018-1312   6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1312">https://vulners.com/cve/CVE-2018-1312</rich_text>
+      <rich_text>
+|       CVE-2017-15715  6.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-15715">https://vulners.com/cve/CVE-2017-15715</rich_text>
+      <rich_text>
+|       CVE-2019-10082  6.4     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-10082">https://vulners.com/cve/CVE-2019-10082</rich_text>
+      <rich_text>
+|       CVE-2017-9788   6.4     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-9788">https://vulners.com/cve/CVE-2017-9788</rich_text>
+      <rich_text>
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/ 6.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/      6.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       CVE-2019-0217   6.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-0217">https://vulners.com/cve/CVE-2019-0217</rich_text>
+      <rich_text>
+|       EDB-ID:47689    5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:47689">https://vulners.com/exploitdb/EDB-ID:47689</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2020-1927   5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2020-1927">https://vulners.com/cve/CVE-2020-1927</rich_text>
+      <rich_text>
+|       CVE-2019-10098  5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-10098">https://vulners.com/cve/CVE-2019-10098</rich_text>
+      <rich_text>
+|       1337DAY-ID-33577        5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-33577">https://vulners.com/zdt/1337DAY-ID-33577</rich_text>
+      <rich_text>        *EXPLOIT*
+|       CVE-2016-5387   5.1     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-5387">https://vulners.com/cve/CVE-2016-5387</rich_text>
+      <rich_text>
+|       SSV:96537       5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:96537">https://vulners.com/seebug/SSV:96537</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2018-1333/       5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1333/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1333/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2018-1303/       5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1303/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1303/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2017-15710/      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2017-15710/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/       5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2020-1934/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2017-15710/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/     5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2017-15710/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2016-8743/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2017-15710/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2017-15710/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/        5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/">https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2017-15710/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED">https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED</rich_text>
+      <rich_text>       *EXPLOIT*
+|       EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D">https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:2666FB0676B4B582D689921651A30355    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:2666FB0676B4B582D689921651A30355">https://vulners.com/exploitpack/EXPLOITPACK:2666FB0676B4B582D689921651A30355</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:40909    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40909">https://vulners.com/exploitdb/EDB-ID:40909</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2021-33193  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2021-33193">https://vulners.com/cve/CVE-2021-33193</rich_text>
+      <rich_text>
+|       CVE-2021-26690  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2021-26690">https://vulners.com/cve/CVE-2021-26690</rich_text>
+      <rich_text>
+|       CVE-2020-1934   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2020-1934">https://vulners.com/cve/CVE-2020-1934</rich_text>
+      <rich_text>
+|       CVE-2019-17567  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-17567">https://vulners.com/cve/CVE-2019-17567</rich_text>
+      <rich_text>
+|       CVE-2019-0220   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-0220">https://vulners.com/cve/CVE-2019-0220</rich_text>
+      <rich_text>
+|       CVE-2019-0196   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-0196">https://vulners.com/cve/CVE-2019-0196</rich_text>
+      <rich_text>
+|       CVE-2018-17199  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-17199">https://vulners.com/cve/CVE-2018-17199</rich_text>
+      <rich_text>
+|       CVE-2018-17189  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-17189">https://vulners.com/cve/CVE-2018-17189</rich_text>
+      <rich_text>
+|       CVE-2018-1333   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1333">https://vulners.com/cve/CVE-2018-1333</rich_text>
+      <rich_text>
+|       CVE-2018-1303   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1303">https://vulners.com/cve/CVE-2018-1303</rich_text>
+      <rich_text>
+|       CVE-2017-9798   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-9798">https://vulners.com/cve/CVE-2017-9798</rich_text>
+      <rich_text>
+|       CVE-2017-15710  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-15710">https://vulners.com/cve/CVE-2017-15710</rich_text>
+      <rich_text>
+|       CVE-2016-8743   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-8743">https://vulners.com/cve/CVE-2016-8743</rich_text>
+      <rich_text>
+|       CVE-2016-8740   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-8740">https://vulners.com/cve/CVE-2016-8740</rich_text>
+      <rich_text>
+|       CVE-2016-4979   5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-4979">https://vulners.com/cve/CVE-2016-4979</rich_text>
+      <rich_text>
+|       1337DAY-ID-28573        5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-28573">https://vulners.com/zdt/1337DAY-ID-28573</rich_text>
+      <rich_text>        *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-0197/       4.9     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-0197/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-0197/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       CVE-2019-0197   4.9     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-0197">https://vulners.com/cve/CVE-2019-0197</rich_text>
+      <rich_text>
+|       MSF:ILITIES/UBUNTU-CVE-2018-1302/       4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1302/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1302/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2018-1301/       4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1301/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1301/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/       4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2016-4975/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/DEBIAN-CVE-2019-10092/      4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-10092/">https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-10092/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/        4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/">https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2020-11985/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/        4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/">https://vulners.com/metasploit/MSF:ILITIES/APACHE-HTTPD-CVE-2019-10092/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       EDB-ID:47688    4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:47688">https://vulners.com/exploitdb/EDB-ID:47688</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2020-11985  4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2020-11985">https://vulners.com/cve/CVE-2020-11985</rich_text>
+      <rich_text>
+|       CVE-2019-10092  4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-10092">https://vulners.com/cve/CVE-2019-10092</rich_text>
+      <rich_text>
+|       CVE-2018-1302   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1302">https://vulners.com/cve/CVE-2018-1302</rich_text>
+      <rich_text>
+|       CVE-2018-1301   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1301">https://vulners.com/cve/CVE-2018-1301</rich_text>
+      <rich_text>
+|       CVE-2018-11763  4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-11763">https://vulners.com/cve/CVE-2018-11763</rich_text>
+      <rich_text>
+|       CVE-2016-4975   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-4975">https://vulners.com/cve/CVE-2016-4975</rich_text>
+      <rich_text>
+|       CVE-2016-1546   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-1546">https://vulners.com/cve/CVE-2016-1546</rich_text>
+      <rich_text>
+|       1337DAY-ID-33575        4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-33575">https://vulners.com/zdt/1337DAY-ID-33575</rich_text>
+      <rich_text>        *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2018-1283/       3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2018-1283/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/ 3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2018-1283/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/       3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2018-1283/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/      3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2018-1283/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/       3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2018-1283/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/ 3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/">https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2018-1283/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2018-1283   3.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-1283">https://vulners.com/cve/CVE-2018-1283</rich_text>
+      <rich_text>
+|       CVE-2016-8612   3.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-8612">https://vulners.com/cve/CVE-2016-8612</rich_text>
+      <rich_text>
+|       PACKETSTORM:152441      0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:152441">https://vulners.com/packetstorm/PACKETSTORM:152441</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:46676    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:46676">https://vulners.com/exploitdb/EDB-ID:46676</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:42745    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:42745">https://vulners.com/exploitdb/EDB-ID:42745</rich_text>
+      <rich_text>      *EXPLOIT*
+|       1337DAY-ID-663  0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-663">https://vulners.com/zdt/1337DAY-ID-663</rich_text>
+      <rich_text>  *EXPLOIT*
+|       1337DAY-ID-601  0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-601">https://vulners.com/zdt/1337DAY-ID-601</rich_text>
+      <rich_text>  *EXPLOIT*
+|       1337DAY-ID-4533 0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-4533">https://vulners.com/zdt/1337DAY-ID-4533</rich_text>
+      <rich_text> *EXPLOIT*
+|       1337DAY-ID-3109 0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-3109">https://vulners.com/zdt/1337DAY-ID-3109</rich_text>
+      <rich_text> *EXPLOIT*
+|_      1337DAY-ID-2237 0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-2237">https://vulners.com/zdt/1337DAY-ID-2237</rich_text>
+      <rich_text> *EXPLOIT*
+
+
+2222/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.2p2: 
+|       PACKETSTORM:140070      7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:140070">https://vulners.com/packetstorm/PACKETSTORM:140070</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09    7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09">https://vulners.com/exploitpack/EXPLOITPACK:5BCA798C6BA71FAE29334297EC0B6A09</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:40888    7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40888">https://vulners.com/exploitdb/EDB-ID:40888</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2016-8858   7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-8858">https://vulners.com/cve/CVE-2016-8858</rich_text>
+      <rich_text>
+|       CVE-2016-6515   7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-6515">https://vulners.com/cve/CVE-2016-6515</rich_text>
+      <rich_text>
+|       1337DAY-ID-26494        7.8     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-26494">https://vulners.com/zdt/1337DAY-ID-26494</rich_text>
+      <rich_text>        *EXPLOIT*
+|       SSV:92579       7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:92579">https://vulners.com/seebug/SSV:92579</rich_text>
+      <rich_text>    *EXPLOIT*
+|       CVE-2016-10009  7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-10009">https://vulners.com/cve/CVE-2016-10009</rich_text>
+      <rich_text>
+|       1337DAY-ID-26576        7.5     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-26576">https://vulners.com/zdt/1337DAY-ID-26576</rich_text>
+      <rich_text>        *EXPLOIT*
+|       SSV:92582       7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:92582">https://vulners.com/seebug/SSV:92582</rich_text>
+      <rich_text>    *EXPLOIT*
+|       CVE-2016-10012  7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-10012">https://vulners.com/cve/CVE-2016-10012</rich_text>
+      <rich_text>
+|       CVE-2015-8325   7.2     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2015-8325">https://vulners.com/cve/CVE-2015-8325</rich_text>
+      <rich_text>
+|       SSV:92580       6.9     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:92580">https://vulners.com/seebug/SSV:92580</rich_text>
+      <rich_text>    *EXPLOIT*
+|       CVE-2016-10010  6.9     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-10010">https://vulners.com/cve/CVE-2016-10010</rich_text>
+      <rich_text>
+|       1337DAY-ID-26577        6.9     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-26577">https://vulners.com/zdt/1337DAY-ID-26577</rich_text>
+      <rich_text>        *EXPLOIT*
+|       MSF:ILITIES/UBUNTU-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/SUSE-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-6111/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/SUSE-CVE-2019-25017/        5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-25017/">https://vulners.com/metasploit/MSF:ILITIES/SUSE-CVE-2019-25017/</rich_text>
+      <rich_text>     *EXPLOIT*
+|       MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-6111/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/     5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/REDHAT-OPENSHIFT-CVE-2019-6111/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/ORACLE-SOLARIS-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/      5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2019-6111/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/IBM-AIX-CVE-2019-6111/      5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/IBM-AIX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/IBM-AIX-CVE-2019-6111/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP3-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP2-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/GENTOO-LINUX-CVE-2019-6111/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/    5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2019-6111/</rich_text>
+      <rich_text> *EXPLOIT*
+|       MSF:ILITIES/DEBIAN-CVE-2019-6111/       5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2019-6111/</rich_text>
+      <rich_text>    *EXPLOIT*
+|       MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/CENTOS_LINUX-CVE-2019-6111/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/AMAZON_LINUX-CVE-2019-6111/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/   5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/AMAZON-LINUX-AMI-2-CVE-2019-6111/</rich_text>
+      <rich_text>        *EXPLOIT*
+|       MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/ 5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/">https://vulners.com/metasploit/MSF:ILITIES/ALPINE-LINUX-CVE-2019-6111/</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EXPLOITPACK:98FE96309F9524B8C84C508837551A19    5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19">https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97    5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97">https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:46516    5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:46516">https://vulners.com/exploitdb/EDB-ID:46516</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2019-6111   5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-6111">https://vulners.com/cve/CVE-2019-6111</rich_text>
+      <rich_text>
+|       1337DAY-ID-32328        5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-32328">https://vulners.com/zdt/1337DAY-ID-32328</rich_text>
+      <rich_text>        *EXPLOIT*
+|       1337DAY-ID-32009        5.8     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-32009">https://vulners.com/zdt/1337DAY-ID-32009</rich_text>
+      <rich_text>        *EXPLOIT*
+|       SSV:91041       5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:91041">https://vulners.com/seebug/SSV:91041</rich_text>
+      <rich_text>    *EXPLOIT*
+|       PACKETSTORM:140019      5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:140019">https://vulners.com/packetstorm/PACKETSTORM:140019</rich_text>
+      <rich_text>      *EXPLOIT*
+|       PACKETSTORM:136234      5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:136234">https://vulners.com/packetstorm/PACKETSTORM:136234</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EXPLOITPACK:F92411A645D85F05BDBD274FD222226F    5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F">https://vulners.com/exploitpack/EXPLOITPACK:F92411A645D85F05BDBD274FD222226F</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:9F2E746846C3C623A27A441281EAD138    5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138">https://vulners.com/exploitpack/EXPLOITPACK:9F2E746846C3C623A27A441281EAD138</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:1902C998CBF9154396911926B4C3B330    5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330">https://vulners.com/exploitpack/EXPLOITPACK:1902C998CBF9154396911926B4C3B330</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:40858    5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40858">https://vulners.com/exploitdb/EDB-ID:40858</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2016-3115   5.5     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-3115">https://vulners.com/cve/CVE-2016-3115</rich_text>
+      <rich_text>
+|       SSH_ENUM        5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/canvas/SSH_ENUM">https://vulners.com/canvas/SSH_ENUM</rich_text>
+      <rich_text>     *EXPLOIT*
+|       PACKETSTORM:150621      5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:150621">https://vulners.com/packetstorm/PACKETSTORM:150621</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS 5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS">https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/SSH/SSH_ENUMUSERS</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0">https://vulners.com/exploitpack/EXPLOITPACK:F957D7E8A0CC1E23C3C649B764E13FB0</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283">https://vulners.com/exploitpack/EXPLOITPACK:EBDBC5685E3276D648B4D14B75563283</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:45939    5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:45939">https://vulners.com/exploitdb/EDB-ID:45939</rich_text>
+      <rich_text>      *EXPLOIT*
+|       CVE-2018-15919  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-15919">https://vulners.com/cve/CVE-2018-15919</rich_text>
+      <rich_text>
+|       CVE-2018-15473  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-15473">https://vulners.com/cve/CVE-2018-15473</rich_text>
+      <rich_text>
+|       CVE-2017-15906  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2017-15906">https://vulners.com/cve/CVE-2017-15906</rich_text>
+      <rich_text>
+|       CVE-2016-10708  5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-10708">https://vulners.com/cve/CVE-2016-10708</rich_text>
+      <rich_text>
+|       1337DAY-ID-31730        5.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-31730">https://vulners.com/zdt/1337DAY-ID-31730</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EDB-ID:45233    4.6     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:45233">https://vulners.com/exploitdb/EDB-ID:45233</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:40963    4.6     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40963">https://vulners.com/exploitdb/EDB-ID:40963</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:40962    4.6     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40962">https://vulners.com/exploitdb/EDB-ID:40962</rich_text>
+      <rich_text>      *EXPLOIT*
+|       MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/     4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/">https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/</rich_text>
+      <rich_text>  *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/      4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/      4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/      4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/">https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/</rich_text>
+      <rich_text>   *EXPLOIT*
+|       MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/">https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF    4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF">https://vulners.com/exploitpack/EXPLOITPACK:802AF3229492E147A5F09C7F2B27C6DF</rich_text>
+      <rich_text>        *EXPLOIT*
+|       EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF    4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF">https://vulners.com/exploitpack/EXPLOITPACK:5652DDAA7FE452E19AC0DC1CD97BA3EF</rich_text>
+      <rich_text>        *EXPLOIT*
+|       CVE-2020-14145  4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2020-14145">https://vulners.com/cve/CVE-2020-14145</rich_text>
+      <rich_text>
+|       CVE-2016-6210   4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-6210">https://vulners.com/cve/CVE-2016-6210</rich_text>
+      <rich_text>
+|       1337DAY-ID-25440        4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-25440">https://vulners.com/zdt/1337DAY-ID-25440</rich_text>
+      <rich_text>        *EXPLOIT*
+|       1337DAY-ID-25438        4.3     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-25438">https://vulners.com/zdt/1337DAY-ID-25438</rich_text>
+      <rich_text>        *EXPLOIT*
+|       CVE-2019-6110   4.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-6110">https://vulners.com/cve/CVE-2019-6110</rich_text>
+      <rich_text>
+|       CVE-2019-6109   4.0     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2019-6109">https://vulners.com/cve/CVE-2019-6109</rich_text>
+      <rich_text>
+|       CVE-2018-20685  2.6     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2018-20685">https://vulners.com/cve/CVE-2018-20685</rich_text>
+      <rich_text>
+|       SSV:92581       2.1     </rich_text>
+      <rich_text link="webs https://vulners.com/seebug/SSV:92581">https://vulners.com/seebug/SSV:92581</rich_text>
+      <rich_text>    *EXPLOIT*
+|       CVE-2016-10011  2.1     </rich_text>
+      <rich_text link="webs https://vulners.com/cve/CVE-2016-10011">https://vulners.com/cve/CVE-2016-10011</rich_text>
+      <rich_text>
+|       PACKETSTORM:151227      0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:151227">https://vulners.com/packetstorm/PACKETSTORM:151227</rich_text>
+      <rich_text>      *EXPLOIT*
+|       PACKETSTORM:140261      0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:140261">https://vulners.com/packetstorm/PACKETSTORM:140261</rich_text>
+      <rich_text>      *EXPLOIT*
+|       PACKETSTORM:138006      0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:138006">https://vulners.com/packetstorm/PACKETSTORM:138006</rich_text>
+      <rich_text>      *EXPLOIT*
+|       PACKETSTORM:137942      0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/packetstorm/PACKETSTORM:137942">https://vulners.com/packetstorm/PACKETSTORM:137942</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:46193    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:46193">https://vulners.com/exploitdb/EDB-ID:46193</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:40136    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40136">https://vulners.com/exploitdb/EDB-ID:40136</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:40113    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:40113">https://vulners.com/exploitdb/EDB-ID:40113</rich_text>
+      <rich_text>      *EXPLOIT*
+|       EDB-ID:39569    0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/exploitdb/EDB-ID:39569">https://vulners.com/exploitdb/EDB-ID:39569</rich_text>
+      <rich_text>      *EXPLOIT*
+|       1337DAY-ID-30937        0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-30937">https://vulners.com/zdt/1337DAY-ID-30937</rich_text>
+      <rich_text>        *EXPLOIT*
+|_      1337DAY-ID-10010        0.0     </rich_text>
+      <rich_text link="webs https://vulners.com/zdt/1337DAY-ID-10010">https://vulners.com/zdt/1337DAY-ID-10010</rich_text>
+      <rich_text>        *EXPLOIT*
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    </node>
+    <node name="80:http" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631638534" ts_lastsave="1631638980">
+      <rich_text>- dirsearcher
+[12:56:21] 403 -  297B  - /.ht_wsr.txt                                     
+[12:56:21] 403 -  300B  - /.htaccess.bak1
+[12:56:21] 403 -  300B  - /.htaccess.orig
+[12:56:21] 403 -  302B  - /.htaccess.sample
+[12:56:21] 403 -  300B  - /.htaccess.save
+[12:56:21] 403 -  301B  - /.htaccess_extra                                 
+[12:56:21] 403 -  300B  - /.htaccess_orig
+[12:56:21] 403 -  298B  - /.htaccess_sc                                    
+[12:56:21] 403 -  298B  - /.htaccessBAK
+[12:56:21] 403 -  298B  - /.htaccessOLD
+[12:56:21] 403 -  299B  - /.htaccessOLD2
+[12:56:21] 403 -  290B  - /.htm                                            
+[12:56:21] 403 -  291B  - /.html
+[12:56:21] 403 -  300B  - /.htpasswd_test                                  
+[12:56:21] 403 -  296B  - /.htpasswds
+[12:56:21] 403 -  297B  - /.httr-oauth
+[12:56:22] 403 -  290B  - /.php                                            
+[12:56:48] 200 -   11KB - /index.html                                       
+[12:57:02] 200 -  929B  - /robots.txt                                       
+[12:57:03] 403 -  300B  - /server-status/                                   
+[12:57:03] 403 -  299B  - /server-status                                    
+[12:57:04] 301 -  311B  - /simple  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+      <rich_text> 
+[13:01:32] 301 -  317B  - /simple/admin  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/admin/">http://10.10.90.10/simple/admin/</rich_text>
+      <rich_text>
+[13:01:32] 403 -  308B  - /simple/admin/.htaccess                           
+[13:01:32] 302 -    0B  - /simple/admin/  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/admin/login.php">http://10.10.90.10/simple/admin/login.php</rich_text>
+      <rich_text>
+[13:01:32] 302 -    0B  - /simple/admin/?/login  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/admin/login.php">http://10.10.90.10/simple/admin/login.php</rich_text>
+      <rich_text>
+[13:01:33] 302 -    0B  - /simple/admin/index.php  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/admin/login.php">http://10.10.90.10/simple/admin/login.php</rich_text>
+      <rich_text>
+[13:01:33] 200 -    4KB - /simple/admin/login.php                           
+[13:01:40] 301 -  318B  - /simple/assets  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/assets/">http://10.10.90.10/simple/assets/</rich_text>
+      <rich_text>
+[13:01:40] 200 -    2KB - /simple/assets/                                   
+[13:01:43] 200 -    0B  - /simple/config.php                                
+[13:01:46] 301 -  315B  - /simple/doc  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/doc/">http://10.10.90.10/simple/doc/</rich_text>
+      <rich_text>   
+[13:01:46] 200 -   24B  - /simple/doc/                                      
+[13:01:51] 200 -   19KB - /simple/index.php                                 
+[13:01:52] 301 -    0B  - /simple/install.php  -&gt;  /simple/install.php/index.php
+[13:01:53] 301 -  315B  - /simple/lib  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/lib/">http://10.10.90.10/simple/lib/</rich_text>
+      <rich_text>   
+[13:01:53] 200 -   24B  - /simple/lib/                                      
+[13:01:56] 301 -  319B  - /simple/modules  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/modules/">http://10.10.90.10/simple/modules/</rich_text>
+      <rich_text>
+[13:01:57] 200 -    3KB - /simple/modules/                                  
+[13:02:12] 200 -    1KB - /simple/tmp/                                      
+[13:02:12] 301 -  315B  - /simple/tmp  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/tmp/">http://10.10.90.10/simple/tmp/</rich_text>
+      <rich_text>
+[13:02:13] 301 -  319B  - /simple/uploads  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.90.10/simple/uploads/">http://10.10.90.10/simple/uploads/</rich_text>
+      <rich_text>
+[13:02:13] 200 -    0B  - /simple/uploads/      </rich_text>
+      <node name="/index.html" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631638655" ts_lastsave="1631638667">
+        <rich_text scale="h1">GET </rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">source code </rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">HTML</rich_text>
+        <rich_text>
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2014-03-19
+    See: https://launchpad.net/bugs/1288690
+  --&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;
+    &lt;style type="text/css" media="screen"&gt;
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="main_page"&gt;
+      &lt;div class="page_header floating_element"&gt;
+        &lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/icons/ubuntu-logo.png">/icons/ubuntu-logo.png</rich_text>
+        <rich_text>" alt="Ubuntu Logo" class="floating_element"/&gt;
+        &lt;span class="floating_element"&gt;
+          Apache2 Ubuntu Default Page
+        &lt;/span&gt;
+      &lt;/div&gt;
+&lt;!--      &lt;div class="table_of_contents floating_element"&gt;
+        &lt;div class="section_header section_header_grey"&gt;
+          TABLE OF CONTENTS
+        &lt;/div&gt;
+        &lt;div class="table_of_contents_item floating_element"&gt;
+          &lt;a href="#about"&gt;About&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="table_of_contents_item floating_element"&gt;
+          &lt;a href="#changes"&gt;Changes&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="table_of_contents_item floating_element"&gt;
+          &lt;a href="#scope"&gt;Scope&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="table_of_contents_item floating_element"&gt;
+          &lt;a href="#files"&gt;Config files&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+--&gt;
+      &lt;div class="content_section floating_element"&gt;
+
+
+        &lt;div class="section_header section_header_red"&gt;
+          &lt;div id="about"&gt;&lt;/div&gt;
+          It works!
+        &lt;/div&gt;
+        &lt;div class="content_section_text"&gt;
+          &lt;p&gt;
+                This is the default welcome page used to test the correct 
+                operation of the Apache2 server after installation on Ubuntu systems.
+                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+                packaging is derived.
+                If you can read this page, it means that the Apache HTTP server installed at
+                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at
+                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.
+          &lt;/p&gt;
+
+
+          &lt;p&gt;
+                If you are a normal user of this web site and don't know what this page is
+                about, this probably means that the site is currently unavailable due to
+                maintenance.
+                If the problem persists, please contact the site's administrator.
+          &lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;div class="section_header"&gt;
+          &lt;div id="changes"&gt;&lt;/div&gt;
+                Configuration Overview
+        &lt;/div&gt;
+        &lt;div class="content_section_text"&gt;
+          &lt;p&gt;
+                Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                &lt;b&gt;fully documented in
+                /usr/share/doc/apache2/README.Debian.gz&lt;/b&gt;. Refer to this for the full
+                documentation. Documentation for the web server itself can be
+                found by accessing the &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/manual">/manual</rich_text>
+        <rich_text>"&gt;manual&lt;/a&gt; if the &lt;tt&gt;apache2-doc&lt;/tt&gt;
+                package was installed on this server.
+
+          &lt;/p&gt;
+          &lt;p&gt;
+                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+          &lt;/p&gt;
+          &lt;pre&gt;
+/etc/apache2/
+|-- apache2.conf
+|       `--  ports.conf
+|-- mods-enabled
+|       |-- *.load
+|       `-- *.conf
+|-- conf-enabled
+|       `-- *.conf
+|-- sites-enabled
+|       `-- *.conf
+          &lt;/pre&gt;
+          &lt;ul&gt;
+                        &lt;li&gt;
+                           &lt;tt&gt;apache2.conf&lt;/tt&gt; is the main configuration
+                           file. It puts the pieces together by including all remaining configuration
+                           files when starting up the web server.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           &lt;tt&gt;ports.conf&lt;/tt&gt; is always included from the
+                           main configuration file. It is used to determine the listening ports for
+                           incoming connections, and this file can be customized anytime.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           Configuration files in the &lt;tt&gt;mods-enabled/&lt;/tt&gt;,
+                           &lt;tt&gt;conf-enabled/&lt;/tt&gt; and &lt;tt&gt;sites-enabled/&lt;/tt&gt; directories contain
+                           particular configuration snippets which manage modules, global configuration
+                           fragments, or virtual host configurations, respectively.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           They are activated by symlinking available
+                           configuration files from their respective
+                           *-available/ counterparts. These should be managed
+                           by using our helpers
+                           &lt;tt&gt;
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod</rich_text>
+        <rich_text>"&gt;a2enmod&lt;/a&gt;,
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod</rich_text>
+        <rich_text>"&gt;a2dismod&lt;/a&gt;,
+                           &lt;/tt&gt;
+                           &lt;tt&gt;
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite</rich_text>
+        <rich_text>"&gt;a2ensite&lt;/a&gt;,
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite</rich_text>
+        <rich_text>"&gt;a2dissite&lt;/a&gt;,
+                            &lt;/tt&gt;
+                                and
+                           &lt;tt&gt;
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf</rich_text>
+        <rich_text>"&gt;a2enconf&lt;/a&gt;,
+                                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf</rich_text>
+        <rich_text>"&gt;a2disconf&lt;/a&gt;
+                           &lt;/tt&gt;. See their respective man pages for detailed information.
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                           The binary is called apache2. Due to the use of
+                           environment variables, in the default configuration, apache2 needs to be
+                           started/stopped with &lt;tt&gt;/etc/init.d/apache2&lt;/tt&gt; or &lt;tt&gt;apache2ctl&lt;/tt&gt;.
+                           &lt;b&gt;Calling &lt;tt&gt;/usr/bin/apache2&lt;/tt&gt; directly will not work&lt;/b&gt; with the
+                           default configuration.
+                        &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class="section_header"&gt;
+            &lt;div id="docroot"&gt;&lt;/div&gt;
+                Document Roots
+        &lt;/div&gt;
+
+        &lt;div class="content_section_text"&gt;
+            &lt;p&gt;
+                By default, Ubuntu does not allow access through the web browser to
+                &lt;em&gt;any&lt;/em&gt; file apart of those located in &lt;tt&gt;/var/www&lt;/tt&gt;,
+                &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">http://httpd.apache.org/docs/2.4/mod/mod_userdir.html</rich_text>
+        <rich_text>"&gt;public_html&lt;/a&gt;
+                directories (when enabled) and &lt;tt&gt;/usr/share&lt;/tt&gt; (for web
+                applications). If your site is using a web document root
+                located elsewhere (such as in &lt;tt&gt;/srv&lt;/tt&gt;) you may need to whitelist your
+                document root directory in &lt;tt&gt;/etc/apache2/apache2.conf&lt;/tt&gt;.
+            &lt;/p&gt;
+            &lt;p&gt;
+                The default Ubuntu document root is &lt;tt&gt;/var/www/html&lt;/tt&gt;. You
+                can make your own virtual hosts under /var/www. This is different
+                to previous releases which provides better security out of the box.
+            &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="section_header"&gt;
+          &lt;div id="bugs"&gt;&lt;/div&gt;
+                Reporting Problems
+        &lt;/div&gt;
+        &lt;div class="content_section_text"&gt;
+          &lt;p&gt;
+                Please use the &lt;tt&gt;ubuntu-bug&lt;/tt&gt; tool to report bugs in the
+                Apache2 package with Ubuntu. However, check &lt;a
+                href="</rich_text>
+        <rich_text link="webs http://view-source:https://bugs.launchpad.net/ubuntu/+source/apache2">https://bugs.launchpad.net/ubuntu/+source/apache2</rich_text>
+        <rich_text>"&gt;existing
+                bug reports&lt;/a&gt; before reporting a new bug.
+          &lt;/p&gt;
+          &lt;p&gt;
+                Please report bugs specific to modules (such as PHP and others)
+                to respective packages, not to the web server itself.
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="validator"&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+      </node>
+      <node name="/robots.txt" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631638687" ts_lastsave="1631638758">
+        <rich_text scale="h1">GET</rich_text>
+        <rich_text>
+
+#
+# "$Id: robots.txt 3494 2003-03-19 15:37:44Z mike $"
+#
+#   This file tells search engines not to index your CUPS server.
+#
+#   Copyright 1993-2003 by Easy Software Products.
+#
+#   These coded instructions, statements, and computer programs are the
+#   property of Easy Software Products and are protected by Federal
+#   copyright law.  Distribution and use rights are outlined in the file
+#   "LICENSE.txt" which should have been included with this file.  If this
+#   file is missing or damaged please contact Easy Software Products
+#   at:
+#
+#       Attn: CUPS Licensing Information
+#       Easy Software Products
+#       44141 Airport View Drive, Suite 204
+#       Hollywood, Maryland 20636-3111 USA
+#
+#       Voice: (301) 373-9600
+#       EMail: cups-info@cups.org
+#         WWW: http://www.cups.org
+#
+
+User-agent: *
+Disallow: /
+
+
+Disallow: /openemr-5_0_1_3 
+#
+# End of "$Id: robots.txt 3494 2003-03-19 15:37:44Z mike $".
+#
+
+- CUPS server sind Common Unix Printing System
+- openemr open source electronic health records and medical practice management solution</rich_text>
+      </node>
+      <node name="/simple/" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631638831" ts_lastsave="1631639175">
+        <rich_text scale="h1">GET</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">source code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">html</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;!--[if IE 8]&gt;         &lt;html lang='en' dir='ltr' class='lt-ie9'&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html lang='en' dir='ltr'&gt; &lt;!--&lt;![endif]--&gt;&lt;head&gt;
+        &lt;meta charset='UTF-8' /&gt;
+        
+&lt;base href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+        <rich_text>" /&gt;
+&lt;meta name="Generator" content="CMS Made Simple - Copyright (C) 2004-2019. All rights reserved." /&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+ 
+        &lt;title&gt;Home - Pentest it&lt;/title&gt;
+        &lt;meta name='HandheldFriendly' content='True' /&gt;
+        &lt;meta name='MobileOptimized' content='320' /&gt;
+        &lt;meta name='viewport' content='width=device-width, initial-scale=1' /&gt;
+        &lt;meta http-equiv='cleartype' content='on' /&gt;
+        &lt;meta name='msapplication-TileImage' content='http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-152x152.png' /&gt;
+        &lt;meta name='msapplication-TileColor' content='#5C5A59' /&gt;
+        &lt;link rel='canonical' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+        <rich_text>' /&gt; 
+        &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/tmp/cache/stylesheet_combined_582be98e35ba40e1d4101477f8501c55.css">http://10.10.90.10/simple/tmp/cache/stylesheet_combined_582be98e35ba40e1d4101477f8501c55.css</rich_text>
+        <rich_text>" media="print" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/tmp/cache/stylesheet_combined_364d4da7cf480286e4f9ac4b6d1ca3ee.css">http://10.10.90.10/simple/tmp/cache/stylesheet_combined_364d4da7cf480286e4f9ac4b6d1ca3ee.css</rich_text>
+        <rich_text>" media="screen" /&gt;
+ 
+        &lt;link href='</rich_text>
+        <rich_text link="webs http://view-source:http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Oswald:700">//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Oswald:700</rich_text>
+        <rich_text>' rel='stylesheet' type='text/css' /&gt;
+        &lt;link rel='apple-touch-icon-precomposed' sizes='152x152' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-152x152.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-152x152.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='apple-touch-icon-precomposed' sizes='120x120' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-120x120.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-120x120.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='apple-touch-icon-precomposed' sizes='72x72' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-76x76.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-76x76.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='apple-touch-icon-precomposed' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-60x60.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-60x60.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='shortcut icon' sizes='196x196' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-196x196.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-196x196.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='shortcut icon' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-60x60.png">http://10.10.90.10/simple/uploads/simplex/images/icons/cmsms-60x60.png</rich_text>
+        <rich_text>' /&gt;
+        &lt;link rel='icon' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/icons/favicon_cms.ico">http://10.10.90.10/simple/uploads/simplex/images/icons/favicon_cms.ico</rich_text>
+        <rich_text>' type='image/x-icon' /&gt;
+        &lt;link rel="start" title="Home" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+        <rich_text>" /&gt; 
+        
+        &lt;link rel="next" title="How CMSMS Works" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=how-cmsms-works">http://10.10.90.10/simple/index.php?page=how-cmsms-works</rich_text>
+        <rich_text>" /&gt;
+        &lt;!--[if lt IE 9]&gt;
+            &lt;script src="//html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+            &lt;script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+    &lt;/head&gt;&lt;body id='boxed' class='container page-wrapper page-home page-1'&gt;
+        &lt;!-- #wrapper (wrapping content in a box) --&gt;
+        &lt;div class='row' id='wrapper'&gt;
+            &lt;!-- accessibility links, jump to nav or content --&gt;
+            &lt;ul class="visuallyhidden"&gt;
+                &lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/#nav">http://10.10.90.10/simple/#nav</rich_text>
+        <rich_text>" title="Skip to navigation" accesskey="n"&gt;Skip to navigation&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/#main">http://10.10.90.10/simple/#main</rich_text>
+        <rich_text>" title="Skip to content" accesskey="s"&gt;Skip to content&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!-- accessibility //--&gt;
+            &lt;!-- .top (top section of page containing logo, navigation search...) --&gt;
+            &lt;header class='top inner-section'&gt;
+                &lt;div class='row header'&gt;
+                    &lt;!-- .logo (cmsms logo on the left side) --&gt;
+                    &lt;div class='logo four-col'&gt;
+                        &lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple">http://10.10.90.10/simple</rich_text>
+        <rich_text>' title='Pentest it'&gt;
+                            &lt;img src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/images/cmsmadesimple-logo.png">http://10.10.90.10/simple/uploads/simplex/images/cmsmadesimple-logo.png</rich_text>
+        <rich_text>' width='227' height='59' alt='Pentest it' /&gt;
+                            &lt;span class='palm'&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- .logo //--&gt;
+                    &lt;!-- .main-navigation (main navigation on the right side) --&gt;
+                    &lt;nav class='main-navigation eight-col cf noprint' id='nav' role='navigation'&gt;
+                        &lt;ul id='main-menu' class="cf"&gt;&lt;li class='current'&gt;&lt;a class='cf current' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+        <rich_text>'&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=how-cmsms-works">http://10.10.90.10/simple/index.php?page=how-cmsms-works</rich_text>
+        <rich_text>'&gt;How CMSMS Works &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=templates-and-stylesheets">http://10.10.90.10/simple/index.php?page=templates-and-stylesheets</rich_text>
+        <rich_text>'&gt;Templates and stylesheets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=pages-and-navigation">http://10.10.90.10/simple/index.php?page=pages-and-navigation</rich_text>
+        <rich_text>'&gt;Pages and navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=content">http://10.10.90.10/simple/index.php?page=content</rich_text>
+        <rich_text>'&gt;Content&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=menu-manager">http://10.10.90.10/simple/index.php?page=menu-manager</rich_text>
+        <rich_text>'&gt;Menu Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=extensions">http://10.10.90.10/simple/index.php?page=extensions</rich_text>
+        <rich_text>'&gt;Extensions&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=event-manager">http://10.10.90.10/simple/index.php?page=event-manager</rich_text>
+        <rich_text>'&gt;Event Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=workflow">http://10.10.90.10/simple/index.php?page=workflow</rich_text>
+        <rich_text>'&gt;Workflow&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=where-do-i-get-help">http://10.10.90.10/simple/index.php?page=where-do-i-get-help</rich_text>
+        <rich_text>'&gt;Where do i get help?&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=default_templates">http://10.10.90.10/simple/index.php?page=default_templates</rich_text>
+        <rich_text>'&gt;Default Templates Explained &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cms_tags">http://10.10.90.10/simple/index.php?page=cms_tags</rich_text>
+        <rich_text>'&gt;CMSMS tags in the templates&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=navleft">http://10.10.90.10/simple/index.php?page=navleft</rich_text>
+        <rich_text>'&gt;Left simple navigation + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=top_left">http://10.10.90.10/simple/index.php?page=top_left</rich_text>
+        <rich_text>'&gt;Top simple navigation + left subnavigation + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cssmenu_horizontal">http://10.10.90.10/simple/index.php?page=cssmenu_horizontal</rich_text>
+        <rich_text>'&gt;CSSMenu top + 2 columns&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cssmenu_vertical">http://10.10.90.10/simple/index.php?page=cssmenu_vertical</rich_text>
+        <rich_text>'&gt;CSSMenu left + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=minimal-template">http://10.10.90.10/simple/index.php?page=minimal-template</rich_text>
+        <rich_text>'&gt;Minimal template&lt;/a&gt;&lt;/li&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=higher-end">http://10.10.90.10/simple/index.php?page=higher-end</rich_text>
+        <rich_text>'&gt;Higher End &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=ncleanblue">http://10.10.90.10/simple/index.php?page=ncleanblue</rich_text>
+        <rich_text>'&gt;NCleanBlue&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=shadowmenu-tab-2-columns">http://10.10.90.10/simple/index.php?page=shadowmenu-tab-2-columns</rich_text>
+        <rich_text>'&gt;ShadowMenu Tab + 2 columns&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=welcome-to-simplex">http://10.10.90.10/simple/index.php?page=welcome-to-simplex</rich_text>
+        <rich_text>'&gt;Simplex Theme&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=default-extensions">http://10.10.90.10/simple/index.php?page=default-extensions</rich_text>
+        <rich_text>'&gt;Default Extensions &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=modules">http://10.10.90.10/simple/index.php?page=modules</rich_text>
+        <rich_text>'&gt;Modules &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=news">http://10.10.90.10/simple/index.php?page=news</rich_text>
+        <rich_text>'&gt;News&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=menu-manager-2">http://10.10.90.10/simple/index.php?page=menu-manager-2</rich_text>
+        <rich_text>'&gt;Menu Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=theme-manager">http://10.10.90.10/simple/index.php?page=theme-manager</rich_text>
+        <rich_text>'&gt;Theme Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=microtiny">http://10.10.90.10/simple/index.php?page=microtiny</rich_text>
+        <rich_text>'&gt;MicroTiny&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=search">http://10.10.90.10/simple/index.php?page=search</rich_text>
+        <rich_text>'&gt;Search&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=module-manager">http://10.10.90.10/simple/index.php?page=module-manager</rich_text>
+        <rich_text>'&gt;Module Manager&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class='parent' aria-haspopup='true'&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=tags">http://10.10.90.10/simple/index.php?page=tags</rich_text>
+        <rich_text>'&gt;Tags &lt;i class='icon-arrow-left' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cms_tags-2">http://10.10.90.10/simple/index.php?page=cms_tags-2</rich_text>
+        <rich_text>'&gt;Tags in the core&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class='cf' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=user-defined-tags">http://10.10.90.10/simple/index.php?page=user-defined-tags</rich_text>
+        <rich_text>'&gt;User Defined Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt; 
+                    &lt;/nav&gt;
+                    &lt;!-- .main-navigation //--&gt;
+                &lt;/div&gt;
+                &lt;!-- .header-bottom (bottom part of header containing catchphrase and search field) --&gt;
+                &lt;div class='row header-bottom'&gt;
+                    &lt;section class='phrase cf'&gt;
+                        &lt;span class='seven-col phrase-text'&gt;Power for professionals&lt;br class='lt-768' /&gt; Simplicity for End Users&lt;/span&gt;
+                        &lt;div class='five-col search noprint' role='search'&gt; &lt;form method="get" enctype="multipart/form-data" action="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/">http://10.10.90.10/simple/</rich_text>
+        <rich_text>"&gt;&lt;div class="hidden"&gt;&lt;input type="hidden" name="mact" value="Search,md1b5b,dosearch,0"/&gt;&lt;input type="hidden" name="md1b5breturnid" value="1"/&gt;&lt;/div&gt; &lt;label for='md1b5bsearchinput' class='visuallyhidden'&gt;Search:&lt;/label&gt; &lt;input type='search' class='search-input' id='md1b5bsearchinput' name='md1b5bsearchinput' size='20' maxlength='50' value='' placeholder='Enter Search...' /&gt;&lt;i class='icon-search' aria-hidden='true'&gt;&lt;/i&gt; &lt;/form&gt; &lt;/div&gt; 
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;!-- .header-bottom //--&gt;
+                &lt;!-- .banner (banner area for a slider or teaser image) --&gt;
+                &lt;section class='banner row noprint' id='sx-slides' role='banner'&gt;&lt;ul class="sequence-canvas"&gt;&lt;li class='animate-in'&gt;&lt;h2 class='title'&gt;Power for professionals&lt;/h2&gt;&lt;h3 class='subtitle'&gt;Simplicity for end Users&lt;/h3&gt;&lt;img class='image' src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/teaser/palm-logo.png">http://10.10.90.10/simple/uploads/simplex/teaser/palm-logo.png</rich_text>
+        <rich_text>' alt='Power for professionals' /&gt;&lt;/li&gt;&lt;li&gt;&lt;h2 class='title'&gt;Faster &amp;amp; Easier&lt;/h2&gt;&lt;h3 class='subtitle'&gt;Website management&lt;/h3&gt;&lt;img class='image' src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/teaser/mate-zimple.png">http://10.10.90.10/simple/uploads/simplex/teaser/mate-zimple.png</rich_text>
+        <rich_text>' alt='Faster &amp;amp;amp; Easier' /&gt;&lt;/li&gt;&lt;li&gt;&lt;h2 class='title'&gt;Flexible &amp;amp; Powerful&lt;/h2&gt;&lt;h3 class='subtitle'&gt;Manage your Website anywhere and anytime&lt;/h3&gt;&lt;img class='image' src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/teaser/mobile-devices-scene.png">http://10.10.90.10/simple/uploads/simplex/teaser/mobile-devices-scene.png</rich_text>
+        <rich_text>' alt='Flexible &amp;amp;amp; Powerful' /&gt;&lt;/li&gt;&lt;li&gt;&lt;h2 class='title'&gt;Secure &amp;amp; Robust&lt;/h2&gt;&lt;h3 class='subtitle'&gt;Take control of your application&lt;/h3&gt;&lt;img class='image' src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/teaser/browser-scene.png">http://10.10.90.10/simple/uploads/simplex/teaser/browser-scene.png</rich_text>
+        <rich_text>' alt='Secure &amp;amp;amp; Robust' /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+                &lt;!-- .banner //--&gt;
+            &lt;/header&gt;
+            &lt;!-- .top //--&gt;
+            &lt;!-- .content-wrapper (wrapping div for content area) --&gt;
+            &lt;main role='main' class='content-wrapper inner-section'&gt;
+                &lt;div class='row'&gt;
+                    &lt;!-- .content-inner (display content first) --&gt;
+                    &lt;div class='content-inner eight-col push-four'&gt;
+                        &lt;!-- .content-top (breadcrumbs) --&gt;
+                        &lt;div class='content-top cf' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'&gt;
+                            
+&lt;div class="breadcrumb"&gt;You are here:&amp;nbsp;&lt;span class="breadcrumb current"&gt;Home&lt;/span&gt;&lt;/div&gt; 
+                            &lt;span class='title-border' aria-hidden='true'&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;!-- .content-top //--&gt;
+                        &lt;!-- .content (actual content with title and content tags) --&gt;
+                        &lt;article class='content' id='main'&gt;
+                            &lt;h1&gt;Home &lt;/h1&gt; 
+                                &lt;p&gt;Congratulations! The installation worked. You now have a fully functional installation of CMS Made Simple and you are &lt;em&gt;almost&lt;/em&gt; ready to start building your site.&lt;/p&gt;&lt;p&gt;If you chose to install the default content, you will see numerous pages available to read.  You should read them thoroughly  as these default pages are devoted to showing you the basics of how to begin working with CMS Made Simple.  On these example pages, templates, and stylesheets many of the features of the default installation of CMS Made Simple are described and demonstrated. You can learn much about the power of CMS Made Simple by absorbing this information.&lt;/p&gt;&lt;p&gt;To get to the Administration Console you have to login as the administrator (with the username/password you mentioned during the installation process) on your site at http://yourwebsite.com/cmsmspath/admin.  If this is your site click &lt;a title="CMSMS Demo Admin Panel" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/admin">admin</rich_text>
+        <rich_text>"&gt;here&lt;/a&gt; to login.&lt;/p&gt;&lt;p&gt;Read about how to use CMS Made Simple in the &lt;a class="external" href="</rich_text>
+        <rich_text link="webs http://view-source:http://docs.cmsmadesimple.org/">http://docs.cmsmadesimple.org/</rich_text>
+        <rich_text>" title="CMS Made Simple Documentation" target="_blank"&gt;documentation&lt;/a&gt;. In case you need any help the community is always at your service, in the  &lt;a class="external" href="</rich_text>
+        <rich_text link="webs http://view-source:http://forum.cmsmadesimple.org/">http://forum.cmsmadesimple.org</rich_text>
+        <rich_text>" title="CMS Made Simple Forum" target="_blank"&gt;forum&lt;/a&gt; or the &lt;a class="external" href="</rich_text>
+        <rich_text link="webs http://view-source:http://www.cmsmadesimple.org/support/irc">http://www.cmsmadesimple.org/support/irc</rich_text>
+        <rich_text>" title="Information about the CMS Made Simple IRC channel" target="_blank"&gt;IRC&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;License&lt;/h3&gt;&lt;p&gt;CMS Made Simple is released under the &lt;a class="external" href="</rich_text>
+        <rich_text link="webs http://view-source:http://www.gnu.org/licenses/licenses.html#GPL">http://www.gnu.org/licenses/licenses.html#GPL</rich_text>
+        <rich_text>" title="General Public License" target="_blank"&gt;GPL&lt;/a&gt; license and as such you don't have to leave a link back to us in these templates or on your site as much as we would like it.&lt;/p&gt;&lt;p&gt; Some third party add-on modules may include additional license restrictions.&lt;/p&gt; 
+                        &lt;/article&gt;
+                        &lt;!-- .content //--&gt;
+                    &lt;/div&gt;
+                    &lt;!-- .content-inner //--&gt;
+                    &lt;!-- .sidebar (then show sidebar) --&gt;
+                    &lt;aside class='sidebar four-col pull-eight'&gt;
+                        
+                        &lt;!-- .news-summary wrapper --&gt;&lt;article class='news-summary'&gt;&lt;span class='heading'&gt;&lt;span&gt;News&lt;/span&gt;&lt;/span&gt;&lt;ul class='category-list cf'&gt;&lt;li class='first'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?mact=News,cntnt01,default,0&amp;cntnt01summarytemplate=Simplex%20News%20Summary&amp;cntnt01number=2&amp;cntnt01detailtemplate=Simplex%20News%20Detail&amp;cntnt01category_id=1&amp;cntnt01returnid=1">http://10.10.90.10/simple/index.php?mact=News,cntnt01,default,0&amp;amp;cntnt01summarytemplate=Simplex%20News%20Summary&amp;amp;cntnt01number=2&amp;amp;cntnt01detailtemplate=Simplex%20News%20Detail&amp;amp;cntnt01category_id=1&amp;amp;cntnt01returnid=1</rich_text>
+        <rich_text>'&gt;General&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;!-- .news-article (wrapping each article) --&gt;&lt;section class='news-article'&gt;&lt;header&gt;&lt;h2&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?mact=News,cntnt01,detail,0&amp;cntnt01articleid=1&amp;cntnt01detailtemplate=Simplex%20News%20Detail&amp;cntnt01returnid=1">http://10.10.90.10/simple/index.php?mact=News,cntnt01,detail,0&amp;amp;cntnt01articleid=1&amp;amp;cntnt01detailtemplate=Simplex%20News%20Detail&amp;amp;cntnt01returnid=1</rich_text>
+        <rich_text>' title='News Module Installed'&gt;News Module Installed&lt;/a&gt;&lt;/h2&gt;&lt;div class='meta cf'&gt;&lt;time class='date' datetime='2019-08-19'&gt;&lt;span class='day'&gt; 19 &lt;/span&gt;&lt;span class='month'&gt; Aug &lt;/span&gt;&lt;/time&gt;&lt;span class='author'&gt; Posted by: mitch &lt;/span&gt;&lt;span class='category'&gt; Category: General&lt;/span&gt;&lt;/div&gt;&lt;/header&gt;&lt;p&gt;The news module was installed.  Exciting. This news article is not using the Summary field and therefore there is no link to read more. But you can click on the news heading to read only this article.&lt;/p&gt;&lt;/section&gt;&lt;!-- .news-article //--&gt;&lt;!-- news pagination --&gt;&lt;/article&gt;&lt;!-- .news-summary //--&gt;
+                    &lt;/aside&gt;
+                    &lt;!-- .sidebar //--&gt;
+                    &lt;div class='cf eight-col push-four'&gt;
+                                                &lt;span class='next'&gt;Next page: &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=how-cmsms-works">http://10.10.90.10/simple/index.php?page=how-cmsms-works</rich_text>
+        <rich_text>" title="How CMSMS Works" &gt;How CMSMS Works&lt;/a&gt;&lt;/span&gt;                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+            &lt;!-- .content-wrapper //--&gt;
+            &lt;!-- .footer (footer area) --&gt;
+            &lt;footer class='footer inner-section'&gt;
+                &lt;span class='back-top'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/#main">http://10.10.90.10/simple/#main</rich_text>
+        <rich_text>' id='scroll-top'&gt;&lt;i class='icon-arrow-up' aria-hidden='true'&gt;&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;
+                &lt;div class='row'&gt;
+                    &lt;section class='eight-col push-four noprint'&gt;
+                        &lt;nav class='footer-navigation row'&gt;
+                            &lt;ul id='footer-menu' class="cf"&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=how-cmsms-works">http://10.10.90.10/simple/index.php?page=how-cmsms-works</rich_text>
+        <rich_text>'&gt;How CMSMS Works&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=templates-and-stylesheets">http://10.10.90.10/simple/index.php?page=templates-and-stylesheets</rich_text>
+        <rich_text>'&gt;Templates and stylesheets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=pages-and-navigation">http://10.10.90.10/simple/index.php?page=pages-and-navigation</rich_text>
+        <rich_text>'&gt;Pages and navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=content">http://10.10.90.10/simple/index.php?page=content</rich_text>
+        <rich_text>'&gt;Content&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=menu-manager">http://10.10.90.10/simple/index.php?page=menu-manager</rich_text>
+        <rich_text>'&gt;Menu Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=extensions">http://10.10.90.10/simple/index.php?page=extensions</rich_text>
+        <rich_text>'&gt;Extensions&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=event-manager">http://10.10.90.10/simple/index.php?page=event-manager</rich_text>
+        <rich_text>'&gt;Event Manager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=workflow">http://10.10.90.10/simple/index.php?page=workflow</rich_text>
+        <rich_text>'&gt;Workflow&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=where-do-i-get-help">http://10.10.90.10/simple/index.php?page=where-do-i-get-help</rich_text>
+        <rich_text>'&gt;Where do i get help?&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=default_templates">http://10.10.90.10/simple/index.php?page=default_templates</rich_text>
+        <rich_text>'&gt;Default Templates Explained&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cms_tags">http://10.10.90.10/simple/index.php?page=cms_tags</rich_text>
+        <rich_text>'&gt;CMSMS tags in the templates&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=navleft">http://10.10.90.10/simple/index.php?page=navleft</rich_text>
+        <rich_text>'&gt;Left simple navigation + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=top_left">http://10.10.90.10/simple/index.php?page=top_left</rich_text>
+        <rich_text>'&gt;Top simple navigation + left subnavigation + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cssmenu_horizontal">http://10.10.90.10/simple/index.php?page=cssmenu_horizontal</rich_text>
+        <rich_text>'&gt;CSSMenu top + 2 columns&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=cssmenu_vertical">http://10.10.90.10/simple/index.php?page=cssmenu_vertical</rich_text>
+        <rich_text>'&gt;CSSMenu left + 1 column&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=minimal-template">http://10.10.90.10/simple/index.php?page=minimal-template</rich_text>
+        <rich_text>'&gt;Minimal template&lt;/a&gt;&lt;/li&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=higher-end">http://10.10.90.10/simple/index.php?page=higher-end</rich_text>
+        <rich_text>'&gt;Higher End&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=default-extensions">http://10.10.90.10/simple/index.php?page=default-extensions</rich_text>
+        <rich_text>'&gt;Default Extensions&lt;/a&gt;&lt;ul&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=modules">http://10.10.90.10/simple/index.php?page=modules</rich_text>
+        <rich_text>'&gt;Modules&lt;/a&gt;&lt;/li&gt;&lt;li class='parent'&gt;&lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/index.php?page=tags">http://10.10.90.10/simple/index.php?page=tags</rich_text>
+        <rich_text>'&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/section&gt; 
+                    &lt;section class='four-col pull-eight copyright'&gt;
+                         &lt;ul class='social cf'&gt; &lt;li class='twitter'&gt;&lt;a title='Twitter' href='</rich_text>
+        <rich_text link="webs http://view-source:http://twitter.com/#!/cmsms">http://twitter.com/#!/cmsms</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-twitter'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li class='facebook'&gt;&lt;a title='Facebook' href='</rich_text>
+        <rich_text link="webs http://view-source:https://www.facebook.com/cmsmadesimple">https://www.facebook.com/cmsmadesimple</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-facebook'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li class='linkedin'&gt;&lt;a title='LinkedIn' href='</rich_text>
+        <rich_text link="webs http://view-source:http://www.linkedin.com/groups?gid=1139537">http://www.linkedin.com/groups?gid=1139537</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-linkedin'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;LinkedIn&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li class='youtube'&gt;&lt;a title='YouTube' href='</rich_text>
+        <rich_text link="webs http://view-source:http://www.youtube.com/user/cmsmadesimple">http://www.youtube.com/user/cmsmadesimple</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-youtube'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;YouTube&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li class='google'&gt;&lt;a title='Google Plus' href='</rich_text>
+        <rich_text link="webs http://view-source:https://plus.google.com/+cmsmadesimple/posts">https://plus.google.com/+cmsmadesimple/posts</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-google'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;Google Plus&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li class='pinterest'&gt;&lt;a title='Pinterest' href='</rich_text>
+        <rich_text link="webs http://view-source:http://www.pinterest.com/cmsmadesimple/">http://www.pinterest.com/cmsmadesimple/</rich_text>
+        <rich_text>'&gt;&lt;i class='icon-pinterest'&gt;&lt;/i&gt;&lt;span class='visuallyhidden'&gt;Pinterest&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p class='copyright-info'&gt;&amp;copy; Copyright 2004 - 2021 - CMS Made Simple&lt;br /&gt; This site is powered by &lt;a href='</rich_text>
+        <rich_text link="webs http://view-source:http://www.cmsmadesimple.org/">http://www.cmsmadesimple.org</rich_text>
+        <rich_text>'&gt;CMS Made Simple&lt;/a&gt; version 2.2.8&lt;/p&gt; 
+                    &lt;/section&gt;
+                &lt;/div&gt;
+            &lt;/footer&gt;
+        &lt;!-- #wrapper //--&gt; 
+        &lt;/div&gt;
+    &lt;script type="text/javascript" src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/lib/jquery/js/jquery-1.11.1.min.js">http://10.10.90.10/simple/lib/jquery/js/jquery-1.11.1.min.js</rich_text>
+        <rich_text>"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/js/jquery.sequence-min.js">uploads/simplex/js/jquery.sequence-min.js</rich_text>
+        <rich_text>"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.90.10/simple/uploads/simplex/js/functions.min.js">uploads/simplex/js/functions.min.js</rich_text>
+        <rich_text>"&gt;&lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+
+- cmsms - content management system in version 2.2.8</rich_text>
+      </node>
+    </node>
+    <node name="exploitation" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631640832" ts_lastsave="1631640891">
+      <rich_text>- found sqli vulnerability for the CMS MS CVE-2019-9053
+   → found password and salt with the exploit
+   → [+] Salt for password found: 1dac0d92e9fa6bb2
+</rich_text>
+      <rich_text indent="1">[+] Username found: mitch
+[+] Email found: admin@admin.com
+[+] Password found: 0c01f4468bd75d7a84c7eb73846e8d96</rich_text>
+      <rich_text>
+</rich_text>
+    </node>
+  </node>
+</cherrytree>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="LazyAdmin" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631811342" ts_lastsave="1631814322">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631811362" ts_lastsave="1631812050">
+      <rich_text>PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</rich_text>
+    </node>
+    <node name="80:http:Apache httpd 2.4.18" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812050" ts_lastsave="1631812910">
+      <rich_text>- dirsearcher
+[13:08:25] 301 -  314B  - /content  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.240.98/content/">http://10.10.240.98/content/</rich_text>
+      <rich_text>        
+[13:08:25] 200 -    2KB - /content/                                         
+[13:08:32] 200 -   11KB - /index.html  
+
+[13:12:02] 200 -  963B  - /content/_themes/                                 
+[13:12:15] 200 -   18KB - /content/changelog.txt                            
+[13:12:24] 301 -  321B  - /content/images  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.240.98/content/images/">http://10.10.240.98/content/images/</rich_text>
+      <rich_text>
+[13:12:24] 200 -    3KB - /content/images/                                  
+[13:12:24] 301 -  318B  - /content/inc  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.240.98/content/inc/">http://10.10.240.98/content/inc/</rich_text>
+      <rich_text>
+[13:12:24] 200 -    7KB - /content/inc/                                     
+[13:12:25] 200 -    2KB - /content/index.php                                
+[13:12:25] 200 -    2KB - /content/index.php/login/                         
+[13:12:26] 200 -    2KB - /content/js/                                      
+[13:12:27] 200 -   15KB - /content/license.txt   </rich_text>
+      <node name="/" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812170" ts_lastsave="1631812172">
+        <rich_text>- Apache 2 Ubuntu Default Page</rich_text>
+      </node>
+      <node name="/content/" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812205" ts_lastsave="1631812581">
+        <rich_text>- “Thank your for install SweetRice as your website management system.”
+- using Sweet Rice CMS
+
+</rich_text>
+        <rich_text scale="h1">Source code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE html&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;
+&lt;meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" name="viewport" id="viewport"/&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;&lt;title&gt;Welcome to SweetRice - Thank your for install SweetRice as your website management system.&lt;/title&gt;
+&lt;title&gt;SweetRice notice&lt;/title&gt;
+&lt;script type="text/javascript" src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.240.98/content/js/SweetRice.js">http://10.10.240.98/content/js/SweetRice.js</rich_text>
+        <rich_text>"&gt;&lt;/script&gt;
+&lt;style&gt;
+*{margin:0;}
+body{font-family:"Microsoft YaHei",Verdana,Georgia,arial,sans-serif;}
+.header{line-height:30px;font-size:20px;background-color:#444;box-shadow:0px 0px 2px 2px #444;color:#fafafa;padding:0px 10px;}
+#div_foot{	background-color:#444;height:30px;	line-height:30px;	color:#fff;padding:0px 10px;}
+#div_foot a{	color: #66CC00;	text-decoration: none;}
+#div_foot a:hover{	color: #66CC00;	text-decoration: underline;}
+.content{margin:0px 10px;}
+.content h1{
+	margin:20px 0px;
+	font-size:22px;
+}
+.content div,.content p{margin-bottom:16px;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="header"&gt;SweetRice notice&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;p&gt;Welcome to SweetRice - Thank your for install SweetRice as your website management system.&lt;/p&gt;&lt;h1&gt;This site is building now , please come late.&lt;/h1&gt;&lt;p&gt;If you are the webmaster,please go to Dashboard -&gt; General -&gt; Website setting &lt;/p&gt;&lt;p&gt;and uncheck the checkbox "Site close" to open your website.&lt;/p&gt;&lt;p&gt;More help at &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://www.basic-cms.org/docs/5-things-need-to-be-done-when-SweetRice-installed/">http://www.basic-cms.org/docs/5-things-need-to-be-done-when-SweetRice-installed/</rich_text>
+        <rich_text>"&gt;Tip for Basic CMS SweetRice installed&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id="div_foot"&gt;Powered by &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://www.basic-cms.org/">http://www.basic-cms.org</rich_text>
+        <rich_text>"&gt;Basic-CMS.ORG&lt;/a&gt; SweetRice.&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+	_().ready(function(){
+		_('.content').css({'margin-top':((_.pageSize().windowHeight-60-_('.content').height())/2)+'px','margin-bottom':((_.pageSize().windowHeight-60-_('.content').height())/2)+'px'});
+	});
+	_(window).bind('resize',function(){
+		_('.content').animate({'margin-top':((_.pageSize().windowHeight-60-_('.content').height())/2)+'px','margin-bottom':((_.pageSize().windowHeight-60-_('.content').height())/2)+'px'});
+	});
+//--&gt;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+      </node>
+      <node name="/inc/" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812555" ts_lastsave="1631813149">
+        <rich_text>- found mysql backup
+   → found hash 42f749ade7f9e195bf475f37a44cafcb -&gt; Password123
+   → found possible usernames admin, manager, passwd</rich_text>
+      </node>
+      <node name="Exploit" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812910" ts_lastsave="1631816087">
+        <rich_text>- found arbitrary file upload for SweetRice 1.5.1 (</rich_text>
+        <rich_text link="webs https://www.exploit-db.com/exploits/40716">https://www.exploit-db.com/exploits/40716</rich_text>
+        <rich_text>)
+   → needs username and password
+   → tryingin found potential credentials from mysql backup
+   → manager:Password123
+   → upload php reverse-shell
+   → cannot access the file
+- maybe the credentials can be used for ssh
+   → no
+- login page is /as found in exploit 40716.py
+   → logged in as manager:Password123</rich_text>
+      </node>
+    </node>
+    <node name="SSH" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631814322" ts_lastsave="1631814377">
+      <rich_text>- possible credentials manager:Password123
+- not working</rich_text>
+    </node>
+    <node name="Technologies" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812258" ts_lastsave="1631812588">
+      <rich_text>- SweetRice CMS at port 80 from /content/
+   → maybe version 0.5.4? (from /content/js/SweetRice.js)
+   → maybe version 1.5.1 (from </rich_text>
+      <rich_text link="webs http://10.10.240.98/content/inc/lastest.txt">http://10.10.240.98/content/inc/lastest.txt</rich_text>
+      <rich_text>)</rich_text>
+    </node>
+    <node name="Credentials" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631812666" ts_lastsave="1631814041">
+      <rich_text>- possible usernames:
+   → admin
+   → manager
+   → passwd
+- possible passwords
+   → Password123
+
+Credentials:
+
+SweetRice: manager:Password123</rich_text>
+    </node>
+  </node>
+</cherrytree>

@@ -1,0 +1,17 @@
+# Nmap 7.91 scan initiated Wed Aug 25 06:15:06 2021 as: nmap -sS -vv -sV -oN scanResult -p-1024 10.10.92.7
+Nmap scan report for 10.10.92.7
+Host is up, received echo-reply ttl 63 (0.039s latency).
+Scanned at 2021-08-25 06:15:06 EDT for 12s
+Not shown: 1019 filtered ports
+Reason: 1019 no-responses
+PORT    STATE  SERVICE  REASON         VERSION
+20/tcp  closed ftp-data reset ttl 63
+21/tcp  open   ftp      syn-ack ttl 63 vsftpd 3.0.3
+22/tcp  open   ssh      syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp  open   http     syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+990/tcp closed ftps     reset ttl 63
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 25 06:15:18 2021 -- 1 IP address (1 host up) scanned in 12.26 seconds

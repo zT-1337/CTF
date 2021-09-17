@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Relevant" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631350292" ts_lastsave="1631353860">
+    <node name="Ports" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631350318" ts_lastsave="1631353417">
+      <rich_text>80/tcp    open  http          syn-ack ttl 127 Microsoft IIS httpd 10.0
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  syn-ack ttl 127 Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server syn-ack ttl 127 Microsoft Terminal Services
+49663/tcp open  http          syn-ack ttl 127 Microsoft IIS httpd 10.0
+49667/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+</rich_text>
+      <node name="80:http:Microsoft IIS httpd 10.0" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351249" ts_lastsave="1631351826">
+        <rich_text>- dirsearcher
+[05:08:22] 403 -  312B  - /%2e%2e//google.com
+[05:08:36] 403 -    2KB - /Trace.axd                                        
+[05:08:36] 403 -  312B  - /\..\..\..\..\..\..\..\..\..\etc\passwd           
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/jfrStart/filename=!/tmp!/foo
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/disable
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/compilerDirectivesAdd/!/etc!/passwd
+[05:09:25] 400 -    3KB - /jolokia/exec/java.lang:type=Memory/gc            
+[05:09:25] 400 -    3KB - /jolokia/search/*:j2eeType=J2EEServer,*
+[05:09:25] 400 -    3KB - /jolokia/read/java.lang:type=*/HeapMemoryUsage
+[05:09:25] 400 -    3KB - /jolokia/write/java.lang:type=Memory/Verbose/true 
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/jvmtiAgentLoad/!/etc!/passwd
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmSystemProperties
+[05:09:25] 400 -    3KB - /jolokia/read/java.lang:type=Memory/HeapMemoryUsage/used
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/help/*
+[05:09:25] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/output=!/tmp!/pwned
+
+- webalyzer
+   → microsoft asp.net
+   → windows server
+   → IIS 10.0 (web server)</rich_text>
+        <node name="/" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351470" ts_lastsave="1631351479">
+          <rich_text scale="h1">Source Code:</rich_text>
+          <rich_text>
+
+</rich_text>
+          <rich_text scale="h2">HTML</rich_text>
+          <rich_text>
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+&lt;title&gt;IIS Windows Server&lt;/title&gt;
+&lt;style type="text/css"&gt;
+&lt;!--
+body {
+	color:#000000;
+	background-color:#0072C6;
+	margin:0;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+a img {
+	border:none;
+}
+
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="container"&gt;
+&lt;a href="</rich_text>
+          <rich_text link="webs http://view-source:http://go.microsoft.com/fwlink/?linkid=66138&amp;clcid=0x409">http://go.microsoft.com/fwlink/?linkid=66138&amp;amp;clcid=0x409</rich_text>
+          <rich_text>"&gt;&lt;img src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.194.169/iisstart.png">iisstart.png</rich_text>
+          <rich_text>" alt="IIS" width="960" height="600" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</rich_text>
+        </node>
+      </node>
+      <node name="135:msrpc:Microsoft Windows RPC" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631352222" ts_lastsave="1631352225"/>
+      <node name="139:netbios-ssn:Microsoft Windows netbios-ssn" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631352350" ts_lastsave="1631352353"/>
+      <node name="445:microsoft-ds:Microsoft Windows Server 2008 R2 -2012" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631352420" ts_lastsave="1631354406">
+        <rich_text>Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        C$              Disk      Default share
+        IPC$            IPC       Remote IPC
+        nt4wrksv        Disk      
+</rich_text>
+        <node name="nt4wrksv" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631353792" ts_lastsave="1631353852">
+          <rich_text>password.txt
+[User Passwords - Encoded]
+Qm9iIC0gIVBAJCRXMHJEITEyMw==
+QmlsbCAtIEp1dzRubmFNNG40MjA2OTY5NjkhJCQk</rich_text>
+        </node>
+        <node name="ADMIN$" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631354025" ts_lastsave="1631354394">
+          <rich_text>- cannot access with Bill
+- cannot access with Bob</rich_text>
+        </node>
+        <node name="C$" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631354406" ts_lastsave="1631354427">
+          <rich_text>- cannot be accessed with Bob
+- </rich_text>
+        </node>
+      </node>
+      <node name="3389:ms-wbt-server:Microsoft Terminal Services" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631353417" ts_lastsave="1631354665"/>
+      <node name="49663:http-Microsoft IIS httpd 10.0" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351814" ts_lastsave="1631358387">
+        <rich_text>- dirsearcher
+[05:17:31] 403 -  312B  - /%2e%2e//google.com                              
+[05:17:39] 403 -    2KB - /Trace.axd                                        
+[05:17:40] 403 -  312B  - /\..\..\..\..\..\..\..\..\..\etc\passwd           
+[05:17:51] 200 -    0B  - /aspnet_client/                                   
+[05:17:51] 301 -  164B  - /aspnet_client  -&gt;  </rich_text>
+        <rich_text link="webs http://10.10.194.169:49663/aspnet_client/">http://10.10.194.169:49663/aspnet_client/</rich_text>
+        <rich_text>
+[05:18:07] 400 -    3KB - /jolokia/exec/java.lang:type=Memory/gc            
+[05:18:07] 400 -    3KB - /jolokia/search/*:j2eeType=J2EEServer,*           
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/compilerDirectivesAdd/!/etc!/passwd                                                                                                                   
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/help/*
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/output=!/tmp!/pwned
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmSystemProperties
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/jvmtiAgentLoad/!/etc!/passwd
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/jfrStart/filename=!/tmp!/foo
+[05:18:07] 400 -    3KB - /jolokia/write/java.lang:type=Memory/Verbose/true 
+[05:18:07] 400 -    3KB - /jolokia/exec/com.sun.management:type=DiagnosticCommand/vmLog/disable
+[05:18:07] 400 -    3KB - /jolokia/read/java.lang:type=*/HeapMemoryUsage
+[05:18:07] 400 -    3KB - /jolokia/read/java.lang:type=Memory/HeapMemoryUsage/used
+
+- webalyzer
+   → microsoft asp.net
+   → windows server
+   → IIS 10.0 (web server)
+- found same folder as smb share nt4wrksv
+   → tried to access passwords.txt
+   → worked
+   → try to upload aspx reverse and access it too
+   → worked
+   → found user.txt in Users Desktop Folder of Bob
+   → SeImpersonatePrivilege allows for privilege escalation printspoofer</rich_text>
+        <node name="/" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351878" ts_lastsave="1631351893">
+          <rich_text scale="h1">Source Code:</rich_text>
+          <rich_text>
+
+</rich_text>
+          <rich_text scale="h2">HTML</rich_text>
+          <rich_text>
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+&lt;title&gt;IIS Windows Server&lt;/title&gt;
+&lt;style type="text/css"&gt;
+&lt;!--
+body {
+	color:#000000;
+	background-color:#0072C6;
+	margin:0;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+a img {
+	border:none;
+}
+
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="container"&gt;
+&lt;a href="</rich_text>
+          <rich_text link="webs http://view-source:http://go.microsoft.com/fwlink/?linkid=66138&amp;clcid=0x409">http://go.microsoft.com/fwlink/?linkid=66138&amp;amp;clcid=0x409</rich_text>
+          <rich_text>"&gt;&lt;img src="</rich_text>
+          <rich_text link="webs http://view-source:http://10.10.194.169:49663/iisstart.png">iisstart.png</rich_text>
+          <rich_text>" alt="IIS" width="960" height="600" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</rich_text>
+        </node>
+      </node>
+    </node>
+    <node name="Vulnerabilities" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351160" ts_lastsave="1631351930">
+      <node name="80: http Microsoft IIS httpd 10.0" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351556" ts_lastsave="1631351941"/>
+      <node name="445: microsoft-ds Microsoft Windows RPC" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351563" ts_lastsave="1631351976">
+        <rich_text>- ms17-010 (Eternal Blue) for smb</rich_text>
+      </node>
+      <node name="49663: http Microsoft IIS httpd 10.0" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631351930" ts_lastsave="1631351936"/>
+    </node>
+    <node name="Credentials" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631353860" ts_lastsave="1631353862">
+      <rich_text>Bob:!P@$$W0rD!123
+Bill:Juw4nnaM4n420696969!$$$</rich_text>
+    </node>
+  </node>
+</cherrytree>

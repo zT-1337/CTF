@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Mr. Robot CTF" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630945643" ts_lastsave="1630946098">
+    <node name="Ports" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630945648" ts_lastsave="1630946091">
+      <rich_text>PORT    STATE  SERVICE  REASON         VERSION
+22/tcp  closed ssh      reset ttl 63
+80/tcp  open   http     syn-ack ttl 63 Apache httpd
+443/tcp open   ssl/http syn-ack ttl 63 Apache httpd
+</rich_text>
+    </node>
+    <node name="Webserver :80" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630946098" ts_lastsave="1631023669">
+      <rich_text>- dirsearcher
+[12:45:27] 301 -  235B  - /images  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/images/">http://10.10.237.81/images/</rich_text>
+      <rich_text>         
+[12:45:27] 301 -  233B  - /blog  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/blog/">http://10.10.237.81/blog/</rich_text>
+      <rich_text>
+[12:45:27] 200 -    0B  - /sitemap
+[12:45:28] 301 -    0B  - /rss  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/feed/">http://10.10.237.81/feed/</rich_text>
+      <rich_text>              
+[12:45:28] 302 -    0B  - /login  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/wp-login.php">http://10.10.237.81/wp-login.php</rich_text>
+      <rich_text>     
+[12:45:30] 301 -  234B  - /video  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/video/">http://10.10.237.81/video/</rich_text>
+      <rich_text>           
+[12:45:30] 301 -    0B  - /0  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/0/">http://10.10.237.81/0/</rich_text>
+      <rich_text>                   
+[12:45:30] 301 -    0B  - /feed  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/feed/">http://10.10.237.81/feed/</rich_text>
+      <rich_text>             
+[12:45:32] 301 -    0B  - /image  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/image/">http://10.10.237.81/image/</rich_text>
+      <rich_text>           
+[12:45:32] 301 -    0B  - /atom  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/feed/atom/">http://10.10.237.81/feed/atom/</rich_text>
+      <rich_text>        
+[12:45:35] 301 -  239B  - /wp-content  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/wp-content/">http://10.10.237.81/wp-content/</rich_text>
+      <rich_text> 
+[12:45:38] 301 -  234B  - /admin  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/admin/">http://10.10.237.81/admin/</rich_text>
+      <rich_text>           
+[12:46:21] 301 -  234B  - /audio  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/audio/">http://10.10.237.81/audio/</rich_text>
+      <rich_text>           
+[12:46:31] 200 -  504KB - /intro
+[12:48:08] 301 -  232B  - /css  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.237.81/css/">http://10.10.237.81/css/</rich_text>
+      <rich_text>
+
+
+
+- /robots.txt
+   → fsocity.dic
+      ⇒ /fsocity.dic
+         • wordlist file
+   → key-1-of-3.txt
+      ⇒ /key-1-of-3.txt
+         • file with first flag
+- /wp-login.php
+   → password forgotten function
+   → using random credentials only tells me the credentials are invalid not if the username or password is invalid
+- /wp-login.php?action=lostpassword
+   → trying to find valid username with provided wordlist by bruteforece
+- /wp-login.php
+   → trying to bruteforce login with Elliot username and wordlist as password
+      ⇒ stopped at discussing
+      ⇒ word are occuring multiple times
+      ⇒ wrote script to filter out duplicates
+      ⇒ started bruteforce again
+      ⇒ found password: ER28-0652
+      ⇒ login worked
+      ⇒ edited wp template to spawn reverse shell
+         • found 2nd key.txt but need to be user robot</rich_text>
+    </node>
+    <node name="Credentials" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630947815" ts_lastsave="1631023797">
+      <rich_text>/wp-login.php
+	Elliot:ER28-0652
+	robot:abcdefghijklmnopqrstuvwxyz</rich_text>
+    </node>
+  </node>
+</cherrytree>

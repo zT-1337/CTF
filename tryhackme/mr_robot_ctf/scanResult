@@ -1,0 +1,14 @@
+# Nmap 7.91 scan initiated Mon Sep  6 12:31:53 2021 as: nmap -sS -vv -sV -p- -oN scanResult 10.10.237.81
+Nmap scan report for 10.10.237.81
+Host is up, received syn-ack ttl 63 (0.046s latency).
+Scanned at 2021-09-06 12:31:53 EDT for 170s
+Not shown: 65532 filtered ports
+Reason: 65532 no-responses
+PORT    STATE  SERVICE  REASON         VERSION
+22/tcp  closed ssh      reset ttl 63
+80/tcp  open   http     syn-ack ttl 63 Apache httpd
+443/tcp open   ssl/http syn-ack ttl 63 Apache httpd
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep  6 12:34:44 2021 -- 1 IP address (1 host up) scanned in 170.80 seconds

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="RootMe" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630058892" ts_lastsave="1630059046">
+    <node name="Ports" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630059027" ts_lastsave="1630059028">
+      <rich_text>PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</rich_text>
+    </node>
+    <node name="Web Server" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630059043" ts_lastsave="1630060356">
+      <rich_text>Port 80
+
+- Wappalyzer
+   → Web Server
+      ⇒ Apache 2.4.29
+   → Backend Language
+      ⇒ PHP
+   → Operating System
+      ⇒ Ubuntu
+- dirsearcher
+[06:20:36] Starting: 
+[06:20:39] 403 -  278B  - /.ht_wsr.txt                                     
+[06:20:39] 403 -  278B  - /.htaccess.bak1
+[06:20:39] 403 -  278B  - /.htaccess.sample
+[06:20:39] 403 -  278B  - /.htaccess.orig
+[06:20:39] 403 -  278B  - /.htaccess.save
+[06:20:39] 403 -  278B  - /.htaccess_extra
+[06:20:39] 403 -  278B  - /.htaccess_orig
+[06:20:39] 403 -  278B  - /.htaccess_sc
+[06:20:39] 403 -  278B  - /.htaccessBAK
+[06:20:39] 403 -  278B  - /.htaccessOLD
+[06:20:39] 403 -  278B  - /.htaccessOLD2
+[06:20:39] 403 -  278B  - /.htm                                            
+[06:20:39] 403 -  278B  - /.html
+[06:20:39] 403 -  278B  - /.htpasswd_test
+[06:20:39] 403 -  278B  - /.htpasswds
+[06:20:39] 403 -  278B  - /.httr-oauth
+[06:20:40] 301 -  311B  - /js  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.210.113/js/">http://10.10.210.113/js/</rich_text>
+      <rich_text>                
+[06:20:40] 403 -  278B  - /.php                                            
+[06:21:00] 301 -  312B  - /css  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.210.113/css/">http://10.10.210.113/css/</rich_text>
+      <rich_text>               
+[06:21:06] 200 -  616B  - /index.php                                        
+[06:21:06] 200 -  616B  - /index.php/login/                                 
+[06:21:08] 200 -  959B  - /js/                                              
+[06:21:14] 200 -  732B  - /panel/                                           
+[06:21:14] 301 -  314B  - /panel  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.210.113/panel/">http://10.10.210.113/panel/</rich_text>
+      <rich_text>           
+[06:21:21] 403 -  278B  - /server-status/                                   
+[06:21:21] 403 -  278B  - /server-status                                    
+[06:21:28] 301 -  316B  - /uploads  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.210.113/uploads/">http://10.10.210.113/uploads/</rich_text>
+      <rich_text>       
+[06:21:28] 200 -  744B  - /uploads/
+
+- /panel/
+   → form to upload a file
+      ⇒ trying a php reverse shell
+         • php not allowed error message
+            ◇ no client side filter
+            ◇ trying different php file.exentensions
+               ▪ .phtml
+               ▪ php3
+                  - worked
+                  - trying to access it
+                  - php gets send but not run
+               ▪ php4
+                  - worked
+                  - trying to access it
+                  - php gets send but not run
+               ▪ php5
+                  - worked
+                  - trying to access it
+                  - php gets run but 
+                     → WARNING: Failed to daemonise.  This is quite common and not fatal.Connection refused (111)
+                     → nc wasnt set up properly nc -u -lvp 1234 didnt work but nc -lnvp 1234
+               ▪ phps
+               ▪ phar</rich_text>
+    </node>
+    <node name="SSH" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1630059046" ts_lastsave="1630059046"/>
+  </node>
+</cherrytree>
