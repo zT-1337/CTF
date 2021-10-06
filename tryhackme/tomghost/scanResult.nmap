@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Mon Sep 27 12:02:06 2021 as: nmap -sS -sV -p- -oN scanResult.nmap -vv 10.10.239.57
+Nmap scan report for 10.10.239.57
+Host is up, received echo-reply ttl 63 (0.049s latency).
+Scanned at 2021-09-27 12:02:06 EDT for 62s
+Not shown: 65531 closed ports
+Reason: 65531 resets
+PORT     STATE SERVICE    REASON         VERSION
+22/tcp   open  ssh        syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+53/tcp   open  tcpwrapped syn-ack ttl 63
+8009/tcp open  ajp13      syn-ack ttl 63 Apache Jserv (Protocol v1.3)
+8080/tcp open  http       syn-ack ttl 63 Apache Tomcat 9.0.30
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 27 12:03:08 2021 -- 1 IP address (1 host up) scanned in 62.94 seconds

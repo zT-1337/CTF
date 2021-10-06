@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Res" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633178086" ts_lastsave="1633181451">
+    <rich_text scale="h1">IP Address</rich_text>
+    <rich_text>
+
+10.10.187.150
+
+</rich_text>
+    <rich_text scale="h1">Ports</rich_text>
+    <rich_text>
+
+PORT     STATE SERVICE REASON         VERSION
+80/tcp   open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+6379/tcp open  redis   syn-ack ttl 63 Redis key-value store 6.0.7
+
+</rich_text>
+    <rich_text scale="h1">HTTP 80</rich_text>
+    <rich_text>
+
+- dirsearcher
+[08:41:51] 200 -   11KB - /index.html
+
+- /index.html
+   → no interesting comments
+   → apache2 start page
+
+</rich_text>
+    <rich_text scale="h1">Redis 6.0.7 6379</rich_text>
+    <rich_text>
+
+- searchsploit
+   → Redis - Replication Code Execution (Metasploit)                                   | linux/remote/48272.rb
+- </rich_text>
+    <rich_text link="webs https://book.hacktricks.xyz/pentesting/6379-pentesting-redis">https://book.hacktricks.xyz/pentesting/6379-pentesting-redis</rich_text>
+    <rich_text>
+- connection with redis-cli
+   → anonymous login is possible
+   → info command
+   → </rich_text>
+    <rich_text link="webs https://book.hacktricks.xyz/pentesting/6379-pentesting-redis#webshell">https://book.hacktricks.xyz/pentesting/6379-pentesting-redis#webshell</rich_text>
+    <rich_text> setup a webshell
+      ⇒ inject redis db as .php file
+      ⇒ add keys with a value that is php reverse shell payload
+      ⇒ accessed .php file with payload
+      ⇒ got reverse shell
+      ⇒ stabilezed shell
+
+</rich_text>
+    <rich_text scale="h1">Reverse Shell</rich_text>
+    <rich_text>
+
+- found user.txt in /home/vianka folder
+- sudo -l
+   → missing www-data password
+- linpeas.sh
+   → -rwsr-xr-x 1 root root 19K Mar 18  2020 /usr/bin/xxd
+      ⇒ read /etc/shadow file
+      ⇒ got vianka hash
+      ⇒ bruteforced it with john
+      ⇒ beautiful1
+      ⇒ got access to vianka
+- sudo -l as vianka
+   → (ALL : ALL) ALL
+   → sudo bash</rich_text>
+  </node>
+</cherrytree>

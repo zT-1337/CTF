@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Fri Sep 24 11:06:43 2021 as: nmap -sS -sV -p- -oN scanResult.nmap -vv 10.10.114.127
+Increasing send delay for 10.10.114.127 from 0 to 5 due to 439 out of 1463 dropped probes since last increase.
+Nmap scan report for 10.10.114.127
+Host is up, received reset ttl 63 (0.046s latency).
+Scanned at 2021-09-24 11:06:44 EDT for 431s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 24 11:13:55 2021 -- 1 IP address (1 host up) scanned in 431.99 seconds

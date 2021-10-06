@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Anonymous" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632132476" ts_lastsave="1632133443">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632132524" ts_lastsave="1632132714">
+      <rich_text>21/tcp  open  ftp         syn-ack ttl 63 vsftpd 2.0.8 or later
+22/tcp  open  ssh         syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+139/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+</rich_text>
+    </node>
+    <node name="21:ftp:vsftpd 2.0.8" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632132724" ts_lastsave="1632133086">
+      <rich_text>- anonymous login is possible
+- files
+drwxrwxrwx    2 111      113          4096 Jun 04  2020 scripts
+	-rwxr-xrwx    1 1000     1000          314 Jun 04  2020 clean.sh
+		-&gt; cleanup script, deletes files from /tmp
+	-rw-rw-r--    1 1000     1000         1075 Sep 20 10:14 removed_files.log
+		-&gt; logs of deleted files (no files deleted)
+	-rw-r--r--    1 1000     1000           68 May 12  2020 to_do.txt
+		-&gt; note that anonymous login should be disabled
+</rich_text>
+    </node>
+    <node name="139:445: samba shares" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632133128" ts_lastsave="1632133230">
+      <rich_text>- anonymous login possible
+- shares        
+        Sharename       Type      Comment
+        ---------       ----      -------
+        print$          Disk      Printer Drivers
+        pics            Disk      My SMB Share Directory for Pics
+        IPC$            IPC       IPC Service (anonymous server (Samba, Ubuntu))
+
+- /pics
+	corgo2.jpg                          N    42663  Mon May 11 20:43:42 2020
+  	puppos.jpeg                         N   265188  Mon May 11 20:43:42 2020
+</rich_text>
+    </node>
+    <node name="Exploit Ideas" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632133443" ts_lastsave="1632133906">
+      <rich_text>- clean.sh is writeable for others
+   → edit clean.sh so that is opens a reverse shell
+   → worked got shell
+      ⇒ found user.txt in /home/namelessone
+      ⇒ now trying to find pe vector
+         • sudo -l doesnt work (password for manelessone needed)
+         • enumeration with linpeas.sh</rich_text>
+    </node>
+  </node>
+</cherrytree>

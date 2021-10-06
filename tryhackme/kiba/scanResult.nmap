@@ -1,0 +1,47 @@
+# Nmap 7.91 scan initiated Wed Oct  6 09:47:13 2021 as: nmap -sS -sV -p- -vv -oN scanResult.nmap 10.10.91.51
+Nmap scan report for 10.10.91.51
+Host is up, received echo-reply ttl 63 (0.052s latency).
+Scanned at 2021-10-06 09:47:14 EDT for 86s
+Not shown: 65531 closed ports
+Reason: 65531 resets
+PORT     STATE SERVICE      REASON         VERSION
+22/tcp   open  ssh          syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http         syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+5044/tcp open  lxi-evntsvc? syn-ack ttl 63
+5601/tcp open  esmagent?    syn-ack ttl 63
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5601-TCP:V=7.91%I=7%D=10/6%Time=615DA92B%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,D4,"HTTP/1\.1\x20302\x20Found\r\nlocation:\x20/app/kibana\r\nk
+SF:bn-name:\x20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d04923283ef48ab54e3e6
+SF:c\r\ncache-control:\x20no-cache\r\ncontent-length:\x200\r\nconnection:\
+SF:x20close\r\nDate:\x20Wed,\x2006\x20Oct\x202021\x2013:48:27\x20GMT\r\n\r
+SF:\n")%r(HTTPOptions,117,"HTTP/1\.1\x20404\x20Not\x20Found\r\nkbn-name:\x
+SF:20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d04923283ef48ab54e3e6c\r\nconte
+SF:nt-type:\x20application/json;\x20charset=utf-8\r\ncache-control:\x20no-
+SF:cache\r\ncontent-length:\x2038\r\nconnection:\x20close\r\nDate:\x20Wed,
+SF:\x2006\x20Oct\x202021\x2013:48:29\x20GMT\r\n\r\n{\"statusCode\":404,\"e
+SF:rror\":\"Not\x20Found\"}")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:n\r\n")%r(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SSLS
+SF:essionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalSe
+SF:rverCookie,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSessio
+SF:nReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(FourOhFourRequest,12D,"HTTP/1\.1\x20404\x20Not
+SF:\x20Found\r\nkbn-name:\x20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d049232
+SF:83ef48ab54e3e6c\r\ncontent-type:\x20application/json;\x20charset=utf-8\
+SF:r\ncache-control:\x20no-cache\r\ncontent-length:\x2060\r\nconnection:\x
+SF:20close\r\nDate:\x20Wed,\x2006\x20Oct\x202021\x2013:48:30\x20GMT\r\n\r\
+SF:n{\"statusCode\":404,\"error\":\"Not\x20Found\",\"message\":\"Not\x20Fo
+SF:und\"}")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r
+SF:(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LDAPB
+SF:indReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SIPOptions,1C
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  6 09:48:40 2021 -- 1 IP address (1 host up) scanned in 86.61 seconds

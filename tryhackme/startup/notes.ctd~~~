@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Startup" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632502183" ts_lastsave="1632505735">
+    <rich_text>IP: 10.10.112.206
+
+Ports:
+
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Enumerate FTP
+
+- anonymous login
+   → worked
+   → content
+
+drwxrwxrwx    2 65534    65534        4096 Nov 12  2020 ftp
+- empty
+
+-rw-r--r--    1 0        0          251631 Nov 12  2020 important.jpg
+
+-rw-r--r--    1 0        0             208 Nov 12  2020 notice.txt
+
+- Whoever is leaving these damn Among Us memes in this share, it IS NOT FUNNY. People downloading documents from our website will think we are a joke! Now I dont know who it is, but Maya is looking pretty sus.
+- possible username Maya
+- possible file inclusion via ftp
+
+Enumerate http
+
+- directories
+
+[12:58:03] 200 -    1KB - /files/                                           
+[12:58:06] 200 -  808B  - /index.html   
+
+/
+
+from source code:
+- comment: &lt;!--when are we gonna update this??--&gt;
+
+/files
+
+- found ftp share
+   → exploit idea add php reverse shell
+   → could not add in share because of missing write rights
+   → but ftp allows me to write
+   → placed payload in ftp
+   → got shell access
+
+Privilege Escalation
+
+Stabilization
+
+- done
+
+Enumeration
+
+- sudo -l 
+   → need password of www-data
+- linpeas.sh enumeration
+   → -rwsr-xr-x 1 root root 23K Mar 27  2019 /usr/bin/pkexec  ---&gt;  Linux4.10_to_5.1.17(CVE-2019-13272)/rhel_6(CVE-2011-1485)
+   → doesnt work
+- incident folder owned by www-data
+   → found wireshark file
+   → moved it to /var/www/html/files/ftp folder to download it
+   → found string c4ntg3t3n0ughsp1c3 might be a password
+   → could login as lennie
+      ⇒ sudo -l
+         • no commands
+      ⇒ </rich_text>
+  </node>
+</cherrytree>

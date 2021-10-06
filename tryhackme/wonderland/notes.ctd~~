@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Wonderland" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632154031" ts_lastsave="1632156131">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632154071" ts_lastsave="1632156344">
+      <rich_text>22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</rich_text>
+    </node>
+    <node name="80:http" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632154299" ts_lastsave="1632156711">
+      <rich_text>- dirsearcher
+[12:44:24] 301 -    0B  - /img  -&gt;  img/                                         
+[12:44:38] 301 -    0B  - /r  -&gt;  r/  
+/r/a                    (Status: 301) [Size: 0] [--&gt; a/]
+[12:49:43] 301 -    0B  - /r/a/b  -&gt;  b/ 
+[12:49:43] 301 -    0B  - /r/a/b/b  -&gt;  b/ 
+r/a/b/b/i/t/</rich_text>
+      <node name="/" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632154304" ts_lastsave="1632154474">
+        <rich_text>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Follow the white rabbit.&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/main.css">/main.css</rich_text>
+        <rich_text>"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Follow the White Rabbit.&lt;/h1&gt;
+    &lt;p&gt;"Curiouser and curiouser!" cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English)&lt;/p&gt;
+    &lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/img/white_rabbit_1.jpg">/img/white_rabbit_1.jpg</rich_text>
+        <rich_text>" style="height: 50rem;"&gt;
+&lt;/body&gt;
+</rich_text>
+      </node>
+      <node name="/img" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632154478" ts_lastsave="1632155525">
+        <rich_text>- found three images</rich_text>
+      </node>
+      <node name="/r/" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632156355" ts_lastsave="1632156606">
+        <rich_text>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Follow the white rabbit.&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/main.css">/main.css</rich_text>
+        <rich_text>"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Keep Going.&lt;/h1&gt;
+    &lt;p&gt;"Would you tell me, please, which way I ought to go from here?"&lt;/p&gt;
+&lt;/body&gt;</rich_text>
+      </node>
+      <node name="/r/a/" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632156606" ts_lastsave="1632156661">
+        <rich_text>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Follow the white rabbit.&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/main.css">/main.css</rich_text>
+        <rich_text>"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Keep Going.&lt;/h1&gt;
+    &lt;p&gt;"That depends a good deal on where you want to get to," said the Cat.&lt;/p&gt;
+&lt;/body&gt;</rich_text>
+      </node>
+      <node name="/r/a/b/" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632156630" ts_lastsave="1632156664">
+        <rich_text>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Follow the white rabbit.&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/main.css">/main.css</rich_text>
+        <rich_text>"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Keep Going.&lt;/h1&gt;
+    &lt;p&gt;"I don’t much care where—" said Alice.&lt;/p&gt;
+&lt;/body&gt;</rich_text>
+      </node>
+      <node name="/r/a/b/b/i/t/" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632156711" ts_lastsave="1632156886">
+        <rich_text>&lt;!DOCTYPE html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Enter wonderland&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/main.css">/main.css</rich_text>
+        <rich_text>"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Open the door and enter wonderland&lt;/h1&gt;
+    &lt;p&gt;"Oh, you’re sure to do that," said the Cat, "if you only walk long enough."&lt;/p&gt;
+    &lt;p&gt;Alice felt that this could not be denied, so she tried another question. "What sort of people live about here?"
+    &lt;/p&gt;
+    &lt;p&gt;"In that direction,"" the Cat said, waving its right paw round, "lives a Hatter: and in that direction," waving
+        the other paw, "lives a March Hare. Visit either you like: they’re both mad."&lt;/p&gt;
+    &lt;p style="display: none;"&gt;alice:HowDothTheLittleCrocodileImproveHisShiningTail&lt;/p&gt;
+    &lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.44.146/img/alice_door.png">/img/alice_door.png</rich_text>
+        <rich_text>" style="height: 50rem;"&gt;
+&lt;/body&gt;
+
+- found possible credentials
+   → alice:HowDothTheLittleCrocodileImproveHisShiningTail
+   → ssh credentials</rich_text>
+      </node>
+    </node>
+    <node name="22:ssh" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632156131" ts_lastsave="1632161919">
+      <rich_text>- trying to escalate privileges
+   → sudo -l
+   Matching Defaults entries for alice on wonderland:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User alice may run the following commands on wonderland:
+    (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+    
+      ⇒   walrus_and_the_carpenter.py import library random
+      ⇒ create random.py that opens bash
+      ⇒ escalated to user rabbit by starting it
+      ⇒ found teaParty programm with suid inside of rabbit folder
+      ⇒ found string </rich_text>
+      <rich_text family="monospace">/bin/echo -n 'Probably by ' &amp;&amp; date --date='next hour' -R</rich_text>
+      <rich_text> inside binary
+      ⇒ create own date programm that starts bash to escalate to hatter user and make it executable
+         • found password.txt in hatter folder
+            ◇ WhyIsARavenLikeAWritingDesk?
+                
+   → linpeas.sh
+      ⇒ found file with setuid capabilites but can only be used by user hatter
+      ⇒ </rich_text>
+    </node>
+  </node>
+</cherrytree>

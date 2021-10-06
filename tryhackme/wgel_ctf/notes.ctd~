@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Wgel CTF" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632592330" ts_lastsave="1632597491">
+    <rich_text>Enumeration:
+
+IP:
+
+10.10.78.79
+
+Ports:
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Port 80:
+
+- dirsearcher
+[13:57:46] 200 -   11KB - /index.html                                                                      
+[13:58:02] 301 -  312B  - /sitemap  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.78.79/sitemap/">http://10.10.78.79/sitemap/</rich_text>
+    <rich_text>
+[13:59:34] 200 -   14KB - /sitemap/.DS_Store                    
+[13:59:37] 200 -  953B  - /sitemap/.ssh/                                    
+[13:59:37] 200 -    2KB - /sitemap/.ssh/id_rsa                              
+[13:59:43] 200 -   12KB - /sitemap/about.html                               
+[13:59:56] 200 -   10KB - /sitemap/contact.html                             
+[13:59:56] 301 -  316B  - /sitemap/css  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.78.79/sitemap/css/">http://10.10.78.79/sitemap/css/</rich_text>
+    <rich_text> 
+[14:00:01] 301 -  318B  - /sitemap/fonts  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.78.79/sitemap/fonts/">http://10.10.78.79/sitemap/fonts/</rich_text>
+    <rich_text>
+[14:00:03] 200 -    8KB - /sitemap/images/
+[14:00:03] 200 -   21KB - /sitemap/index.html                               
+[14:00:05] 200 -    4KB - /sitemap/js/     
+
+- /index.html
+   → apache2 Ubuntu Default Page
+   → found possible Username Jessie
+- /sitemap/
+   → Unapp free Business Template
+- /.ssh/
+   → id_rsa - private key without password
+- /about.html
+   → nothing interesting when skimming
+- /contact.html
+   → nothing interesting when skimming
+- /.DS_Store
+   → gets DS_Store file
+      ⇒ found some more files
+      ⇒ nothing interesting
+   
+Port 22:
+
+- trying jessie username with found private key
+   → worked
+- searches users home folders
+   → found user_flag.txt file in documents
+- sudo -l
+   → (ALL : ALL) ALL
+      ⇒ find user password and gain root privilege
+   → (root) NOPASSWD: /usr/bin/wget
+      ⇒ can be used to read local files with privileges
+      ⇒ try to read /etc/shadow to bruteforce jessicas password
+         • found hash $6$0wv9XLy.$HxqSdXgk7JJ6n9oZ9Z52qxuGCdFqp0qI/9X.a4VRJt860njSusSuQ663bXfIV7y.ywZxeOinj4Mckj8/uvA7U.
+      ⇒ with sudo wget is also possible to overwrite files
+      ⇒ overwrite /etc/shadow so that i know jessicas password
+- linpeas.sh
+   → in sudo group
+   → in adm group
+   → in PATH /home/jessie/bin
+      ⇒ write own wget programm which just spawns a shell as root
+      ⇒ doesnt work because sudo requires the /usr/bin/wget binary
+   → PKexec policiy - AdminIdentities=unix-group:sudo;unix-group:admin
+      ⇒ doesnt work because is need jessies password</rich_text>
+  </node>
+</cherrytree>

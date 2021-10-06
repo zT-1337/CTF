@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Looking Glass" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632238697" ts_lastsave="1632238718">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632238718" ts_lastsave="1632247930">
+      <rich_text>22/tcp    open  ssh        syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+9000/tcp  open  ssh        syn-ack ttl 63 Dropbear sshd (protocol 2.0)
+9100/tcp  open  jetdirect? syn-ack ttl 63
+
+and many more Dropbear sshd ports</rich_text>
+      <node name="9100 jetdirect?" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632239196" ts_lastsave="1632239197">
+        <rich_text>9100/tcp  open  jetdirect? syn-ack ttl 63
+
+•9100 TCP port is used for printing. Port numbers 9101 and 9102 are for parallel ports 2 and 3 on the three-port HP Jetdirect external print servers.</rich_text>
+      </node>
+      <node name="9000-13999 Dropbear" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632239217" ts_lastsave="1632247917">
+        <rich_text>9000/tcp  open  ssh        syn-ack ttl 63 Dropbear sshd (protocol 2.0)
+
+port 13440 is the correct port
+connecting to it shows text and asks for a secret
+
+text is encrypted with vigenere
+ - tried the jabberwocky as encryption key
+ - decrypted thealphabetcipher in repeat
+ - used this as decryption key instead
+ - found secret in last line 
+ - got jabberwock:IndignantlyButtersBooksExcitement as a result</rich_text>
+      </node>
+      <node name="22: OpenSSH" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632239311" ts_lastsave="1632252161">
+        <rich_text>22/tcp    open  ssh        syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+
+- privilege escalation
+   → @reboot tweedledum bash /home/jabberwock/twasBrillig.sh
+      ⇒ worked
+      ⇒ hexadecimal encoded humptydumpty.txt
+         • decoded and found password
+         • logged in as humptydumpty
+         • but found nothing
+         • alice home folder is executable
+            ◇ cd is possible
+            ◇ use cd to enumerate folders
+            ◇ try to find ssh credentials
+            ◇ id_rsa is readable
+            ◇ got key and logged in as alice
+            ◇ sudo -l didnt work, because i dont have alice password
+            ◇ /etc/sudoers.d shows the commands i can execute as alice anyway
+            ◇ can use /bin/bash as root with no passwd but need to change the host with -h flag</rich_text>
+      </node>
+      <node name="credentials" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632247930" ts_lastsave="1632248830">
+        <rich_text>ssh: jabberwock:RidingStrikePrivilegeSighed</rich_text>
+      </node>
+    </node>
+  </node>
+</cherrytree>

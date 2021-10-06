@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Kiba" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633527959" ts_lastsave="1633531821">
+    <rich_text scale="h1">IP Adress</rich_text>
+    <rich_text>
+
+10.10.91.51
+
+</rich_text>
+    <rich_text scale="h1">Ports</rich_text>
+    <rich_text>
+
+PORT     STATE SERVICE      REASON         VERSION
+22/tcp   open  ssh          syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http         syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+5044/tcp open  lxi-evntsvc? syn-ack ttl 63
+5601/tcp open  esmagent?    syn-ack ttl 63
+
+</rich_text>
+    <rich_text scale="h1">HTTP 80</rich_text>
+    <rich_text>
+
+- dirsearcher
+[09:50:29] 200 -    1KB - /index.html 
+
+- /index.html
+   → some ascii art (cicada)
+
+</rich_text>
+    <rich_text scale="h1">Kibana 5601</rich_text>
+    <rich_text>
+
+- hosts kibana app
+   → benutzeroberfläche zur visualisierung von elasticsearch-daten
+- found /api/status for version number (found with google)
+   → 6.5.4
+- found CVE-2019-7609 for this Kibana
+   → exploit payloads from here </rich_text>
+    <rich_text link="webs https://github.com/mpgn/CVE-2019-7609">https://github.com/mpgn/CVE-2019-7609</rich_text>
+    <rich_text>
+   → got reverse shell
+
+</rich_text>
+    <rich_text scale="h1">Reverse Shell</rich_text>
+  </node>
+</cherrytree>

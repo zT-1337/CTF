@@ -1,0 +1,14 @@
+# Nmap 7.91 scan initiated Tue Sep 28 09:40:25 2021 as: nmap -sS -sV -p- -oN scanResult.nmap -vv 10.10.56.76
+Nmap scan report for 10.10.56.76
+Host is up, received echo-reply ttl 63 (0.047s latency).
+Scanned at 2021-09-28 09:40:26 EDT for 62s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 62 Apache httpd 2.4.38 ((Debian))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 28 09:41:28 2021 -- 1 IP address (1 host up) scanned in 62.95 seconds

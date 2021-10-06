@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="The Marketplace" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633197006" ts_lastsave="1633364466">
+    <rich_text scale="h1">IP Address</rich_text>
+    <rich_text>
+
+10.10.219.157
+
+</rich_text>
+    <rich_text scale="h1">Ports</rich_text>
+    <rich_text>
+
+22/tcp    open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http    syn-ack ttl 62 nginx 1.19.2
+32768/tcp open  http    syn-ack ttl 62 Node.js (Express middleware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    <rich_text scale="h1">HTTP 80 nginx 1.19.2</rich_text>
+    <rich_text>
+
+- dirsearcher
+
+[13:59:31] 301 -  179B  - /images  -&gt;  /images/                             
+[13:59:34] 200 -  857B  - /login                                            
+[13:59:34] 200 -  857B  - /login/                                           
+[13:59:36] 302 -   28B  - /messages  -&gt;  /login                             
+[13:59:38] 302 -   28B  - /new  -&gt;  /login                                  
+[13:59:45] 200 -   31B  - /robots.txt                                       
+[13:59:47] 200 -  667B  - /signup  
+
+- /
+   → no comments
+   → no inputs
+   → links to
+      ⇒ /login
+      ⇒ /signup
+      ⇒ /item/1
+      ⇒ /item/2
+      ⇒ /stylesheets/style.css
+      ⇒ images/&lt;some-id&gt;.jpg
+   → no cookies
+
+- /robots.txt
+   → link to /admin
+
+- /images/
+   → not found page
+
+- /login
+   → no comments
+   → inputs for login (username and password)
+   → login with test:test
+      ⇒ sends me to page with the text ‘User not found’
+
+- /signup
+   → no comments
+   → same input data like /login
+   → after successful signup got redirected to login
+
+- /new
+   → accessible after login
+   → no comments
+   → inputs for creating an item
+      ⇒ text input: title
+      ⇒ textarea: description
+      ⇒ file: temporary disabled but with html code disabled
+
+- /messages
+   → h1 with “You have 0 new message(s)”
+   → even after sending michael a message still “You have 0 new message(s)”
+   → got another message from system, saying the listing didnt found anything that violates the rules
+      ⇒ probably an automatic system
+
+- /item/1
+   → no comments
+   → links to 
+      ⇒ /contact/michael
+      ⇒ /report/1
+   → showing user who created listing “michael”
+      ⇒ probably a username
+   → showing description of listing
+   → showing title of listing
+
+- /contact/michael
+   → no comments
+   → inputs
+      ⇒ textarea: message
+   → after sending message you get redirected to page with the text Message sent successfully
+
+- /report/1
+   → submit button to create report
+   → submitting report creates message from system and redirects me to /messages
+
+- cookies
+   → after successfull login as user test:test got the cookie 
+      ⇒ token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoidGVzdCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjMzMTk4MTYyfQ.lYHBIUlr2gAqGDRvHKjUpC6fEHDWW0bhIqiXpUzqbDU
+      ⇒ token is a JWT:
+         • "{\"alg\":\"HS256\",\"typ\":\"JWT\"}"
+         • "{\"userId\":4,\"username\":\"test\",\"admin\":false,\"iat\":1633198162}"
+         • "\u0095\u0081Á!IkÚ\u0000*\u00184o\u001c¨Ô¤.\u009f\u0010pÖ[Fá\"¨\u0097¥Lêl5"
+      ⇒ there are probably 3 other users
+
+</rich_text>
+    <rich_text scale="h1">HTTP Node.js (Express middleware) 32768</rich_text>
+    <rich_text>
+
+- same as port 80 but accessing the application directly instead of nginx
+
+</rich_text>
+    <rich_text scale="h1">Exploitation 80</rich_text>
+    <rich_text>
+
+- changing admin value to true in JWT, maybe signature is not checked
+   → not needed
+
+- bruteforcing key of JWT signature
+   → key is !SkicA!..*7¡Vamos!
+   → forging own jwt with admin = true
+      ⇒ not working
+      ⇒ key was probably a false positive
+
+- messaging yourself with /contact/test
+   → messaged yourself, but nothing happend
+
+- trying SQL injections in following inputs
+   → /login
+      ⇒ not working
+   → /signup
+      ⇒ not working
+   → /new + /item/&lt;id&gt;
+      ⇒ not working
+   → /contact/&lt;username&gt;
+      ⇒ not working
+   → /item/&lt;here&gt;
+      ⇒ not working
+   → /report/&lt;here&gt;
+      ⇒ not working
+   → /contact/&lt;here&gt;
+      ⇒ not working
+   → /admin?user=&lt;here&gt;
+      ⇒ working
+      ⇒ enumerate database
+         • found database ‘marketplace’
+            ◇ found tables items
+            ◇ found tables messages
+               ▪ found columns id,is_read,message_content,user_from,user_to 
+                  - found message with SSH password: @b_ENXkGYUCAv3zJ
+                  - could login as jake with this password
+            ◇ found users
+
+- trying XSS injections in following inputs
+   → /login -&gt; &lt;username&gt;
+   → /new
+      ⇒ works
+      ⇒ reporting is worked through by admin
+      ⇒ use XSS to hijack admins cookie and send it to own server
+      ⇒ got admin cookie
+      ⇒ found flag in admin panel
+
+- file inclusion via /new form
+   → file was not send
+
+- reporting own listing with curse words
+   → created listing with fuck
+   → didnt do anything
+
+</rich_text>
+    <rich_text scale="h1">SSH 22 </rich_text>
+    <rich_text>
+
+- logged in as jake:@b_ENXkGYUCAv3zJ
+- sudo -l
+   →     (michael) NOPASSWD: /opt/backups/backup.sh
+      ⇒ backup.sh allows for argument injection to spawn shell as michael
+- logged in as michael
+   → is in docker group</rich_text>
+  </node>
+</cherrytree>

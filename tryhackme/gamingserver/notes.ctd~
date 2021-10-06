@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Gamingserver" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632495956" ts_lastsave="1632497928">
+    <rich_text>Ports open:
+
+22 - ssh
+80 - http
+
+Enum on 80
+
+technologies:
+- apache 2.4.9
+- php
+
+directories:
+
+[11:13:34] 200 -    2KB - /about.php                                        
+[11:13:34] 200 -    1KB - /about.html                                       
+[11:13:55] 200 -    3KB - /index.html                                       
+[11:14:08] 200 -   33B  - /robots.txt                                       
+[11:14:09] 200 -  941B  - /secret/
+[11:14:16] 200 -    1KB - /uploads/ 
+
+possible username: john
+
+/secret
+
+- found ssh key at /secret/secretKey
+   → passphrase letmein
+   → trying to login as john with found secretKey
+   → worked
+
+Privilege Escalation
+
+- sudo -l
+   → cannot access missing password
+- linpeas.sh
+   → in group sudo
+      ⇒ missing password of john to abuse it
+   → in group lxd
+      ⇒ similiar to docker group
+      ⇒ create container let it escalte the privilege (</rich_text>
+    <rich_text link="webs https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation">https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation</rich_text>
+    <rich_text>)
+   → in group adm
+   → Pkexec policiy AdminIdentities=unix-group:sudo;unix-group:admin</rich_text>
+  </node>
+</cherrytree>

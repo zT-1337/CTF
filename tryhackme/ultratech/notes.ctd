@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="UltraTech" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631961232" ts_lastsave="1631964424">
+    <node name="nmap" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631961236" ts_lastsave="1631961757">
+      <rich_text>PORT      STATE SERVICE REASON         VERSION
+21/tcp    open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+22/tcp    open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+8081/tcp  open  http    syn-ack ttl 63 Node.js Express framework
+31331/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+</rich_text>
+    </node>
+    <node name="21:vftpd" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631961866" ts_lastsave="1631962012">
+      <rich_text>- anonymous login not possible
+- no vulnerabilities found for 3.0.3</rich_text>
+    </node>
+    <node name="31331:http:apache" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962065" ts_lastsave="1631963054">
+      <rich_text>- dirsearcher
+[06:49:14] 200 -   15KB - /favicon.ico                                      
+[06:49:16] 200 -    4KB - /images/                                          
+[06:49:16] 301 -  322B  - /images  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.226.54:31331/images/">http://10.10.226.54:31331/images/</rich_text>
+      <rich_text>    
+[06:49:17] 200 -    6KB - /index.html                                       
+[06:49:18] 301 -  326B  - /javascript  -&gt;  </rich_text>
+      <rich_text link="webs http://10.10.226.54:31331/javascript/">http://10.10.226.54:31331/javascript/</rich_text>
+      <rich_text>
+[06:49:18] 200 -    1KB - /js/                                              
+[06:49:29] 200 -   53B  - /robots.txt</rich_text>
+      <node name="/index.html" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962076" ts_lastsave="1631962662">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang='en'&gt;
+&lt;head&gt;
+	&lt;meta class="utf-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+	&lt;title&gt;UltraTech - The best of technology (AI, FinTech, Big Data)&lt;/title&gt;
+	&lt;link rel='stylesheet' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/css/style.min.css">css/style.min.css</rich_text>
+        <rich_text>' /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- Hero(extended) navbar --&gt;
+	&lt;div class="navbar navbar--extended"&gt;
+		&lt;nav class="nav__mobile"&gt;&lt;/nav&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="navbar__inner"&gt;
+				&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/index.html">index.html</rich_text>
+        <rich_text>" class="navbar__logo"&gt;UltraTech&lt;/a&gt;
+				&lt;nav class="navbar__menu"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/index.html#">#</rich_text>
+        <rich_text>"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/what.html">/what.html</rich_text>
+        <rich_text>"&gt;What we are doing&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/nav&gt;
+				&lt;div class="navbar__menu-mob"&gt;&lt;a href="" id='toggle'&gt;&lt;svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"&gt;&lt;path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Hero unit --&gt;
+	&lt;div class="hero"&gt;
+		&lt;div class="hero__overlay hero__overlay--gradient"&gt;&lt;/div&gt;
+		&lt;div class="hero__mask"&gt;&lt;/div&gt;
+		&lt;div class="hero__inner"&gt;
+			&lt;div class="container"&gt;
+				&lt;div class="hero__content"&gt;
+					&lt;div class="hero__content__inner" id='navConverter'&gt;
+						&lt;h1 class="hero__title"&gt;Simply the best team of&lt;br/&gt;BigData, AI and Blockchain experts&lt;/h1&gt;
+						&lt;p class="hero__text"&gt;Do you need a new Blockchain for your company?&lt;br/&gt;An AI to make coffee because interns cost too much?&lt;br/&gt;You have more than 1000 entries in your database and need real Big Data aventurers?&lt;/p&gt;
+						&lt;a href="</rich_text>
+        <rich_text link="webs http://mailto:ultratech@yopmail.com">mailto:ultratech@yopmail.com</rich_text>
+        <rich_text>" class="button button__accent"&gt;Contact Us NOW&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="hero__sub"&gt;
+		&lt;span id="scrollToNext" class="scroll"&gt;
+			&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"&gt;&lt;path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/&gt;&lt;/svg&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!-- Steps --&gt;
+	&lt;div class="steps landing__section"&gt;
+		&lt;div class="container"&gt;
+			&lt;h2&gt;Who are we?&lt;/h2&gt;
+			&lt;p&gt;You might wonder: "hey, who are these hardcore code ninjas I've never heard of?".&lt;br/&gt;Here's our team :&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="steps__inner"&gt;
+				&lt;div class="step"&gt;
+					&lt;div class="step__media"&gt;
+						&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_designer.svg">./images/undraw_designer.svg</rich_text>
+        <rich_text>" class="step__image"&gt;
+					&lt;/div&gt;
+					&lt;h4&gt;John McFamicom | &lt;i&gt;r00t&lt;/i&gt;&lt;/h4&gt;
+					&lt;p class="step__text"&gt;A web 3.0 full stack rockstar coder.&lt;br/&gt;CSS and HTML expert.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="step"&gt;
+					&lt;div class="step__media"&gt;
+						&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_responsive.svg">./images/undraw_responsive.svg</rich_text>
+        <rich_text>" class="step__image"&gt;
+					&lt;/div&gt;
+					&lt;h4&gt;Francois LeMytho | &lt;i&gt;P4c0&lt;/i&gt;&lt;/h4&gt;
+					&lt;p class="step__text"&gt;One of the best designer in the whole world.&lt;br/&gt; Expert in Photoshop CS2 and Paint.NET.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="step"&gt;
+					&lt;div class="step__media"&gt;
+						&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_creation.svg">./images/undraw_creation.svg</rich_text>
+        <rich_text>" class="step__image"&gt;
+					&lt;/div&gt;
+					&lt;h4&gt;Alvaro Squalo | &lt;i&gt;Sq4l&lt;/i&gt;&lt;/h4&gt;
+					&lt;p class="step__text"&gt;Young, rich and successful entrepreneur.&lt;br/&gt;Forbes top 8B.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Expanded sections --&gt;
+	&lt;div class="expanded landing__section"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="expanded__inner"&gt;
+				&lt;div class="expanded__media"&gt;
+					&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_browser.svg">./images/undraw_browser.svg</rich_text>
+        <rich_text>" class="expanded__image"&gt;
+				&lt;/div&gt;
+				&lt;div class="expanded__content"&gt;
+					&lt;h2 class="expanded__title"&gt;All of the fortune 500 companies work with us&lt;/h2&gt;
+					&lt;p class="expanded__text"&gt;We can't tell you exactly which companies. It's confidential. But think about your favorite company. Done? Well, we're working with them right now.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="expanded landing__section"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="expanded__inner"&gt;
+				&lt;div class="expanded__media"&gt;
+					&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_frameworks.svg">./images/undraw_frameworks.svg</rich_text>
+        <rich_text>" class="expanded__image"&gt;
+				&lt;/div&gt;
+				&lt;div class="expanded__content"&gt;
+					&lt;h2 class="expanded__title"&gt;All of the lastest fancy techs&lt;/h2&gt;
+					&lt;p class="expanded__text"&gt;From BlockChains to DarkInterwebs, Johnny Depp Packet Inspection, NodeJava, Continuous Desintegration to User Experiments design, we're doing it all. For an undisclosed but impressive amount of money.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Call To Action --&gt;
+	&lt;div class="cta cta--reverse"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="cta__inner"&gt;
+				&lt;h2 class="cta__title"&gt;Did you contact us yet?!&lt;/h2&gt;
+				&lt;p class="cta__sub cta__sub--center"&gt;What are you waiting for?! DO IT RIGHT NOW!!!.&lt;/p&gt;
+				&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/ultratech@yopmail.com">ultratech@yopmail.com</rich_text>
+        <rich_text>" class="button button__accent"&gt;Contact Us&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Footer --&gt;
+	&lt;div class="footer footer--dark"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="footer__inner"&gt;
+				&lt;div class="footer__data"&gt;
+					&lt;div class="footer__data__item"&gt;
+						&lt;div class="footer__row"&gt;(Real-life) meta information :&lt;br/&gt;&lt;br/&gt;
+							Theme created by &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:https://twitter.com/ninalimpi">https://twitter.com/ninalimpi</rich_text>
+        <rich_text>" target="_blank" class="footer__link"&gt;Katerina Limpitsouni&lt;/a&gt;
+						&lt;/div&gt;
+						&lt;div class="footer__row"&gt;
+						Theme code/design by &lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:https://twitter.com/anges244">https://twitter.com/anges244</rich_text>
+        <rich_text>" target="_blank" class="footer__link"&gt;Aggelos Gesoulis&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="footer__data__item"&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;script src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/js/app.min.js">js/app.min.js</rich_text>
+        <rich_text>'&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;!-- Hey, what are you looking at?! --&gt;
+
+JavaScript 
+
+document.addEventListener("DOMContentLoaded",function(){window.pageYOffset||document.documentElement.scrollTop;function e(e,t){if(e){"string"==typeof e?e=document.querySelectorAll(e):e.tagName&amp;&amp;(e=[e]);for(var n=0;n&lt;e.length;n++)(" "+e[n].className+" ").indexOf(" "+t+" ")&lt;0&amp;&amp;(e[n].className+=" "+t)}}function t(e,t){if(e){"string"==typeof e?e=document.querySelectorAll(e):e.tagName&amp;&amp;(e=[e]);for(var n=new RegExp("(^| )"+t+"($| )","g"),o=0;o&lt;e.length;o++)e[o].className=e[o].className.replace(n," ")}}if(window.onresize=function(e){window.pageYOffset||document.documentElement.scrollTop},"querySelector"in document&amp;&amp;"addEventListener"in window&amp;&amp;Array.prototype.forEach){var n=document.querySelectorAll(".scroll");[].forEach.call(n,function(o){o.addEventListener("click",function(e){e.preventDefault();var t=document.querySelector(".landing__section"),n=o.getAttribute("data-speed");t&amp;&amp;function(e,t){var n,o=window.pageYOffset,r=e.offsetTop-40,i=(r-o)/(t/16);0&lt;=i&amp;&amp;(n=function(){var e=window.pageYOffset;(r-i&lt;=e||window.innerHeight+e&gt;=document.body.offsetHeight)&amp;&amp;clearInterval(s)});var s=setInterval(function(){window.scrollBy(0,i),n()},16)}(t,n||700)},!1)})}if(window.addEventListener("scroll",function(){document.body.contains(document.getElementById("navConverter"))&amp;&amp;((window.pageYOffset||document.documentElement.scrollTop)&gt;function(e){for(var t=0,n=0;e&amp;&amp;!isNaN(e.offsetLeft)&amp;&amp;!isNaN(e.offsetTop);)t+=e.offsetLeft-e.scrollLeft,n+=e.offsetTop-e.scrollTop,e=e.offsetParent;return{top:n,left:t}}(document.getElementById("navConverter")).top-60?t(document.querySelector(".navbar"),"navbar--extended"):e(document.querySelector(".navbar"),"navbar--extended"));document.body.contains(document.getElementById("scrollToNext"))&amp;&amp;(20&lt;(window.pageYOffset||document.documentElement.scrollTop)?e(document.getElementById("scrollToNext"),"invisible"):t(document.getElementById("scrollToNext"),"invisible"))}),document.getElementsByClassName("nav__mobile")&amp;&amp;0&lt;document.getElementsByClassName("nav__mobile").length){var o=document.getElementsByClassName("navbar__menu")[0].innerHTML;document.getElementsByClassName("nav__mobile")[0].innerHTML=o;responsiveNav(".nav__mobile",{animate:!0,transition:284,label:"Menu",insert:"before",customToggle:"toggle",openPos:"relative",navClass:"nav__mobile"})}else e(document.querySelector(".navbar__menu"),"navbar__menu--noMob"),e(document.querySelector(".navbar__menu-mob"),"navbar__menu-mob--noMob")}),function(e){if("object"==typeof exports&amp;&amp;"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&amp;&amp;define.amd)define([],e);else{("undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this).flexibility=e()}}(function(){return function i(s,a,c){function l(n,e){if(!a[n]){if(!s[n]){var t="function"==typeof require&amp;&amp;require;if(!e&amp;&amp;t)return t(n,!0);if(f)return f(n,!0);var o=new Error("Cannot find module '"+n+"'");throw o.code="MODULE_NOT_FOUND",o}var r=a[n]={exports:{}};s[n][0].call(r.exports,function(e){var t=s[n][1][e];return l(t||e)},r,r.exports,i,s,a,c)}return a[n].exports}for(var f="function"==typeof require&amp;&amp;require,e=0;e&lt;c.length;e++)l(c[e]);return l}({1:[function(e,t,n){t.exports=function(e){var t,n;e.lines.length&lt;2||"stretch"===e.alignContent?(n=e.crossSpace/e.lines.length,t=0,e.lines.forEach(function(e){e.crossStart=t,e.cross+=n,t+=e.cross})):"flex-start"===e.alignContent?(t=0,e.lines.forEach(function(e){e.crossStart=t,t+=e.cross})):"flex-end"===e.alignContent?(t=e.crossSpace,e.lines.forEach(function(e){e.crossStart=t,t+=e.cross})):"center"===e.alignContent?(t=e.crossSpace/2,e.lines.forEach(function(e){e.crossStart=t,t+=e.cross})):"space-between"===e.alignContent?(n=e.crossSpace/(e.lines.length-1),t=0,e.lines.forEach(function(e){e.crossStart=t,t+=e.cross+n})):"space-around"===e.alignContent?(n=2*e.crossSpace/(2*e.lines.length),t=n/2,e.lines.forEach(function(e){e.crossStart=t,t+=e.cross+n})):"stretch"===e.alignContent&amp;&amp;(n=e.crossSpace/e.lines.length,t=0,e.lines.forEach(function(e){e.crossStart=t,e.cross+=n,t+=e.cross}))}},{}],2:[function(e,t,n){t.exports=function(e){e.lines.forEach(function(t){t.children.forEach(function(e){"flex-start"===e.alignSelf?e.crossStart=t.crossStart:"flex-end"===e.alignSelf?e.crossStart=t.crossStart+t.cross-e.crossAround:"center"===e.alignSelf?e.crossStart=t.crossStart+(t.cross-e.crossAround)/2:"stretch"===e.alignSelf&amp;&amp;(e.crossStart=t.crossStart,e.crossAround=t.cross)})})}},{}],3:[function(e,t,n){t.exports=function(e,t,n){var o=e.node.getBoundingClientRect();e.crossAfter="row"===t||"row-reverse"===t?(e.mainAxis="inline",e.crossAxis="block","number"!=typeof e.main&amp;&amp;"number"!=typeof e.cross||("row"===e.flexDirection||"row-reverse"===t?(e.width=e.main,e.height=e.cross):(e.width=e.cross,e.height=e.main)),e.main=e.width,e.cross=e.height,e.mainClient=o.width||e.node.offsetWidth,e.crossClient=o.height||e.node.offsetHeight,e.mainBefore=e.marginLeft,e.mainAfter=e.marginRight,e.crossBefore=e.marginTop,e.marginBottom):(e.mainAxis="block",e.crossAxis="inline",e.main=e.height,e.cross=e.width,"number"!=typeof e.main&amp;&amp;"number"!=typeof e.cross||("column"===e.flexDirection||"column-reverse"===t?(e.width=e.cross,e.height=e.main):(e.width=e.main,e.height=e.cross)),e.mainClient=o.height||e.node.offsetHeight,e.crossClient=o.width||e.node.offsetWidth,e.mainBefore=e.marginTop,e.mainAfter=e.marginBottom,e.crossBefore=e.marginLeft,e.marginRight),"number"==typeof e.flexBasis&amp;&amp;(e.main=e.flexBasis),"auto"===e.main?e.mainAround=e.mainClient:e.mainAround=e.main,"auto"===e.cross?e.crossAround=e.crossClient:e.crossAround=e.cross,"number"==typeof e.mainBefore&amp;&amp;(e.mainAround+=e.mainBefore),"number"==typeof e.mainAfter&amp;&amp;(e.mainAround+=e.mainAfter),"number"==typeof e.crossBefore&amp;&amp;(e.crossAround+=e.crossBefore),"number"==typeof e.crossBefore&amp;&amp;(e.crossAround+=e.crossBefore),"auto"===e.alignSelf&amp;&amp;(e.alignSelf=n)}},{}],4:[function(e,t,n){t.exports=function(t){if(0&lt;t.mainSpace){var n=t.children.reduce(function(e,t){return e+t.flexGrow},0);0&lt;n&amp;&amp;(t.children.forEach(function(e){e.mainAround+=e.flexGrow/n*t.mainSpace}),t.main=t.children.reduce(function(e,t){return e+t.mainAround},0),t.mainSpace=0)}}},{}],5:[function(e,t,n){t.exports=function(t){if(t.mainSpace&lt;0){var n=t.children.reduce(function(e,t){return e+t.flexShrink},0);0&lt;n&amp;&amp;(t.children.forEach(function(e){e.mainAround+=e.flexShrink/n*t.mainSpace}),t.main=t.children.reduce(function(e,t){return e+t.mainAround},0),t.mainSpace=0)}}},{}],6:[function(e,t,n){t.exports=function(t){var n;t.lines=[n={main:0,cross:0,children:[]}],t.children.forEach(function(e){"nowrap"===t.flexWrap||0===n.children.length||t.mainAround&gt;=n.main+e.mainAround?(n.main+=e.mainAround,n.cross=Math.max(n.cross,e.crossAround)):t.lines.push(n={main:e.mainAround,cross:e.crossAround,children:[]}),n.children.push(e)})}},{}],7:[function(n,o,e){o.exports=function(t){return t.descendants.forEach(function(e){o.exports(e)}),"flex"!==t.display||(t.children.forEach(function(e){n("./flex-direction")(e,t.flexDirection,t.alignItems)}),n("./order")(t),n("./flex-direction")(t,t.flexDirection,t.alignItems),n("./flexbox-lines")(t),"auto"===t.main&amp;&amp;(t.main=Math.max(t.mainAround,t.lines.reduce(function(e,t){return Math.max(e,t.main)},0)),"row"===t.flexDirection?t.mainAround=t.mainClient+t.mainBefore+t.mainAfter:t.mainAround=t.main+t.mainBefore+t.mainAfter),"auto"===t.cross?(t.cross=t.lines.reduce(function(e,t){return e+t.cross},0),"column"===t.flexDirection?t.crossAround=t.crossClient+t.crossBefore+t.crossAfter:t.crossAround=t.cross+t.crossBefore+t.crossAfter,t.crossSpace=t.crossAround-t.cross):t.crossSpace=t.cross-t.lines.reduce(function(e,t){return e+t.cross},0),n("./align-content")(t),t.lines.forEach(function(e){e.mainSpace=t.main-e.main,n("./flex-grow")(e),n("./flex-shrink")(e),n("./margin-main")(e),n("./margin-cross")(e),n("./justify-content")(e,t.justifyContent)}),n("./align-items")(t)),t}},{"./align-content":1,"./align-items":2,"./flex-direction":3,"./flex-grow":4,"./flex-shrink":5,"./flexbox-lines":6,"./justify-content":8,"./margin-cross":9,"./margin-main":10,"./order":11}],8:[function(e,t,n){t.exports=function(e,t){var n,o;"flex-start"===t?(n=0,e.children.forEach(function(e){e.mainStart=n,n+=e.mainAround})):"flex-end"===t?(n=e.mainSpace,e.children.forEach(function(e){e.mainStart=n,n+=e.mainAround})):"center"===t?(n=e.mainSpace/2,e.children.forEach(function(e){e.mainStart=n,n+=e.mainAround})):"space-between"===t?(o=e.mainSpace/(e.children.length-1),n=0,e.children.forEach(function(e){e.mainStart=n,n+=e.mainAround+o})):"space-around"===t&amp;&amp;(o=2*e.mainSpace/(2*e.children.length),n=o/2,e.children.forEach(function(e){e.mainStart=n,n+=e.mainAround+o}))}},{}],9:[function(e,t,n){t.exports=function(o){o.children.forEach(function(e){var t=0;"auto"===e.crossBefore&amp;&amp;++t,"auto"===e.crossAfter&amp;&amp;++t;var n=o.cross-e.crossAround;"auto"===e.crossBefore&amp;&amp;(e.crossBefore=n/t,e.crossAround+=e.crossBefore),"auto"===e.crossAfter&amp;&amp;(e.crossAfter=n/t,e.crossAround+=e.crossAfter)})}},{}],10:[function(e,t,n){t.exports=function(t){var n=0;t.children.forEach(function(e){"auto"===e.mainBefore&amp;&amp;++n,"auto"===e.mainAfter&amp;&amp;++n}),0&lt;n&amp;&amp;(t.children.forEach(function(e){"auto"===e.mainBefore&amp;&amp;(e.mainBefore=t.mainSpace/n,e.mainAround+=e.mainBefore),"auto"===e.mainAfter&amp;&amp;(e.mainAfter=t.mainSpace/n,e.mainAround+=e.mainAfter)}),t.mainSpace=0)}},{}],11:[function(e,t,n){t.exports=function(e){e.children.sort(function(e,t){return e.order-t.order||e.index-t.index})}},{}],12:[function(e,t,n){t.exports=function(e,t,n){var o=Object.assign(t,{alignContent:"stretch",alignItems:"stretch",alignSelf:"auto",display:"inline",flexBasis:"auto",flexDirection:"row",flexGrow:0,flexShrink:1,flexWrap:"nowrap",justifyContent:"flex-start",height:"auto",marginTop:0,marginRight:0,marginLeft:0,marginBottom:0,maxHeight:"none",maxWidth:"none",minHeight:0,minWidth:0,order:0,position:"static",width:"auto"});e.hasAttribute("data-style")?e.setAttribute("style",e.getAttribute("data-style")):e.setAttribute("data-style",e.getAttribute("style")||"");for(var r,i=(e.getAttribute("data-style")||"")+";"+(e.getAttribute("data-flex")||""),s=/([^\s:;]+)\s*:\s*([^;]+?)\s*(;|$)/g;r=s.exec(i);){var a=r[1].toLowerCase().replace(/-[a-z]/g,function(e){return e.slice(1).toUpperCase()});o[a]=parseFloat(r[2]),isNaN(o[a])&amp;&amp;(o[a]=r[2])}n&amp;&amp;(e.style.display="inline-block",e.style.position="absolute");var c=e.getBoundingClientRect();return o.clientWidth=c.width||e.offsetWidth,o.clientHeight=c.height||e.offsetHeight,o}},{}],13:[function(e,o,t){o.exports=function(e){var t=o.exports.walk(e),n=o.exports.flexbox(t);return o.exports.write(n)},o.exports.flexbox=e("./flexbox"),o.exports.getFlexStyles=e("./getFlexStyles"),o.exports.walk=e("./walk"),o.exports.write=e("./write")},{"./flexbox":7,"./getFlexStyles":12,"./walk":14,"./write":15}],14:[function(e,a,t){var n=e("../getFlexStyles");a.exports=function(o,r,e){var i=/(^|;)\s*display\s*:\s*(inline-)?flex\s*(;|$)/i.test(o.getAttribute("data-flex")),s={node:o,children:[],descendants:[]};return i&amp;&amp;void 0!==r&amp;&amp;r.descendants.push(s),!i&amp;&amp;r||(r=s),Array.prototype.forEach.call(o.childNodes,function(e){if(i&amp;&amp;3===e.nodeType&amp;&amp;e.nodeValue.trim()){var t=e;(e=o.insertBefore(document.createElement("flex-item"),t)).appendChild(t)}if(1===e.nodeType){var n=a.exports(e,r,i);i&amp;&amp;s.children.push(n)}}),(i||e)&amp;&amp;n(o,s,e),s}},{"../getFlexStyles":12}],15:[function(e,n,t){n.exports=function(t){if(t.descendants.filter(function(e){return-1===t.children.indexOf(e)}).forEach(function(e){n.exports(e)}),t.display){var e=t.node.style;"mainStart"in t?(e.position="absolute","inline"===t.mainAxis?(e.left=t.mainStart+"px",e.top=t.crossStart+"px",e.marginTop=t.crossBefore+"px",e.marginRight=t.mainAfter+"px",e.marginBottom=t.crossAfter+"px",e.marginLeft=t.mainBefore+"px"):(e.left=t.crossStart+"px",e.top=t.mainStart+"px",e.marginTop=t.mainBefore+"px",e.marginRight=t.crossAfter+"px",e.marginBottom=t.mainAfter+"px",e.marginLeft=t.crossBefore+"px"),"inline"===t.mainAxis?(e.width=t.mainAround-t.mainBefore-t.mainAfter+"px",e.height=t.crossAround-t.crossBefore-t.crossAfter+"px"):("auto"===t.cross?e.width=t.crossClient-t.crossBefore-t.crossAfter+"px":e.width=t.crossAround-t.crossBefore-t.crossAfter+"px","auto"===t.main?e.height=t.mainClient-t.mainBefore-t.mainAfter+"px":e.height=t.mainAround-t.mainBefore-t.mainAfter+"px")):(e.position||(e.position="relative"),"inline"===t.mainAxis?(e.width=t.mainAround-t.mainBefore-t.mainAfter+"px",e.height=t.crossAround-t.crossBefore-t.crossAfter+"px"):(e.width=t.crossAround-t.crossBefore-t.crossAfter+"px",e.height=t.mainAround-t.mainBefore-t.mainAfter+"px")),t.children&amp;&amp;t.children.forEach(function(e){n.exports(e)})}}},{}]},{},[13])(13)}),function(g,v,x){"use strict";var e=function(e,t){!!v.getComputedStyle||(v.getComputedStyle=function(n){return this.el=n,this.getPropertyValue=function(e){var t=/(\-([a-z]){1})/g;return"float"===e&amp;&amp;(e="styleFloat"),t.test(e)&amp;&amp;(e=e.replace(t,function(){return arguments[2].toUpperCase()})),n.currentStyle[e]?n.currentStyle[e]:null},this});var r,i,n,o,s,a,c=function(t,n,o,r){if("addEventListener"in t)try{t.addEventListener(n,o,r)}catch(e){if("object"!=typeof o||!o.handleEvent)throw e;t.addEventListener(n,function(e){o.handleEvent.call(o,e)},r)}else"attachEvent"in t&amp;&amp;("object"==typeof o&amp;&amp;o.handleEvent?t.attachEvent("on"+n,function(){o.handleEvent.call(o)}):t.attachEvent("on"+n,o))},l=function(t,n,o,r){if("removeEventListener"in t)try{t.removeEventListener(n,o,r)}catch(e){if("object"!=typeof o||!o.handleEvent)throw e;t.removeEventListener(n,function(e){o.handleEvent.call(o,e)},r)}else"detachEvent"in t&amp;&amp;("object"==typeof o&amp;&amp;o.handleEvent?t.detachEvent("on"+n,function(){o.handleEvent.call(o)}):t.detachEvent("on"+n,o))},f=function(e,t){for(var n in t)e.setAttribute(n,t[n])},u=function(e,t){0!==e.className.indexOf(t)&amp;&amp;(e.className+=" "+t,e.className=e.className.replace(/(^\s*)|(\s*$)/g,""))},d=function(e,t){var n=new RegExp("(\\s|^)"+t+"(\\s|$)");e.className=e.className.replace(n," ").replace(/(^\s*)|(\s*$)/g,"")},m=g.createElement("style"),h=g.documentElement,p=function(e,t){var n;for(n in this.options={animate:!0,transition:284,label:"Menu",insert:"before",customToggle:"",closeOnNavClick:!1,openPos:"relative",navClass:"nav-collapse",navActiveClass:"js-nav-active",jsClass:"js",init:function(){},open:function(){},close:function(){}},t)this.options[n]=t[n];if(u(h,this.options.jsClass),this.wrapperEl=e.replace("#",""),g.getElementById(this.wrapperEl))this.wrapper=g.getElementById(this.wrapperEl);else{if(!g.querySelector(this.wrapperEl))throw new Error("The nav element you are trying to select doesn't exist");this.wrapper=g.querySelector(this.wrapperEl)}this.wrapper.inner=function(e){if(e.children.length&lt;1)throw new Error("The Nav container has no containing elements");for(var t=[],n=0;n&lt;e.children.length;n++)1===e.children[n].nodeType&amp;&amp;t.push(e.children[n]);return t}(this.wrapper),i=this.options,r=this.wrapper,this._init(this)};return p.prototype={destroy:function(){this._removeStyles(),d(r,"closed"),d(r,"opened"),d(r,i.navClass),d(r,i.navClass+"-"+this.index),d(h,i.navActiveClass),r.removeAttribute("style"),r.removeAttribute("aria-hidden"),l(v,"resize",this,!1),l(v,"focus",this,!1),l(g.body,"touchmove",this,!1),l(n,"touchstart",this,!1),l(n,"touchend",this,!1),l(n,"mouseup",this,!1),l(n,"keyup",this,!1),l(n,"click",this,!1),i.customToggle?n.removeAttribute("aria-hidden"):n.parentNode.removeChild(n)},toggle:function(){!0===o&amp;&amp;(a?this.close():this.open())},open:function(){a||(d(r,"closed"),u(r,"opened"),u(h,i.navActiveClass),u(n,"active"),r.style.position=i.openPos,f(r,{"aria-hidden":"false"}),a=!0,i.open())},close:function(){a&amp;&amp;(u(r,"closed"),d(r,"opened"),d(h,i.navActiveClass),d(n,"active"),f(r,{"aria-hidden":"true"}),i.animate?(o=!1,setTimeout(function(){r.style.position="absolute",o=!0},i.transition+10)):r.style.position="absolute",a=!1,i.close())},resize:function(){"none"!==v.getComputedStyle(n,null).getPropertyValue("display")?(s=!0,f(n,{"aria-hidden":"false"}),r.className.match(/(^|\s)closed(\s|$)/)&amp;&amp;(f(r,{"aria-hidden":"true"}),r.style.position="absolute"),this._createStyles(),this._calcHeight()):(s=!1,f(n,{"aria-hidden":"true"}),f(r,{"aria-hidden":"false"}),r.style.position=i.openPos,this._removeStyles())},handleEvent:function(e){var t=e||v.event;switch(t.type){case"touchstart":this._onTouchStart(t);break;case"touchmove":this._onTouchMove(t);break;case"touchend":case"mouseup":this._onTouchEnd(t);break;case"click":this._preventDefault(t);break;case"keyup":this._onKeyUp(t);break;case"focus":case"resize":this.resize(t)}},_init:function(){this.index=x++,u(r,i.navClass),u(r,i.navClass+"-"+this.index),u(r,"closed"),a=!(o=!0),this._closeOnNavClick(),this._createToggle(),this._transitions(),this.resize();var e=this;setTimeout(function(){e.resize()},20),c(v,"resize",this,!1),c(v,"focus",this,!1),c(g.body,"touchmove",this,!1),c(n,"touchstart",this,!1),c(n,"touchend",this,!1),c(n,"mouseup",this,!1),c(n,"keyup",this,!1),c(n,"click",this,!1),i.init()},_createStyles:function(){m.parentNode||(m.type="text/css",g.getElementsByTagName("head")[0].appendChild(m))},_removeStyles:function(){m.parentNode&amp;&amp;m.parentNode.removeChild(m)},_createToggle:function(){if(i.customToggle){var e=i.customToggle.replace("#","");if(g.getElementById(e))n=g.getElementById(e);else{if(!g.querySelector(e))throw new Error("The custom nav toggle you are trying to select doesn't exist");n=g.querySelector(e)}}else{var t=g.createElement("a");t.innerHTML=i.label,f(t,{href:"#",class:"nav-toggle"}),"after"===i.insert?r.parentNode.insertBefore(t,r.nextSibling):r.parentNode.insertBefore(t,r),n=t}},_closeOnNavClick:function(){if(i.closeOnNavClick){var n=r.getElementsByTagName("a"),o=this;!function(e,t,n){for(var o=0;o&lt;e.length;o++)t.call(n,o,e[o])}(n,function(e,t){c(n[e],"click",function(){s&amp;&amp;o.toggle()},!1)})}},_preventDefault:function(e){if(e.preventDefault)return e.stopImmediatePropagation&amp;&amp;e.stopImmediatePropagation(),e.preventDefault(),e.stopPropagation(),!1;e.returnValue=!1},_onTouchStart:function(e){Event.prototype.stopImmediatePropagation||this._preventDefault(e),this.startX=e.touches[0].clientX,this.startY=e.touches[0].clientY,this.touchHasMoved=!1,l(n,"mouseup",this,!1)},_onTouchMove:function(e){(10&lt;Math.abs(e.touches[0].clientX-this.startX)||10&lt;Math.abs(e.touches[0].clientY-this.startY))&amp;&amp;(this.touchHasMoved=!0)},_onTouchEnd:function(e){if(this._preventDefault(e),s&amp;&amp;!this.touchHasMoved){if("touchend"===e.type)return void this.toggle();var t=e||v.event;3!==t.which&amp;&amp;2!==t.button&amp;&amp;this.toggle()}},_onKeyUp:function(e){13===(e||v.event).keyCode&amp;&amp;this.toggle()},_transitions:function(){if(i.animate){var e=r.style,t="max-height "+i.transition+"ms";e.WebkitTransition=e.MozTransition=e.OTransition=e.transition=t}},_calcHeight:function(){for(var e=0,t=0;t&lt;r.inner.length;t++)e+=r.inner[t].offsetHeight;var n="."+i.jsClass+" ."+i.navClass+"-"+this.index+".opened{max-height:"+e+"px !important} ."+i.jsClass+" ."+i.navClass+"-"+this.index+".opened.dropdown-active {max-height:9999px !important}";m.styleSheet?m.styleSheet.cssText=n:m.innerHTML=n,n=""}},new p(e,t)};"undefined"!=typeof module&amp;&amp;module.exports?module.exports=e:v.responsiveNav=e}(document,window,0);
+
+- looks like it only handles ui logic</rich_text>
+      </node>
+      <node name="/what.html" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962384" ts_lastsave="1631962389">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang='en'&gt;
+&lt;head&gt;
+	&lt;meta class="utf-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+	&lt;title&gt;UltraTech | What do we do?&lt;/title&gt;
+	&lt;link rel='stylesheet' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/css/style.min.css">css/style.min.css</rich_text>
+        <rich_text>' /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- navbar --&gt;
+	&lt;div class="navbar navbar--extended"&gt;
+		&lt;nav class="nav__mobile"&gt;&lt;/nav&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="navbar__inner"&gt;
+				&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/what.html#">#</rich_text>
+        <rich_text>" class="navbar__logo"&gt;UltraTech&lt;/a&gt;
+				&lt;nav class="navbar__menu"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/">/</rich_text>
+        <rich_text>"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/what.html">/what.html</rich_text>
+        <rich_text>"&gt;What we are doing&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/nav&gt;
+				&lt;div class="navbar__menu-mob"&gt;&lt;a href="" id='toggle'&gt;&lt;svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"&gt;&lt;path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Hero unit --&gt;
+	&lt;div class="page__header"&gt;
+		&lt;div class="hero__overlay hero__overlay--gradient"&gt;&lt;/div&gt;
+		&lt;div class="hero__mask"&gt;&lt;/div&gt;
+		&lt;div class="page__header__inner"&gt;
+			&lt;div class="container"&gt;
+				&lt;div class="page__header__content"&gt;
+					&lt;div class="page__header__content__inner" id='navConverter'&gt;
+						&lt;h1 class="page__header__title"&gt;What are we doing?&lt;/h1&gt;
+						&lt;p class="page__header__text"&gt;Didn't you read the About page? We're doing FinTech, Big Data, AI and leet stuff. Maybe you're not leet enough if you didn't precisely understand what our company is about...&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Page content --&gt;
+	&lt;div class="page"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="page__inner"&gt;
+				&lt;div class="page__menu"&gt;
+				  &lt;ul class="vMenu"&gt;
+				    &lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/">/</rich_text>
+        <rich_text>"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+										
+				    &lt;li&gt;&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/what.html">/what.html</rich_text>
+        <rich_text>" class="vMenu--active"&gt;What are we doing&lt;/a&gt;&lt;/li&gt;
+				    &lt;!--&lt;li&gt;Partners&lt;/li&gt;--&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class="page__main"&gt;
+					&lt;div class="text-container"&gt;
+						&lt;h3 style="color:#e2e2e2" class="page__main__title"&gt;//TODO : Fill this part&lt;/h3&gt;
+						&lt;p&gt;&lt;i style="color:#e2e2e2"&gt;//TODO: Tell the unpaid intern to fill this part, we don't have time for this&lt;/i&gt;&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;script src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/js/app.min.js">js/app.min.js</rich_text>
+        <rich_text>'&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</rich_text>
+      </node>
+      <node name="/images" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962748" ts_lastsave="1631962748">
+        <rich_text>- list of images</rich_text>
+      </node>
+      <node name="/js/" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962767" ts_lastsave="1631963200">
+        <rich_text>- api.js
+
+(function() {
+    console.warn('Debugging ::');
+
+    function getAPIURL() {
+	return `${window.location.hostname}:8081`
+    }
+    
+    function checkAPIStatus() {
+	const req = new XMLHttpRequest();
+	try {
+	    const url = `http://${getAPIURL()}/ping?ip=${window.location.hostname}`
+	    req.open('GET', url, true);
+	    req.onload = function (e) {
+		if (req.readyState === 4) {
+		    if (req.status === 200) {
+			console.log('The api seems to be running')
+		    } else {
+			console.error(req.statusText);
+		    }
+		}
+	    };
+	    req.onerror = function (e) {
+		console.error(xhr.statusText);
+	    };
+	    req.send(null);
+	}
+	catch (e) {
+	    console.error(e)
+	    console.log('API Error');
+	}
+    }
+    checkAPIStatus()
+    const interval = setInterval(checkAPIStatus, 10000);
+    const form = document.querySelector('form')
+    form.action = `http://${getAPIURL()}/auth`;
+    
+})();
+
+   → two api paths
+      ⇒ /ping
+         • GET
+         • query param ip
+      ⇒ /auth
+         • GET
+         • login api
+         • query param login //username
+         • query param password //test
+         • should be post
+
+
+- app.js
+- app.min.js </rich_text>
+      </node>
+      <node name="/robots.txt" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963010" ts_lastsave="1631963022">
+        <rich_text>Allow: *
+User-Agent: *
+Sitemap: /utech_sitemap.txt
+</rich_text>
+      </node>
+      <node name="/utech_sitemap.txt" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963034" ts_lastsave="1631963042">
+        <rich_text>/
+/index.html
+/what.html
+/partners.html</rich_text>
+      </node>
+      <node name="/partners.html" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963054" ts_lastsave="1631963080">
+        <rich_text scale="h1">Source Code</rich_text>
+        <rich_text>
+
+</rich_text>
+        <rich_text scale="h2">HTML</rich_text>
+        <rich_text>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang='en'&gt;
+&lt;head&gt;
+	&lt;meta class="utf-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+	&lt;title&gt;UltraTech | Authentication&lt;/title&gt;
+	&lt;link rel='stylesheet' href='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/css/style.min.css">css/style.min.css</rich_text>
+        <rich_text>' /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- navbar --&gt;
+	&lt;div class="navbar"&gt;
+		&lt;nav class="nav__mobile"&gt;&lt;/nav&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="navbar__inner"&gt;
+				&lt;a href="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/partners.html#">#</rich_text>
+        <rich_text>" class="navbar__logo"&gt;UltraTech&lt;/a&gt;
+
+				&lt;div class="navbar__menu-mob"&gt;&lt;a href="" id='toggle'&gt;&lt;svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"&gt;&lt;path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Authentication pages --&gt;
+	&lt;div class="auth"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="auth__inner"&gt;
+				&lt;div class="auth__media"&gt;
+					&lt;img src="</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/images/undraw_selfie.svg">./images/undraw_selfie.svg</rich_text>
+        <rich_text>"&gt;
+				&lt;/div&gt;
+				&lt;div class="auth__auth"&gt;
+					&lt;h1 class="auth__title"&gt;Private Partners Area&lt;/h1&gt;
+					&lt;p&gt;Fill in your login and password&lt;/p&gt;
+					&lt;form method='GET' autocompelete="new-password" role="presentation" class="form"&gt;
+						&lt;label&gt;Login&lt;/label&gt;
+						&lt;input type="text" name="login" id='email' placeholder="your login"&gt;
+						&lt;label&gt;Password&lt;/label&gt;
+						&lt;input type="password" name="password" id='password' placeholder="&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;&amp;#9679;" autocomplete="off"&gt;
+						&lt;button type='submit' class="button button__accent"&gt;Log in&lt;/button&gt;
+						&lt;a href=""&gt;&lt;h6 class="left-align" &gt;Forgot your password?&lt;/h6&gt;&lt;/a&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;script src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/js/app.min.js">js/app.min.js</rich_text>
+        <rich_text>'&gt;&lt;/script&gt;
+	&lt;script src='</rich_text>
+        <rich_text link="webs http://view-source:http://10.10.226.54:31331/js/api.js">js/api.js</rich_text>
+        <rich_text>'&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</rich_text>
+        <rich_text scale="h2">JS</rich_text>
+        <rich_text>
+
+- app.min.js
+- api.js</rich_text>
+      </node>
+    </node>
+    <node name="8081:node.js express" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963289" ts_lastsave="1631963383">
+      <rich_text>[07:09:00] 200 -   39B  - /auth                                             
+[07:09:00] 200 -   39B  - /auth/                                            
+[07:09:21] 500 -    1KB - /ping  </rich_text>
+      <node name="/ping" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963306" ts_lastsave="1631963306"/>
+      <node name="/auth" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963309" ts_lastsave="1631963309"/>
+    </node>
+    <node name="Technologies" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962151" ts_lastsave="1631962152">
+      <rich_text>- apache web server
+- ftp
+- ssh
+- node.js api server
+- javascript
+- php</rich_text>
+    </node>
+    <node name="Found Persons" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631962304" ts_lastsave="1631962306">
+      <rich_text>
+</rich_text>
+      <rich_text scale="h3">John McFamicom | </rich_text>
+      <rich_text style="italic" scale="h3">r00t</rich_text>
+      <rich_text>
+     A web 3.0 full stack rockstar coder.
+CSS and HTML expert.
+
+
+</rich_text>
+      <rich_text scale="h3">Francois LeMytho | </rich_text>
+      <rich_text style="italic" scale="h3">P4c0</rich_text>
+      <rich_text>
+     One of the best designer in the whole world.
+ Expert in Photoshop CS2 and Paint.NET.
+
+
+
+</rich_text>
+      <rich_text scale="h3">Alvaro Squalo | </rich_text>
+      <rich_text style="italic" scale="h3">Sq4l</rich_text>
+      <rich_text>
+     Young, rich and successful entrepreneur.
+Forbes top 8B.
+</rich_text>
+    </node>
+    <node name="Exploit Ideas" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631963230" ts_lastsave="1631966032">
+      <rich_text>- sql injection in login form
+- command injection in /ping api
+   → payload -h showing ping help
+   → </rich_text>
+      <rich_text foreground="#ff0000">ping -c 4 </rich_text>
+      <rich_text foreground="#6aa84f">8.8.8.8`sleep 5`</rich_text>
+      <rich_text> 
+      ⇒ webserver answered after 5 seconds
+   → it is possible to inject commands as ip to the ping command
+   → the output of the command gets shown as error message of ping command since its not a valid hostname or ip
+   → with command ls
+      ⇒ found sqlite database
+      ⇒ read sqlite database content with cat utech.db.sqlite
+      ⇒ found Mr00t f357a0c52799563c7c7b76c1e7543a32
+      ⇒ found md5 hash: f357a0c52799563c7c7b76c1e7543a32 = n100906
+      ⇒ r00t:n100906
+         • try to login to ssh with this credentials
+         • worked
+         • run sudo -l
+            ◇ cannot run sudo
+         • run linpeas to enumerate privilege escalation vectors
+            ◇ found another credentials pair admin:mrsheafy
+               ▪ only for webapp
+            ◇ uid=1001(r00t) gid=1001(r00t) groups=1001(r00t),116(docker)
+               ▪ being part of the docker group is 95% chance of PE
+               ▪ allow to execute a docker image as root user
+               ▪ started docker image that creates root account
+               ▪ boom got rooted</rich_text>
+    </node>
+    <node name="Credentials" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631964298" ts_lastsave="1631964957">
+      <rich_text>r00t:n100906
+admin:mrsheafy</rich_text>
+    </node>
+  </node>
+</cherrytree>

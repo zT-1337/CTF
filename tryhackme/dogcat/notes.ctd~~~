@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Dogcat" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632836200" ts_lastsave="1632844598">
+    <rich_text>IP 10.10.56.76
+
+</rich_text>
+    <rich_text scale="h1">Enumeration</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">Port Scan:</rich_text>
+    <rich_text>
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 62 Apache httpd 2.4.38 ((Debian))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    <rich_text scale="h2">HTTP 80:</rich_text>
+    <rich_text>
+
+- dirsearcher:
+[09:43:01] 200 -    0B  - /flag.php                                         
+[09:43:04] 200 -  418B  - /index.php                                        
+[09:43:04] 200 -  418B  - /index.php/login/ 
+
+- /flag.php
+   → empty response
+- /index.php
+   → animal buttons linking to /?view=dog, /?view=cat
+- /index.php/login
+   → leads to index.php
+- /?view=dog
+   → added: image dogs/9.jpg
+- /?view=cat
+   → added: image cats/9.jpg
+- /dogs
+   → 403
+- /cats
+   → 403
+- /?view= trying different values for param
+   → view=flag trying to load flag.php
+      ⇒ Sorry only dogs or cats are allowed error message
+   → view=dogcat trying to see how filter works
+      ⇒ got following error message
+</rich_text>
+    <rich_text weight="heavy">Warning</rich_text>
+    <rich_text>:  include(dogcat.php): failed to open stream: No such file or directory in </rich_text>
+    <rich_text weight="heavy">/var/www/html/index.php</rich_text>
+    <rich_text> on line </rich_text>
+    <rich_text weight="heavy">24</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text weight="heavy">Warning</rich_text>
+    <rich_text>:  include(): Failed opening 'dogcat.php' for inclusion (include_path='.:/usr/local/lib/php') in </rich_text>
+    <rich_text weight="heavy">/var/www/html/index.php</rich_text>
+    <rich_text> on line </rich_text>
+    <rich_text weight="heavy">24</rich_text>
+    <rich_text>
+      ⇒ possible LFI
+      ⇒ how it probably works: takes value of view checks if string “dog” or “cat” is included. then add .php and try to include file with name “view_value.php”
+      ⇒ trying null byte injection doesnt work
+      ⇒ trying path trajection and LFI dogs/../index works
+      ⇒ http:// wrapper is disabled
+      ⇒ php://filter works
+      ⇒ can also access apache2 log
+      ⇒ source code for index.php found
+         • file extension is also editable by ext param
+
+</rich_text>
+    <rich_text scale="h1">Exploitation</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">HTTP 80:</rich_text>
+    <rich_text>
+
+- use php://filter and view param to read flag.php file
+   → found flag
+- use php://filter and view param to read index.php file
+   → got source code
+- use log poisoning to get shell
+   → throught log poisoning allowed to get command injection
+   → injected commands that creates php files which starts a reverse shell on execution
+
+</rich_text>
+    <rich_text scale="h1">Post Exploitation</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">HTTP 80:</rich_text>
+    <rich_text>
+
+- sudo -l
+   → (root) NOPASSWD: /usr/bin/env
+   → sudo env /bin/sh
+      ⇒ got root access
+- checked if am inside a docker container with cat /proc/1/cgroup
+   → i am
+- </rich_text>
+  </node>
+</cherrytree>

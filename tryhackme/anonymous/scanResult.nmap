@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Mon Sep 20 06:10:45 2021 as: nmap -sS -sV -p- -oN scanResult.nmap -vv 10.10.87.60
+Nmap scan report for 10.10.87.60
+Host is up, received reset ttl 63 (0.041s latency).
+Scanned at 2021-09-20 06:10:45 EDT for 53s
+Not shown: 65531 closed ports
+Reason: 65531 resets
+PORT    STATE SERVICE     REASON         VERSION
+21/tcp  open  ftp         syn-ack ttl 63 vsftpd 2.0.8 or later
+22/tcp  open  ssh         syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+139/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: ANONYMOUS; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 20 06:11:38 2021 -- 1 IP address (1 host up) scanned in 53.83 seconds

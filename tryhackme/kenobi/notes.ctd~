@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Kenobi" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633011329" ts_lastsave="1633015091">
+    <rich_text scale="h1">IP Address</rich_text>
+    <rich_text>
+
+10.10.254.63
+
+</rich_text>
+    <rich_text scale="h1">Port Scan</rich_text>
+    <rich_text>
+
+PORT      STATE SERVICE     REASON         VERSION
+21/tcp    open  ftp         syn-ack ttl 63 ProFTPD 1.3.5
+22/tcp    open  ssh         syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http        syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+111/tcp   open  rpcbind     syn-ack ttl 63 2-4 (RPC #100000)
+139/tcp   open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+2049/tcp  open  nfs_acl     syn-ack ttl 63 2-3 (RPC #100227)
+33917/tcp open  mountd      syn-ack ttl 63 1-3 (RPC #100005)
+39887/tcp open  nlockmgr    syn-ack ttl 63 1-4 (RPC #100021)
+42077/tcp open  mountd      syn-ack ttl 63 1-3 (RPC #100005)
+47271/tcp open  mountd      syn-ack ttl 63 1-3 (RPC #100005)
+Service Info: Host: KENOBI; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    <rich_text scale="h1">RPCBind 111</rich_text>
+    <rich_text>
+
+- found mounted folder /var *
+
+</rich_text>
+    <rich_text scale="h1">SMB Shares</rich_text>
+    <rich_text>:
+
+- shares
+        Sharename       Type      Comment
+        ---------       ----      -------
+        print$          Disk      Printer Drivers
+        anonymous       Disk      
+        IPC$            IPC       IPC Service (kenobi server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+- anonymous login
+   → worked
+
+- /anonymous
+   → log.txt
+      ⇒ private key in /home/kenobi/.ssh/id_rsa with passphrase
+      ⇒ ProFTPD is running with kenobi user/group
+      ⇒ Anonymous usernames
+         • anonymous
+         • ftp
+
+</rich_text>
+    <rich_text scale="h1">ProFTPD 1.3.5</rich_text>
+    <rich_text>
+
+- anonymous login
+   → not working either with ftp and anonymous
+- searchsploit
+   → Commands SITE CPFR and SITE CPTO can be used to copy files and directories
+   → found in log.txt the private key of kenobi
+   → trying to get it by copying to /var folder since it is mounted
+   → then mount /var folder and copy ssh-key
+   → log in as kenobi with key
+   → worked
+
+</rich_text>
+    <rich_text scale="h1">HTTP Apache</rich_text>
+    <rich_text>
+
+- dirsearcher
+[10:32:21] 200 -  200B  - /admin.html                                       
+[10:32:38] 200 -  200B  - /index.html                                       
+[10:32:50] 200 -   36B  - /robots.txt 
+
+- /index.html
+   → just an image
+- /robots.txt
+   → nothing interesting
+- /admin.html
+   → just a trap :D
+
+</rich_text>
+    <rich_text scale="h1">SSH</rich_text>
+    <rich_text>
+
+- after login as kenobi with private key
+- linpeas.sh
+   → lxd group
+   → sudo group and pkexec policy
+   → writable path
+   → suid for /usr/bin/menu
+- checking /usr/bin/menu with strings
+   → executing curl command
+   → with writeable path is possible </rich_text>
+  </node>
+</cherrytree>

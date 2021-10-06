@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="boilerctf2" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633533182" ts_lastsave="1633537227">
+    <rich_text scale="h1">IP Adress</rich_text>
+    <rich_text>
+
+10.10.125.56
+
+</rich_text>
+    <rich_text scale="h1">Ports</rich_text>
+    <rich_text>
+
+PORT      STATE SERVICE REASON         VERSION
+21/tcp    open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+80/tcp    open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+10000/tcp open  http    syn-ack ttl 63 MiniServ 1.930 (Webmin httpd)
+55007/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    <rich_text scale="h1">FTP 21</rich_text>
+    <rich_text>
+
+- anonymous login is possible
+- found file .info.txt
+   → found String: Whfg jnagrq gb frr vs lbh svaq vg. Yby. Erzrzore: Rahzrengvba vf gur xrl!
+   → is ceaser cipher: just wanted to see if you find it lol remember enumeration is the key
+
+
+</rich_text>
+    <rich_text scale="h1">HTTP 80</rich_text>
+    <rich_text>
+
+- dirsearcher
+
+[11:29:42] 200 -   11KB - /index.html                                       
+[11:29:44] 301 -  313B  - /joomla  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/">http://10.10.125.56/joomla/</rich_text>
+    <rich_text>          
+[11:29:44] 301 -  327B  - /joomla/administrator  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/administrator/">http://10.10.125.56/joomla/administrator/</rich_text>
+    <rich_text>
+[11:29:47] 301 -  313B  - /manual  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/">http://10.10.125.56/manual/</rich_text>
+    <rich_text>       
+
+	[11:42:31] 301 -  316B  - /manual/de  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/de/">http://10.10.125.56/manual/de/</rich_text>
+    <rich_text>    
+	[11:42:33] 301 -  316B  - /manual/en  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/en/">http://10.10.125.56/manual/en/</rich_text>
+    <rich_text>    
+	[11:42:34] 301 -  316B  - /manual/es  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/es/">http://10.10.125.56/manual/es/</rich_text>
+    <rich_text>    
+	[11:42:35] 301 -  316B  - /manual/fr  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/fr/">http://10.10.125.56/manual/fr/</rich_text>
+    <rich_text>    
+	[11:42:37] 301 -  320B  - /manual/images  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/images/">http://10.10.125.56/manual/images/</rich_text>
+    <rich_text>
+	[11:42:37] 200 -    9KB - /manual/images/                                   
+	[11:42:38] 200 -  626B  - /manual/index.html                                
+	[11:42:57] 301 -  319B  - /manual/style  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/manual/style/">http://10.10.125.56/manual/style/</rich_text>
+    <rich_text>
+
+   
+[11:29:47] 200 -  626B  - /manual/index.html                                
+[11:29:54] 200 -   12KB - /joomla/       
+
+	[11:37:45] 200 -    3KB - /joomla/Jenkinsfile                               
+	[11:37:45] 200 -   18KB - /joomla/LICENSE.txt                               
+	[11:37:46] 200 -    5KB - /joomla/README.txt                                
+	[11:37:46] 200 -    6KB - /joomla/README.md                                 
+	[11:37:47] 301 -  320B  - /joomla/_files  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/_files/">http://10.10.125.56/joomla/_files/</rich_text>
+    <rich_text>
+	[11:37:48] 301 -  319B  - /joomla/_test  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/_test/">http://10.10.125.56/joomla/_test/</rich_text>
+    <rich_text>
+	
+		[11:53:45] 200 -  716B  - /joomla/_test/log.txt     	
+	
+	[11:37:54] 301 -  327B  - /joomla/administrator  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/administrator/">http://10.10.125.56/joomla/administrator/</rich_text>
+    <rich_text>
+	[11:37:54] 403 -  317B  - /joomla/administrator/.htaccess                   
+	[11:37:54] 200 -    2KB - /joomla/administrator/includes/                   
+	[11:37:54] 200 -   31B  - /joomla/administrator/cache/                      
+	[11:37:54] 200 -   31B  - /joomla/administrator/logs/                       
+	[11:37:54] 301 -  332B  - /joomla/administrator/logs  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/administrator/logs/">http://10.10.125.56/joomla/administrator/logs/</rich_text>
+    <rich_text>
+	[11:37:55] 200 -    5KB - /joomla/administrator/index.php                   
+	[11:37:55] 200 -    5KB - /joomla/administrator/                            
+	[11:37:59] 301 -  317B  - /joomla/bin  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/bin/">http://10.10.125.56/joomla/bin/</rich_text>
+    <rich_text>  
+	[11:37:59] 200 -   31B  - /joomla/bin/                                      
+	[11:38:00] 301 -  319B  - /joomla/build  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/build/">http://10.10.125.56/joomla/build/</rich_text>
+    <rich_text>
+	[11:38:00] 200 -    6KB - /joomla/build.xml                                 
+	[11:38:00] 200 -    3KB - /joomla/build/                                    
+	[11:38:00] 301 -  319B  - /joomla/cache  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/cache/">http://10.10.125.56/joomla/cache/</rich_text>
+    <rich_text>
+	[11:38:00] 200 -   31B  - /joomla/cache/                                    
+	[11:38:01] 200 -   31B  - /joomla/cli/                                      
+	[11:38:01] 200 -    2KB - /joomla/codeception.yml                           
+	[11:38:01] 200 -   31B  - /joomla/components/                               
+	[11:38:01] 301 -  324B  - /joomla/components  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/components/">http://10.10.125.56/joomla/components/</rich_text>
+    <rich_text>
+	[11:38:01] 200 -    2KB - /joomla/composer.json                             
+	[11:38:02] 200 -    0B  - /joomla/configuration.php                         
+	[11:38:13] 200 -  117KB - /joomla/composer.lock                             
+	[11:38:15] 200 -    3KB - /joomla/htaccess.txt                              
+	[11:38:16] 301 -  320B  - /joomla/images  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/images/">http://10.10.125.56/joomla/images/</rich_text>
+    <rich_text>
+	[11:38:16] 200 -   31B  - /joomla/images/                                   
+	[11:38:16] 200 -   31B  - /joomla/includes/                                 
+	[11:38:16] 301 -  322B  - /joomla/includes  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/includes/">http://10.10.125.56/joomla/includes/</rich_text>
+    <rich_text>
+	[11:38:17] 200 -   12KB - /joomla/index.php                                 
+	[11:38:17] 303 -    0B  - /joomla/index.php/login/  -&gt;  /joomla/index.php/component/users/?view=login&amp;Itemid=104
+	[11:38:17] 301 -  326B  - /joomla/installation  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/installation/">http://10.10.125.56/joomla/installation/</rich_text>
+    <rich_text>
+	[11:38:18] 200 -    6KB - /joomla/installation/                             
+	[11:38:18] 200 -    3KB - /joomla/karma.conf.js                             
+	[11:38:18] 301 -  322B  - /joomla/language  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/language/">http://10.10.125.56/joomla/language/</rich_text>
+    <rich_text>
+	[11:38:19] 200 -   31B  - /joomla/layouts/                                  
+	[11:38:19] 301 -  323B  - /joomla/libraries  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/libraries/">http://10.10.125.56/joomla/libraries/</rich_text>
+    <rich_text>
+	[11:38:19] 200 -   31B  - /joomla/libraries/                                
+	[11:38:22] 301 -  319B  - /joomla/media  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/media/">http://10.10.125.56/joomla/media/</rich_text>
+    <rich_text>
+	[11:38:22] 200 -   31B  - /joomla/media/                                    
+	[11:38:24] 200 -   31B  - /joomla/modules/                                  
+	[11:38:24] 301 -  321B  - /joomla/modules  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/modules/">http://10.10.125.56/joomla/modules/</rich_text>
+    <rich_text>
+	[11:38:31] 200 -    3KB - /joomla/phpunit.xml.dist                          
+	[11:38:31] 200 -   31B  - /joomla/plugins/                                  
+	[11:38:31] 301 -  321B  - /joomla/plugins  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/plugins/">http://10.10.125.56/joomla/plugins/</rich_text>
+    <rich_text>
+	[11:38:35] 200 -  829B  - /joomla/robots.txt.dist                           
+	[11:38:43] 301 -  323B  - /joomla/templates  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/templates/">http://10.10.125.56/joomla/templates/</rich_text>
+    <rich_text>
+	[11:38:43] 200 -    0B  - /joomla/templates/system/                         
+	[11:38:43] 200 -    0B  - /joomla/templates/protostar/                      
+	[11:38:43] 200 -   31B  - /joomla/templates/                                
+	[11:38:43] 200 -   31B  - /joomla/templates/index.html
+	[11:38:43] 200 -    0B  - /joomla/templates/beez3/
+	[11:38:43] 301 -  319B  - /joomla/tests  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/tests/">http://10.10.125.56/joomla/tests/</rich_text>
+    <rich_text>
+	[11:38:43] 200 -    2KB - /joomla/tests/                                    
+	[11:38:44] 200 -   31B  - /joomla/tmp/                                      
+	[11:38:44] 301 -  317B  - /joomla/tmp  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/tmp/">http://10.10.125.56/joomla/tmp/</rich_text>
+    <rich_text>  
+	[11:38:49] 200 -    2KB - /joomla/web.config.txt                            
+	[11:38:52] 301 -  318B  - /joomla/~www  -&gt;  </rich_text>
+    <rich_text link="webs http://10.10.125.56/joomla/~www/">http://10.10.125.56/joomla/~www/</rich_text>
+    <rich_text>
+
+                                   
+[11:29:57] 200 -  257B  - /robots.txt  
+
+- /index.html
+   → no comments
+   → apache start pages
+- /robots.txt
+   → content:
+/tmp
+/.ssh
+/yellow
+/not
+/a+rabbit
+/hole
+/or
+/is
+/it
+
+079 084 108 105 077 068 089 050 077 071 078 107 079 084 086 104 090 071 086 104 077 122 073 051 089 122 085 048 077 084 103 121 089 109 070 104 078 084 069 049 079 068 081 075
+
+   → maybe ascii code -&gt; OTliMDY2MGNkOTVhZGVhMzI3YzU0MTgyYmFhNTE1ODQK
+   → not base64
+   → 404 for the folders in the robots.txt
+
+- /manual/
+   → Apache HTTP Server Version 2.4 Manual
+   → no comments
+
+- /joomla/
+   → start page of CMS
+   → login interface
+
+- /joomla/README.txt
+   → version 3.9
+   → Joomla! Component ACYMAILING 3.9.0 - Unauthenticated Arbitrary File Upload        | php/webapps/48230.txt
+   → Joomla! Component RealEstateManager 3.9 - SQL Injection                           | php/webapps/41429.txt
+   → Joomla! Component VehicleManager 3.9 - SQL Injection                              | php/webapps/41428.txt
+
+- /joomla/_files/
+   → string: VjJodmNITnBaU0JrWVdsemVRbz0K
+   → not base65
+
+- /joomla/_test/
+   → sar2html page
+   → possible exploit </rich_text>
+    <rich_text link="webs https://github.com/AssassinUKG/sar2HTML/blob/main/sar2HTMLshell.py">https://github.com/AssassinUKG/sar2HTML/blob/main/sar2HTMLshell.py</rich_text>
+    <rich_text>
+
+- /joomla/_test/log.txt
+   → content 
+
+Aug 20 11:16:26 parrot sshd[2443]: Server listening on 0.0.0.0 port 22.
+Aug 20 11:16:26 parrot sshd[2443]: Server listening on :: port 22.
+Aug 20 11:16:35 parrot sshd[2451]: Accepted password for basterd from 10.1.1.1 port 49824 ssh2 #pass: superduperp@$$
+Aug 20 11:16:35 parrot sshd[2451]: pam_unix(sshd:session): session opened for user pentest by (uid=0)
+Aug 20 11:16:36 parrot sshd[2466]: Received disconnect from 10.10.170.50 port 49824:11: disconnected by user
+Aug 20 11:16:36 parrot sshd[2466]: Disconnected from user pentest 10.10.170.50 port 49824
+Aug 20 11:16:36 parrot sshd[2451]: pam_unix(sshd:session): session closed for user pentest
+Aug 20 12:24:38 parrot sshd[2443]: Received signal 15; terminating.
+
+- ssh credentials for user basterd
+
+</rich_text>
+    <rich_text scale="h1">MiniServ 1.930 (Webmin) 10000</rich_text>
+    <rich_text>
+
+- dirsearcher
+
+- searchsploit
+   → found nothing for this version
+
+- /index.html
+   → login interface
+
+</rich_text>
+    <rich_text scale="h1">SSH 55007</rich_text>
+    <rich_text>
+
+- login with basterd:superduperp@$$
+   → found backup.sh in /home/basterd
+      ⇒ another password superduperp@$$no1knows
+   → sudo -l
+      ⇒ cant run sudo
+- login with stoner:superduperp@$$no1knows
+   → sudo -l
+      ⇒ (root) NOPASSWD: /NotThisTime/MessinWithYa
+   → linpeas.sh
+      ⇒ group lxd
+      ⇒ suid-bit /usr/bin/find
+         • got shell with root</rich_text>
+  </node>
+</cherrytree>

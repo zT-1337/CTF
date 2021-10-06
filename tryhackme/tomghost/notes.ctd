@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="tomghost" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1632758262" ts_lastsave="1632762547">
+    <rich_text scale="h1">Enumeration</rich_text>
+    <rich_text>
+
+Ports:
+
+22/tcp   open  ssh        syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+53/tcp   open  tcpwrapped syn-ack ttl 63
+8009/tcp open  ajp13      syn-ack ttl 63 Apache Jserv (Protocol v1.3)
+8080/tcp open  http       syn-ack ttl 63 Apache Tomcat 9.0.30
+
+</rich_text>
+    <rich_text scale="h2">8080 und 8009:</rich_text>
+    <rich_text>
+
+Dirsearcher:
+
+10.10.239.57:8080/
+
+[12:07:30] 200 -   17KB - /docs/                                                                    
+[12:07:34] 302 -    0B  - /examples  -&gt;  /examples/                         
+[12:07:34] 200 -  658B  - /examples/servlets/servlet/CookieExample          
+[12:07:34] 200 -    6KB - /examples/servlets/index.html                     
+[12:07:34] 200 -  946B  - /examples/servlets/servlet/RequestHeaderExample
+[12:07:34] 200 -    1KB - /examples/                                        
+[12:07:35] 200 -  677B  - /examples/jsp/snp/snoop.jsp                       
+[12:07:36] 200 -   21KB - /favicon.ico                                      
+[12:07:40] 403 -    3KB - /host-manager/                                    
+[12:07:40] 403 -    3KB - /host-manager/html                                
+[12:07:43] 200 -   11KB - /index.jsp                                        
+[12:07:52] 302 -    0B  - /manager  -&gt;  /manager/  
+
+10.10.239.57:8009/
+
+
+Searchsploit:
+
+- Apache Tomcat
+   → nothing interessting
+- AJP
+   → Apache Tomcat - AJP 'Ghostcat File Read/Inclusion
+
+</rich_text>
+    <rich_text scale="h2">22</rich_text>
+    <rich_text>
+
+- loged in as skyfuck
+- found user.txt in /home/merlin
+- sudo -l
+   → no commands allowed
+- linpeash.sh
+   → PATH variable writeable
+   → *  *    * * *   root    cd /root/ufw &amp;&amp; bash ufw.sh
+- in /home/skyfuck
+   → tryhackme.asc
+   → credentials.pgp
+   → trying to decrypt credentials.pgp but i need a passphrase for the tryhackme.asc key
+
+- logged in as merlin
+- sudo -l
+   → (root : root) NOPASSWD: /usr/bin/zip
+
+</rich_text>
+    <rich_text scale="h1">Exploitation</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">8080 und 8009</rich_text>
+    <rich_text>
+
+- Apache Tomcat - AJP 'Ghostcat File Read/Inclusion (Metasploit)
+   → read WEB-INF/web.xml file
+   → got credentials  string skyfuck:8730281lkjlkjdqlksalks
+
+</rich_text>
+    <rich_text scale="h2">22</rich_text>
+    <rich_text>
+
+- try to bruteforce passphrase of tryhackme.asc with john
+   → alexandru is the passphrase
+   → decrypted credentials.pgp
+      ⇒ merlin:asuyusdoiuqoilkda312j31k2j123j1g23g12k3g12kj3gk12jg3k12j3kj123j
+- (root : root) NOPASSWD: /usr/bin/zip for merlin
+   → </rich_text>
+    <rich_text link="webs https://gtfobins.github.io/gtfobins/zip/#sudo">https://gtfobins.github.io/gtfobins/zip/#sudo</rich_text>
+    <rich_text>
+</rich_text>
+  </node>
+</cherrytree>

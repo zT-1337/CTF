@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Vulnversity" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1633006556" ts_lastsave="1633010329">
+    <rich_text scale="h1">IP Address</rich_text>
+    <rich_text>:
+
+10.10.90.143
+
+</rich_text>
+    <rich_text scale="h1">Port Scan:</rich_text>
+    <rich_text>
+
+Reason: 65529 resets
+PORT     STATE SERVICE     REASON         VERSION
+21/tcp   open  ftp         syn-ack ttl 63 vsftpd 3.0.3
+22/tcp   open  ssh         syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+139/tcp  open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn syn-ack ttl 63 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3128/tcp open  http-proxy  syn-ack ttl 63 Squid http proxy 3.5.12
+3333/tcp open  http        syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+</rich_text>
+    <rich_text scale="h1">FTP:</rich_text>
+    <rich_text>
+
+- anonymous login not working
+
+</rich_text>
+    <rich_text scale="h1">SMB Shares:</rich_text>
+    <rich_text>
+
+- no shares available
+
+</rich_text>
+    <rich_text scale="h1">HTTP Apache:</rich_text>
+    <rich_text>
+
+- dirsearcher
+[09:05:51] 301 -  317B  - /css/       
+[09:05:55] 301 -  319B  - /fonts/ 
+[09:05:57] 301 -  320B  - /images/
+[09:05:57] 200 -    7KB - /images/                                          
+[09:05:57] 200 -   32KB - /index.html                                       
+[09:05:58] 301 -  322B  - /internal/
+[09:05:58] 200 -    5KB - /js/            
+[09:37:23] 200 -  525B  - /internal/index.php                                                     
+[09:37:43] 200 -  772B  - /internal/uploads/                                    
+
+- /index.html
+   → no interesting comments
+   → links not working
+- /internal/
+   → POST request to /internal/index.php to upload a file
+      ⇒ .gif extension not allowed
+      ⇒ .jpg extension not allowed
+      ⇒ .php extension not allowed
+      ⇒ no extension not allowed
+      ⇒ .yyy extension not allowed
+      ⇒ .11 extension not allowed
+      ⇒ .f extension not allowed
+      ⇒ .somegibberishbro not allowed
+      ⇒ . not allowed
+      ⇒ probably filter works with whitelist
+      ⇒ trying out wordlist of filename extensions (</rich_text>
+    <rich_text link="webs https://gist.githubusercontent.com/securifera/e7eed730cbe1ce43d0c29d7cd2d582f4/raw/908a7934ca448f389275432514eaa157def9c385/Filename%2520extension%2520list">https://gist.githubusercontent.com/securifera/e7eed730cbe1ce43d0c29d7cd2d582f4/raw/908a7934ca448f389275432514eaa157def9c385/Filename%2520extension%2520list</rich_text>
+    <rich_text>)
+         • .phtml worked
+         • uploaded reverse shell with .phtml extension
+         • found uploaded file in uploads
+         • executed file
+         • got reverse shell
+   → no js
+   → no comments
+- /internal/uploads
+   → empty directory
+   → possible directory where files are ending up
+
+</rich_text>
+    <rich_text scale="h1">Squid HTTP Proxy:</rich_text>
+    <rich_text>
+
+- searchsploit
+   → nothing interesting
+
+</rich_text>
+    <rich_text scale="h1">Reverse Shell:</rich_text>
+    <rich_text>
+
+- found /home/bill
+   → iniside of it was user.txt with flag
+- sudo -l
+   → missing www-data password
+- linpeas.sh
+   → SUID /bin/systemctl</rich_text>
+  </node>
+</cherrytree>

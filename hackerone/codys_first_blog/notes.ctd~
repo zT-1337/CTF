@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Codys First Blog" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631880884" ts_lastsave="1631883894">
+    <node name="dirsearcher" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631880973" ts_lastsave="1631881069">
+      <rich_text>[08:16:22] 200 -  372B  - /609fb86a5c/Dockerfile                            
+[08:16:32] 200 -  459B  - /609fb86a5c/admin.inc.php                         
+[08:17:05] 200 -  949B  - /609fb86a5c/index.php                             
+[08:17:05] 200 -  949B  - /609fb86a5c/index.php/login/                      
+[08:17:19] 200 -   68KB - /609fb86a5c/php.ini                               
+[08:17:22] 301 -  314B  - /609fb86a5c/posts  -&gt;  </rich_text>
+      <rich_text link="webs http://34.94.3.143/609fb86a5c/posts/">http://34.94.3.143/609fb86a5c/posts/</rich_text>
+      <rich_text>
+</rich_text>
+    </node>
+    <node name="Pages" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631880912" ts_lastsave="1631881613">
+      <node name="/" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631880915" ts_lastsave="1631881463">
+        <rich_text>&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Home -- Cody's First Blog&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Home&lt;/h1&gt;
+		&lt;p&gt;Welcome to my blog!  I'm excited to share my thoughts with the world.  I have many important and controversial positions, which I hope to get across here.&lt;/p&gt;
+
+	&lt;h2&gt;September 1, 2018 -- First&lt;/h2&gt;
+	&lt;p&gt;First post!  I built this blog engine around one basic concept: PHP doesn't need a template language because it &lt;i&gt;is&lt;/i&gt; a template language.  This server can't talk to the outside world and nobody but me can upload files, so there's no risk in just using include().&lt;/p&gt;
+&lt;p&gt;Stick around for a while and comment as much as you want; all thoughts are welcome!&lt;/p&gt;
+
+
+		&lt;br&gt;
+		&lt;br&gt;
+		&lt;hr&gt;
+		&lt;h3&gt;Comments&lt;/h3&gt;
+		&lt;!--&lt;a href="?page=admin.auth.inc"&gt;Admin login&lt;/a&gt;--&gt;
+		&lt;h4&gt;Add comment:&lt;/h4&gt;
+		&lt;form method="POST"&gt;
+			&lt;textarea rows="4" cols="60" name="body"&gt;&lt;/textarea&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+- Inputs
+   → POST /
+      ⇒ body=text
+      ⇒ comment needs approval before getting shown
+   → ?page param
+- Comments
+   → &lt;!--&lt;a href="?page=admin.auth.inc"&gt;Admin login&lt;/a&gt;--&gt;
+      ⇒ link to the admin login page</rich_text>
+      </node>
+      <node name="/index.php?page=admin.aut.inc" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881457" ts_lastsave="1631881547">
+        <rich_text>&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Admin Login -- Cody's First Blog&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Admin Login&lt;/h1&gt;
+		&lt;form method="POST"&gt;
+	Username: &lt;input type="text" name="username"&gt;&lt;br&gt;
+	Password: &lt;input type="password" name="password"&gt;&lt;br&gt;
+	&lt;input type="submit" value="Log In"&gt;&lt;br&gt;
+	&lt;/form&gt;
+		&lt;br&gt;
+		&lt;br&gt;
+		&lt;hr&gt;
+		&lt;h3&gt;Comments&lt;/h3&gt;
+		&lt;!--&lt;a href="?page=admin.auth.inc"&gt;Admin login&lt;/a&gt;--&gt;
+		&lt;h4&gt;Add comment:&lt;/h4&gt;
+		&lt;form method="POST"&gt;
+			&lt;textarea rows="4" cols="60" name="body"&gt;&lt;/textarea&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+- Input
+   → POST /index.php?page=admin.auth.inc
+      ⇒ username=test&amp;password=test</rich_text>
+      </node>
+      <node name="/Dockerfile" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881249" ts_lastsave="1631881253">
+        <rich_text>FROM nimmis/apache-php5
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY php.ini /etc/php5/apache2/php.ini
+
+EXPOSE 80
+
+WORKDIR /app
+
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-client mysql-server libmysqlclient-dev build-essential python-dev python-pip
+RUN pip install mysqlclient
+
+ADD . /app
+
+CMD bash setup.sh</rich_text>
+      </node>
+      <node name="/admin.inc.php" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881332" ts_lastsave="1631881355">
+        <rich_text>&lt;h2&gt;Pending Comments&lt;/h2&gt;
+&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in &lt;b&gt;/app/admin.inc.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  mysql_query(): A link to the server could not be established in &lt;b&gt;/app/admin.inc.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in &lt;b&gt;/app/admin.inc.php&lt;/b&gt; on line &lt;b&gt;6&lt;/b&gt;&lt;br /&gt;
+</rich_text>
+      </node>
+      <node name="/posts/" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881613" ts_lastsave="1631881705">
+        <rich_text>GET
+
+- found file first.inc.php
+   → shows post from start page
+
+OPTIONS
+
+- GET,HEAD,POST,OPTIONS</rich_text>
+      </node>
+    </node>
+    <node name="Technologies" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881275" ts_lastsave="1631881301">
+      <rich_text>- PHP 5.5.9 for backend
+- apache2 as webserver
+- nginx as reverse proxy
+- mysql as database</rich_text>
+    </node>
+    <node name="Exploit Ideas" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631881717" ts_lastsave="1631884629">
+      <rich_text>- sql injection with add comment feature
+   → dont work
+
+- XSS attack with add comment feature
+   → does work, but no flag
+
+- php injection with add comment feature
+   → does work and got flag (but already found with the help of reverse shell)
+
+- sql injection for admin login page
+   → trying sql injection payloads (</rich_text>
+      <rich_text link="webs https://raw.githubusercontent.com/payloadbox/sql-injection-payload-list/master/Intruder/detect/Generic_SQLI.txt">https://raw.githubusercontent.com/payloadbox/sql-injection-payload-list/master/Intruder/detect/Generic_SQLI.txt</rich_text>
+      <rich_text>)
+   → got the content of the auth method
+   → no auth is possible
+
+- /admin.inc.php might be using the username from a cookie to login to the database
+   → not needed
+
+- send POST request  to /posts/ without authentication
+   → got 404 for sending POST request
+
+- injection into page parame of index.php
+   → tried post/first.inc.php
+      ⇒ got error message 
+      ⇒ is injectable
+   → tried post/first.inc
+      ⇒ got the file post/first.inc.php
+      ⇒ in php.ini the setting allow_url_inlcude is on
+      ⇒ remote file inclusion is possible
+      ⇒ trying to include reverse shell
+      ⇒ got a reverse shell
+      ⇒ cat index.php
+         • first line contained a flag
+   → tried admin.inc
+      ⇒ page loaded correctly now
+      ⇒ got flag</rich_text>
+    </node>
+    <node name="flags" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1631883894" ts_lastsave="1631885497">
+      <rich_text>- goto </rich_text>
+      <rich_text link="webs http://34.94.3.143/609fb86a5c/index.php?page=admin.inc">/index.php?page=admin.inc</rich_text>
+      <rich_text>
+- first line of index.php
+   → should not had access via reverse shell
+   → but add comment with php script that reads out index.php
+   → approve comment
+   → then load index.php?page=http://localhost/index
+   → since the server should not be accessible from outside in its actual use, i wo
+- another line of index.php contains the last flag
+   → correct way would have been by injecting your own php code in the add comments features</rich_text>
+    </node>
+  </node>
+</cherrytree>
